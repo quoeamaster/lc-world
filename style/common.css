@@ -1,0 +1,28 @@
+/* common */
+.core-pointer {
+    cursor: pointer;
+}
+
+
+/* fixed-header: fh- */
+.fh-core {
+    padding: 10px 16px;
+    color: #666;
+}
+.fh-label-1 {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.fh-font-1 {
+    font-size: 0.95em;
+    font-weight: bold;
+}
+.fh-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+}
+.fh-rolling-background {
+    background: white;
+}
+
