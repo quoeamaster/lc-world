@@ -1,5 +1,7 @@
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script> <!-- vue -->
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- JQuery -->
@@ -19,6 +21,9 @@
         <fixed-header></fixed-header>
         <!-- filler for the fixed-header above -->
         <div style="height: 80px;" >&nbsp;</div>
+
+        <carousel v-bind:scrub="scrub['featured']"></carousel>
+
         <dummy-text></dummy-text>
         <!-- dummy-text v-bind:scrub="scrub"></dummy-text -->
     </div>
@@ -26,6 +31,7 @@
     <!-- import the vue components, THEN the app here -->
     <script type="text/javascript" src="component/fixed_header.js"></script>
     <script type="text/javascript" src="component/dummy_test.js"></script>
+    <script type="text/javascript" src="component/carousel.js"></script>
     <script type="text/javascript" src="component/app.js"></script>
 
     <script>

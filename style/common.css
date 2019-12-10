@@ -6,6 +6,7 @@
 
 /* fixed-header: fh- */
 .fh-core {
+    z-index: 10;
     padding: 10px 16px;
     color: #666;
 }
@@ -24,5 +25,52 @@
 }
 .fh-rolling-background {
     background: white;
+}
+
+/* carousel */
+.car-flyer-core {
+    z-index: 5;
+    background-color: #cccccc;
+    height: 500px;
+    width: 1000px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.car-flyer-container {
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+}
+.car-core {
+    width: 100%;
+    margin: auto;
+    display: inline-block;
+}
+.car-dots {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 0.8em;
+}
+.car-dots-spacer-1 {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+
+
+
+.car-swipe-left {
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-0%, -50%);
+    color: white;
+    font-size: 0.8em;
 }
 
