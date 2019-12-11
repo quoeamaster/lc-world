@@ -24,7 +24,8 @@
     width: 100%
 }
 .fh-rolling-background {
-    background: white;
+    background: #ffffff;
+    box-shadow: 0 1px 3px #ccc;
 }
 
 /* carousel */
@@ -48,29 +49,64 @@
     margin: auto;
     display: inline-block;
 }
+.car-control-color-1 {
+    color: gray;
+}
+.car-control-color-2 {
+    color: white;
+}
 .car-dots {
     position: absolute;
     bottom: 4%;
     left: 50%;
     transform: translate(-50%);
-    color: white;
     font-size: 0.8em;
 }
 .car-dots-spacer-1 {
     margin-left: 4px;
     margin-right: 4px;
 }
-
-
-
-
 .car-swipe-left {
     text-align: left;
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 20px;
     transform: translate(-0%, -50%);
-    color: white;
-    font-size: 0.8em;
+    font-size: 2.4em;
 }
+.car-swipe-right {
+    text-align: right;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-0%, -50%);
+    font-size: 2.4em;
+}
+
+
+/* card */
+.cd-core-before {
+    margin-top: 120px;
+    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */
+    max-width: 1280px;
+}
+.cd-container {
+    /*margin: 4px;
+    border: 1px solid blue;
+    height: 320px;*/
+
+    /* border: 1px solid blue; */
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 320px;
+
+}
+.cd-preview {
+    /* border-radius: 50%; */
+    border-radius: 4px;
+    width: 100%;
+    height: 280px;
+}
+
+
 

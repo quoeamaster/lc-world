@@ -1,4 +1,8 @@
-
+/**
+ * carousel component
+ * sub-component(s):
+ * - carousel-flyer
+ */
 Vue.component('carousel', {
   props: ['scrub'],
   data: function() {
@@ -44,13 +48,17 @@ Vue.component('carousel', {
   `
 });
 
+
+/**
+ * carousel-flyer component
+ */
 Vue.component('carousel-flyer', {
   props: ['flyer', 'idx', 'flyersAvailable'],
   watch: {
     flyer: function (val) {
-      document.querySelector(".car-flyer-core").classList.remove("fadeIn");
+      document.querySelector(".car-flyer-core").classList.remove("flipInX");
       setTimeout(function () {
-          document.querySelector(".car-flyer-core").classList.add("fadeIn");
+          document.querySelector(".car-flyer-core").classList.add("flipInX");
       }, 10);
     }
   },
@@ -84,25 +92,53 @@ Vue.component('carousel-flyer', {
           "idx": idx,
         });
       }
+    },
+    raisePreviousWipeFlyerEvent: function () {
+      if (this.idx === 0) {
+        this.$emit('car-swipe-flyer', {
+          "idx": (this.flyersAvailable - 1),
+        })
+      } else {
+        this.$emit('car-swipe-flyer', {
+          "idx": (this.idx - 1),
+        })
+      }
+    },
+    raiseNextWipeFlyerEvent: function () {
+      if (this.idx < (this.flyersAvailable - 1)) {
+        this.$emit('car-swipe-flyer', {
+          "idx": (this.idx + 1),
+        })
+      } else {
+        this.$emit('car-swipe-flyer', {
+          "idx": 0,
+        })
+      }
     }
-
   },
   template: `
 <div class="car-flyer-core animated fadeIn"
     style="-webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s;" 
     v-bind:style="getFlyerStyle()">
-    <!--div class="car-swipe-left">
+    <!-- left cursor -->
+    <div class="car-swipe-left car-control-color-1 core-pointer" 
+        v-on:click="raisePreviousWipeFlyerEvent()">
       <i class="fas fa-angle-left"></i>
-    </div -->
-    <div class="car-dots">
+    </div>
+    <!-- right cursor -->
+    <div class="car-swipe-right car-control-color-1 core-pointer" 
+        v-on:click="raiseNextWipeFlyerEvent()">
+      <i class="fas fa-angle-right"></i>
+    </div>
+    <!-- dots -->
+    <div class="car-dots car-control-color-2">
         <i v-for="(val, idx) in flyersAvailable"
             v-on:click="raiseSwipeFlyerEvent(idx)"
             v-bind:class="getDotClass(idx)"
             class="car-dots-spacer-1 core-pointer"></i>
     </div>
 </div>
-
   `
 });
 
-// background-image: url('/w3images/photographer.jpg');
+
