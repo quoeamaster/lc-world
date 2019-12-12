@@ -1,11 +1,41 @@
 
 Vue.component('card-listing', {
   props: ['listing'],
+  data: function() {
+    return {
+      isPopupInited: false
+    };
+  },
+  methods: {
+    onPopupInit: function(data) {
+      if (this.isPopupInited === false) {
+        this.isPopupInited = true;
+        setTimeout(function () {
+          jQuery(data['className']).magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            fixedContentPos: true,
+            image: {
+              verticalFit: true
+            },
+            zoom: {
+              enabled: true,
+              duration: 300
+            }
+            // other options
+          });
+        }, 500);
+      }
+    }
+  },
   template: `
 <div class="container cd-core-before">
   <div class="row">
-    <div v-for="item in listing" class="col-2 col-lg-3 col-md-3 col-sm-12">
+    <div v-for="item in listing"
+        class="col-2 col-lg-3 col-md-3 col-sm-12">
         <card v-bind:presentation="item"
+            v-on:popup-init="onPopupInit"
         ></card>    
     </div>
 
@@ -21,14 +51,24 @@ Vue.component('card', {
       isHovered: false
     };
   },
+  mounted: function() {
+    let instance = this;
+    setTimeout(function () {
+      instance.$emit('popup-init', {
+        'className': '.meta-lightbox'
+      });
+    }, 100+(Math.random() * 1000));
+  },
   template: `
 <div class="cd-container">
     <div class="">
+        <a class="meta-lightbox" v-bind:href="getPresentationImg()">
         <img v-bind:src="getPresentationImg()"
             v-bind:class="getPresentatonImgClass()"
             v-on:mouseover="acceptHoverEvent()" 
             v-on:mouseleave="acceptHoverLeaveEvent();" 
-            class="cd-preview core-pointer">
+            class="cd-preview core-pointer-zoom-in meta-lightbox">
+        </a>
         <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
     </div>
 </div>

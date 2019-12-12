@@ -2,6 +2,9 @@
 .core-pointer {
     cursor: pointer;
 }
+.core-pointer-zoom-in {
+    cursor: zoom-in;
+}
 
 
 /* fixed-header: fh- */

@@ -4,6 +4,8 @@
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/card.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/component/note.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/common.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/component/note.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="48">
-                <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
+              <first_editor relative-caret-position="24">
+                <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
               </first_editor>
               <second_editor />
             </state>
@@ -32,9 +34,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            <state relative-caret-position="435">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
               <folding>
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -53,26 +56,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/component/carousel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1445">
-              <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-end-line="54" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/style/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+            <state relative-caret-position="305">
+              <caret line="90" column="18" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="18" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component/card.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+            <state relative-caret-position="408">
+              <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -82,6 +91,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>labels</find>
+      <find>emit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -93,12 +103,14 @@
         <option value="$PROJECT_DIR$/component/fixed_header.js" />
         <option value="$PROJECT_DIR$/component/app.js" />
         <option value="$PROJECT_DIR$/component/dummy_test.js" />
-        <option value="$PROJECT_DIR$/component/note.md" />
-        <option value="$PROJECT_DIR$/component/carousel.js" />
         <option value="$PROJECT_DIR$/scrub" />
+        <option value="$PROJECT_DIR$/lib/magnificPopup.min.js" />
+        <option value="$PROJECT_DIR$/lib/maginficPopup.css" />
+        <option value="$PROJECT_DIR$/component/carousel.js" />
+        <option value="$PROJECT_DIR$/component/note.md" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/component/card.js" />
         <option value="$PROJECT_DIR$/style/common.css" />
+        <option value="$PROJECT_DIR$/component/card.js" />
       </list>
     </option>
   </component>
@@ -121,22 +133,6 @@
             <path>
               <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="awards" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -176,12 +172,12 @@
       <workItem from="1575874968581" duration="7382000" />
       <workItem from="1575963178907" duration="11672000" />
       <workItem from="1576057029852" duration="9388000" />
-      <workItem from="1576122693782" duration="1236000" />
+      <workItem from="1576122693782" duration="4160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29678000" />
+    <option name="totallyTimeSpent" value="32602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -234,26 +230,6 @@
     <entry file="file://$PROJECT_DIR$/portfolio/awards/000.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/note.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="48">
-            <caret line="2" column="52" selection-start-line="2" selection-start-column="52" selection-end-line="2" selection-end-column="52" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -261,24 +237,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/carousel.js">
+    <entry file="file://$PROJECT_DIR$/lib/magnificPopup.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1445">
-          <caret line="54" column="33" lean-forward="true" selection-start-line="54" selection-end-line="54" selection-end-column="33" />
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/card.js">
+    <entry file="file://$PROJECT_DIR$/lib/maginficPopup.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="27" column="50" selection-start-line="27" selection-start-column="50" selection-end-line="27" selection-end-column="50" />
+        <state relative-caret-position="8333">
+          <caret line="350" column="31" selection-start-line="350" selection-start-column="31" selection-end-line="350" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/note.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="24">
+            <caret line="1" column="79" selection-start-line="1" selection-start-column="79" selection-end-line="1" selection-end-column="79" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="14" selection-end-line="90" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="112" column="25" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+        <state relative-caret-position="96">
+          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/card.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="17" column="34" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
