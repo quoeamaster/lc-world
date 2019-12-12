@@ -16,10 +16,19 @@ Vue.component('card-listing', {
 
 Vue.component('card', {
   props: ['presentation'],
+  data: function() {
+    return {
+      isHovered: false
+    };
+  },
   template: `
 <div class="cd-container">
     <div class="">
-        <img v-bind:src="getPresentationImg()" class="cd-preview core-pointer">
+        <img v-bind:src="getPresentationImg()"
+            v-bind:class="getPresentatonImgClass()"
+            v-on:mouseover="acceptHoverEvent()" 
+            v-on:mouseleave="acceptHoverLeaveEvent();" 
+            class="cd-preview core-pointer">
         <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
     </div>
 </div>
@@ -30,6 +39,23 @@ Vue.component('card', {
         return this.presentation.preview;
       }
       return '';
+    },
+    acceptHoverEvent: function () {
+      this.isHovered = true;
+    },
+    acceptHoverLeaveEvent: function () {
+      this.isHovered = false;
+    },
+    getPresentatonImgClass: function() {
+      if (this.isHovered) {
+        return {
+          "cd-preview-hover": true
+        };
+      }
+      return {
+        "cd-preview-hover": false
+      };
     }
+
   }
 });
