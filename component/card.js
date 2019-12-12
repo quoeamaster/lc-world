@@ -63,11 +63,12 @@ Vue.component('card', {
 <div class="cd-container">
     <div class="">
         <a class="meta-lightbox" v-bind:href="getPresentationImg()">
-        <img v-bind:src="getPresentationImg()"
-            v-bind:class="getPresentatonImgClass()"
-            v-on:mouseover="acceptHoverEvent()" 
-            v-on:mouseleave="acceptHoverLeaveEvent();" 
-            class="cd-preview core-pointer-zoom-in meta-lightbox">
+          <img v-bind:src="getPresentationImg()"
+              v-bind:class="getPresentatonImgClass()"
+              v-on:mouseover="acceptHoverEvent()" 
+              v-on:mouseleave="acceptHoverLeaveEvent();" 
+              class="cd-preview core-pointer-zoom-in meta-lightbox">
+          <!-- div class="cd-content-pane">{{getPresentationContent()}}</div -->
         </a>
         <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
     </div>
@@ -79,6 +80,17 @@ Vue.component('card', {
         return this.presentation.preview;
       }
       return '';
+    },
+    getPresentationContent: function() {
+      if (this.presentation) {
+        // is it empty or null?
+        var content = this.presentation['content'];
+        if (!content || content === '') {
+          return '';
+        }
+        return content;
+      }
+      return "";
     },
     acceptHoverEvent: function () {
       this.isHovered = true;

@@ -115,6 +115,25 @@
     top: -8px;
     box-shadow: 4px 4px 2px #cccccc;
 }
+/* somehow didn't work as expected
+.cd-content-pane {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    margin: 4px;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+}
+.meta-lightbox:hover .cd-content-pane {
+    opacity: 1;
+}
+*/
+
 
 
 
