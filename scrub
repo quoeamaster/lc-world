@@ -14,7 +14,7 @@
   { "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "beach breeze", "content": "in Bali" },
   { "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "STORM~" },
 
-  { "cat": "portraits", "preview": "portfolio/awards/000.jpg", "title": "misc", "content": "testing on gridlayout" },
+  { "cat": "awards", "preview": "portfolio/awards/000.jpg", "title": "misc", "content": "testing on gridlayout" },
   { "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "misc", "content": "testing on gridlayout again..." },
   { "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "misc" }
  ]

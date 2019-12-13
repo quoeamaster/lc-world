@@ -25,6 +25,9 @@
         <div style="height: 80px;" >&nbsp;</div>
 
         <carousel v-bind:scrub="scrub['featured']"></carousel>
+
+        <div style="height: 36px;" >&nbsp;</div>
+        <portfolio-menu></portfolio-menu>
         <card-listing v-bind:listing="scrub['listing']"></card-listing>
 
         <dummy-text></dummy-text>
@@ -32,6 +35,7 @@
     </div>
 
     <!-- import the vue components, THEN the app here -->
+    <script type="text/javascript" src="component/portfolio_menu.js"></script>
     <script type="text/javascript" src="component/fixed_header.js"></script>
     <script type="text/javascript" src="component/dummy_test.js"></script>
     <script type="text/javascript" src="component/carousel.js"></script>
@@ -39,6 +43,10 @@
     <script type="text/javascript" src="component/app.js"></script>
 
     <script>
+        // global event bus for event handling / receiving
+        let eventBus = new Vue();
+        window.eventBus = eventBus;
+
         window.onscroll = function() {
           applyStickToFixedHeader();
         };

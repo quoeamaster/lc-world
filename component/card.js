@@ -3,10 +3,31 @@ Vue.component('card-listing', {
   props: ['listing'],
   data: function() {
     return {
-      isPopupInited: false
+      isPopupInited: false,
+      // cat == '' means "all"
+      cat: ''
     };
   },
+  mounted: function() {
+    let instance = this;
+    /*
+     *  there is a chance that the eventBus is not yet initialized; hence wait for 500ms
+     */
+    if (!window.eventBus) {
+      setTimeout(function () {
+        window.eventBus.$on('on-category-change', function (data) {
+          instance.onCategoryChange(data);
+        });
+      }, 500);
+    }
+  },
   methods: {
+    onCategoryChange: function(data) {
+      if (data) {
+        // possible values '', awards, photos, sketches
+        this.cat = data.cat;
+      }
+    },
     onPopupInit: function(data) {
       if (this.isPopupInited === false) {
         this.isPopupInited = true;
@@ -27,13 +48,41 @@ Vue.component('card-listing', {
           });
         }, 500);
       }
+    },
+    getCardId: function(idx) {
+      return '__card__'+idx;
+    },
+    _getAnimationClass: function(item, idx, cardObj) {
+      if (this.cat === '' || this.cat === item.cat) {
+        cardObj.addClass('core-display-block').removeClass('core-display-none');
+        cardObj.addClass('zoomIn').removeClass('zoomOut');
+      } else {
+        cardObj.addClass('zoomOut').removeClass('zoomIn');
+        cardObj.addClass('core-display-none').removeClass('core-display-block');
+      }
+    },
+    getAnimationClass: function (item, idx) {
+      let instance = this;
+      let cardObj = jQuery('#'+instance.getCardId(idx));
+      if (!cardObj) {
+        setTimeout(function () {
+          cardObj = jQuery('#'+instance.getCardId(idx));
+          instance._getAnimationClass(item, idx, cardObj);
+        }, 100);
+      } else {
+        this._getAnimationClass(item, idx, cardObj);
+      }
     }
+
   },
   template: `
 <div class="container cd-core-before">
   <div class="row">
-    <div v-for="item in listing"
-        class="col-2 col-lg-3 col-md-3 col-sm-12">
+    <div v-for="(item, idx) in listing"
+        v-bind:id="getCardId(idx)"
+        v-bind:class="getAnimationClass(item, idx)"
+        style="-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s;"
+        class="animated col-2 col-lg-3 col-md-3 col-sm-12">
         <card v-bind:presentation="item"
             v-on:popup-init="onPopupInit"
         ></card>    
@@ -48,7 +97,10 @@ Vue.component('card', {
   props: ['presentation'],
   data: function() {
     return {
-      isHovered: false
+      isHovered: false,
+      isCatMatch: true,
+      previousCatMatch: true,
+      shouldDisplayNone: false
     };
   },
   mounted: function() {
@@ -60,7 +112,7 @@ Vue.component('card', {
     }, 100+(Math.random() * 1000));
   },
   template: `
-<div class="cd-container">
+<div class="cd-container" >
     <div class="">
         <a class="meta-lightbox" v-bind:href="getPresentationImg()">
           <img v-bind:src="getPresentationImg()"
@@ -70,7 +122,7 @@ Vue.component('card', {
               class="cd-preview core-pointer-zoom-in meta-lightbox">
           <!-- div class="cd-content-pane">{{getPresentationContent()}}</div -->
         </a>
-        <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
+        <div style="text-align: center; margin-top: 4px;">{{presentation.title}}-{{presentation.cat}}</div>
     </div>
 </div>
   `,
