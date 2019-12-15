@@ -95,7 +95,7 @@
 
 /* card */
 .cd-core-before {
-    margin-top: 20px;
+    margin-top: 100px;
     /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */
     max-width: 1280px;
 }
@@ -147,16 +147,25 @@
     border: 1px solid rgba(200,200,200,0.5);
     /*border-radius: 20px;*/
     height: 64px;
+    z-index: 8;
+    background: white;
+}
+.pmenu-core-rolling-background {
+    position: fixed;
+    top: 44px; /* kind of hard-coded */
+    width: 100%;
 }
 .pmenu-palete-container {
     /* important as this width determines how to centerize the palete options later on */
-    width: 480px;
+    width: 520px;
     margin: auto;
 }
 .pmenu-palete {
     /* vertical-align: center; */
-    height: 64px;
-    line-height: 64px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 56px;
+    line-height: 56px;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -164,6 +173,12 @@
 }
 .pmenu-palete:hover {
     color: #c0bfc3;
+}
+.pmenu-palete-chosen {
+    color: white;
+    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));
+    border-radius: 30px;
+
 }
 
 

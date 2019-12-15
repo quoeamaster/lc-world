@@ -54,11 +54,24 @@
          * add back the fixed header css if started scrolling
          */
         function applyStickToFixedHeader() {
+          // fh-core (fixed header)
           if (window.pageYOffset > 20) {
             document.querySelector(".fh-core").classList.add('fh-rolling-background');
           } else {
             document.querySelector(".fh-core").classList.remove('fh-rolling-background');
           }
+          // pmenu-core (category menu)
+          let pmenuObj = document.querySelector(".pmenu-core");
+          let pmenuOffset = 590;  // hard coded
+          if (pmenuObj) {
+            // let pmenuObjOffsetTop = pmenuObj.offsetTop - 24;
+            if (window.pageYOffset > pmenuOffset) {
+              pmenuObj.classList.add("pmenu-core-rolling-background");
+            } else {
+              pmenuObj.classList.remove("pmenu-core-rolling-background");
+            }
+          }
+
         }
     </script>
 </body>

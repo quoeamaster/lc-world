@@ -122,7 +122,7 @@ Vue.component('card', {
               class="cd-preview core-pointer-zoom-in meta-lightbox">
           <!-- div class="cd-content-pane">{{getPresentationContent()}}</div -->
         </a>
-        <div style="text-align: center; margin-top: 4px;">{{presentation.title}}-{{presentation.cat}}</div>
+        <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
     </div>
 </div>
   `,
