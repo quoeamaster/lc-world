@@ -181,4 +181,35 @@
 
 }
 
+/* about me */
+.am-core {
+    margin-top: 100px;
+    /*margin-left: 20px;
+    margin-right: 20px;*/
 
+    background-image: url("../portfolio/others/about_me.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    height: 600px;
+    /*border-radius: 6px; */
+    /* box-shadow: 0 0 4px 8px #ccc; */
+}
+.am-content-container {
+    position: relative;
+    top: 30%;
+    left: 10%;
+    width: 400px;
+}
+.am-h3 {
+    color: #c0bfc3;
+    font-size: 2em;
+}
+.am-h4 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    color: #F3F3F3;
+    font-size: 1em;
+}

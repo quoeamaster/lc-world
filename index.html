@@ -30,11 +30,14 @@
         <portfolio-menu></portfolio-menu>
         <card-listing v-bind:listing="scrub['listing']"></card-listing>
 
+        <about-me v-bind:about="scrub['about']"></about-me>
+
         <dummy-text></dummy-text>
         <!-- dummy-text v-bind:scrub="scrub"></dummy-text -->
     </div>
 
     <!-- import the vue components, THEN the app here -->
+    <script type="text/javascript" src="component/about_me.js"></script>
     <script type="text/javascript" src="component/portfolio_menu.js"></script>
     <script type="text/javascript" src="component/fixed_header.js"></script>
     <script type="text/javascript" src="component/dummy_test.js"></script>

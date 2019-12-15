@@ -4,6 +4,7 @@
   "portfolio/portraits/000.jpg",
   "portfolio/portraits/001.jpg"
  ],
+
  "listing": [
   {
    "cat": "awards",
@@ -17,5 +18,10 @@
   { "cat": "awards", "preview": "portfolio/awards/000.jpg", "title": "misc", "content": "testing on gridlayout" },
   { "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "misc", "content": "testing on gridlayout again..." },
   { "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "misc" }
- ]
+ ],
+
+ "about": {
+  "caption": "the Story of LC",
+  "content": "a talent working on photos, sketches and portraits. More than 15 years of creativity, stepping into different industries and producing artwork..."
+ }
 }
