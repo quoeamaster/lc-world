@@ -42,14 +42,18 @@
     z-index: 5;
     background-color: #cccccc;
     height: 500px;
-    width: 1000px;
+    /* width: 1000px; */
+    width: 100%;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 }
 .car-flyer-container {
-    width: 1000px;
+    /*width: 1000px; */
+    width: 100%;
+    
     height: 500px;
     margin: auto;
 }
