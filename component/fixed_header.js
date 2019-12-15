@@ -38,8 +38,12 @@ Vue.component('fixed-header-label', {
   `,
   methods: {
     onLinkClick: function () {
-      //console.log(this.label.label + ' => ' + this.label.link);
-      //alert('TBD');
+      /*
+      if (window.eventBus) {
+        window.eventBus.$emit('on-nav', {
+          label: this.label.label
+        });
+      }*/
       return true;
     },
     getLink: function () {

@@ -8,7 +8,30 @@ Vue.component('portfolio-menu', {
       'cat': ''
     };
   },
+  mounted: function() {
+    /*
+    let instance = this;
+    if (!window.eventBus) {
+      setTimeout(function () {
+        window.eventBus.$on('on-nav', function (data) {
+          instance.onNavEvent(data);
+        });
+      }, 500);
+    }*/
+  },
   methods: {
+    /*
+    onNavEvent: function(data) {
+      setTimeout(function () {
+        if (data.label !== "Portfolio") {
+          let menuObj = document.querySelector(".pmenu-core");
+          if (menuObj) {
+            menuObj.classList.remove("pmenu-core-rolling-background");
+          }
+        }
+      }, 100);
+    },
+    */
     raiseCategoryChangeEvent: function (newCat) {
       if (this.cat !== newCat) {
         this.cat = newCat;
@@ -20,15 +43,20 @@ Vue.component('portfolio-menu', {
       } // end -- if (cat comparison)
     },
     getPaleteChosenClass: function (currentCat) {
-      if (currentCat === this.cat) {
-        return {
-          'pmenu-palete-chosen': true
-        };
+      let css = {};
+      /*
+      if (currentCat === 'Portfolio') {
+        css['pmenu-core-rolling-background'] = true;
       } else {
-        return {
-          'pmenu-palete-chosen': false
-        };
+        css['pmenu-core-rolling-background'] = false;
       }
+      */
+      if (currentCat === this.cat) {
+        css['pmenu-palete-chosen'] = true;
+      } else {
+        css['pmenu-palete-chosen'] = false;
+      }
+      return css;
     }
 
   },
