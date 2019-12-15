@@ -5,10 +5,11 @@ Vue.component('fixed-header', {
   data: function() {
     return {
       labels: [
-        {label: 'Portraits', 'link': '#tbd'},
-        {label: 'Sketches', 'link': '#tbd'},
-        {label: 'Photos', 'link': '#tbd'},
-        {label: 'Awards', 'link': '#tbd'}
+        {label: 'Links',      'link': '_link_'},
+        {label: 'Contact',    'link': '_contact_'},
+        {label: 'Resume',     'link': '_resume_'},
+        {label: 'About me',   'link': '_about_'},
+        {label: 'Portfolio',  'link': '_portfolio_'}
       ]
     };
   },
@@ -31,12 +32,18 @@ Vue.component('fixed-header', {
 Vue.component('fixed-header-label', {
   props: ['label'],
   template: `
-<div class="core-pointer float-right fh-font-1 fh-label-1" v-on:click="onLinkClick();">{{label.label}}</div>
+<div class="float-right fh-font-1 fh-label-1" v-on:click="onLinkClick();">
+    <a v-bind:href="getLink()">{{label.label}}</a>
+</div>
   `,
   methods: {
     onLinkClick: function () {
-      console.log(this.label.label + ' => ' + this.label.link);
-      alert('TBD');
+      //console.log(this.label.label + ' => ' + this.label.link);
+      //alert('TBD');
+      return true;
+    },
+    getLink: function () {
+      return '#' + this.label.link;
     }
   }
 });

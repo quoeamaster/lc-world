@@ -33,7 +33,7 @@ Vue.component('portfolio-menu', {
 
   },
   template: `
-<div class="pmenu-core">
+<div id="_portfolio_" class="pmenu-core">
     <div class="pmenu-palete-container">
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('')" v-on:click="raiseCategoryChangeEvent('')">Highlights</div>
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('awards')" v-on:click="raiseCategoryChangeEvent('awards')">Awards</div>
