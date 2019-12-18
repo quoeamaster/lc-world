@@ -221,8 +221,8 @@
 
 /* contact me */
 .cm-core {
-    margin-top: 100px;
-    padding: 48px;
+    /* margin-top: 100px; */
+    padding: 100px 48px 48px 48px;
     background: #F3F3F3;
     width: 100%;
     min-height: 100px;
