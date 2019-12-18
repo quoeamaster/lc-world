@@ -84,7 +84,7 @@ Vue.component('card-listing', {
         v-bind:id="getCardId(idx)"
         v-bind:class="getAnimationClass(item, idx)"
         style="-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s;"
-        class="animated col-2 col-lg-3 col-md-3 col-sm-12">
+        class="animated col-lg-3 col-md-3 col-sm-12">
         <card v-bind:presentation="item"
             v-on:popup-init="onPopupInit"
         ></card>    
