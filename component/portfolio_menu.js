@@ -8,30 +8,7 @@ Vue.component('portfolio-menu', {
       'cat': ''
     };
   },
-  mounted: function() {
-    /*
-    let instance = this;
-    if (!window.eventBus) {
-      setTimeout(function () {
-        window.eventBus.$on('on-nav', function (data) {
-          instance.onNavEvent(data);
-        });
-      }, 500);
-    }*/
-  },
   methods: {
-    /*
-    onNavEvent: function(data) {
-      setTimeout(function () {
-        if (data.label !== "Portfolio") {
-          let menuObj = document.querySelector(".pmenu-core");
-          if (menuObj) {
-            menuObj.classList.remove("pmenu-core-rolling-background");
-          }
-        }
-      }, 100);
-    },
-    */
     raiseCategoryChangeEvent: function (newCat) {
       if (this.cat !== newCat) {
         this.cat = newCat;
@@ -44,13 +21,6 @@ Vue.component('portfolio-menu', {
     },
     getPaleteChosenClass: function (currentCat) {
       let css = {};
-      /*
-      if (currentCat === 'Portfolio') {
-        css['pmenu-core-rolling-background'] = true;
-      } else {
-        css['pmenu-core-rolling-background'] = false;
-      }
-      */
       if (currentCat === this.cat) {
         css['pmenu-palete-chosen'] = true;
       } else {

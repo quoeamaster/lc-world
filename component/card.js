@@ -1,4 +1,6 @@
-
+/**
+ * listing of card(s)
+ */
 Vue.component('card-listing', {
   props: ['listing'],
   data: function() {
@@ -93,6 +95,9 @@ Vue.component('card-listing', {
   `
 });
 
+/**
+ * card - presenting a particular portfolio
+ */
 Vue.component('card', {
   props: ['presentation'],
   data: function() {

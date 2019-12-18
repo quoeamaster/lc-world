@@ -54,6 +54,14 @@ Vue.component('carousel', {
  */
 Vue.component('carousel-flyer', {
   props: ['flyer', 'idx', 'flyersAvailable'],
+  data: function() {
+    return {
+      // flag to determine should the flip happen
+      // isFlipEventPerformed: false,
+      // when did the last flip happened
+      lastFlipTimestamp: new Date()
+    };
+  },
   watch: {
     flyer: function (val) {
       document.querySelector(".car-flyer-core").classList.remove("flipInX");
@@ -61,6 +69,17 @@ Vue.component('carousel-flyer', {
           document.querySelector(".car-flyer-core").classList.add("flipInX");
       }, 10);
     }
+  },
+  mounted: function() {
+    /* auto - swipe feature
+    let instance = this;
+    setInterval(function () {
+      let duration = new Date() - instance.lastFlipTimestamp;
+      if (duration >= 5000) {
+        instance.raiseNextWipeFlyerEvent();
+      }
+    }, 1000);
+    */
   },
   methods: {
     getFlyerStyle: function () {
@@ -88,12 +107,14 @@ Vue.component('carousel-flyer', {
     },
     raiseSwipeFlyerEvent: function (idx) {
       if (idx !== this.idx) {
+        this.lastFlipTimestamp = new Date();
         this.$emit('car-swipe-flyer', {
           "idx": idx,
         });
       }
     },
     raisePreviousWipeFlyerEvent: function () {
+      this.lastFlipTimestamp = new Date();
       if (this.idx === 0) {
         this.$emit('car-swipe-flyer', {
           "idx": (this.flyersAvailable - 1),
@@ -105,6 +126,7 @@ Vue.component('carousel-flyer', {
       }
     },
     raiseNextWipeFlyerEvent: function () {
+      this.lastFlipTimestamp = new Date();
       if (this.idx < (this.flyersAvailable - 1)) {
         this.$emit('car-swipe-flyer', {
           "idx": (this.idx + 1),
