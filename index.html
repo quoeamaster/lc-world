@@ -22,11 +22,11 @@
     <div id="app" style="background: #fbfbfb;">
         <fixed-header></fixed-header>
         <!-- filler for the fixed-header above -->
-        <div style="height: 80px;" >&nbsp;</div>
+        <div class="core-spacer-1" style="height: 80px;" >&nbsp;</div>
 
         <carousel v-bind:scrub="scrub['featured']"></carousel>
 
-        <div style="height: 36px;" >&nbsp;</div>
+        <div class="core-spacer-2" style="height: 36px;" >&nbsp;</div>
         <portfolio-menu></portfolio-menu>
         <card-listing v-bind:listing="scrub['listing']"></card-listing>
 
@@ -51,13 +51,43 @@
         let eventBus = new Vue();
         window.eventBus = eventBus;
 
+        window.globalWindowDimensions = {
+          width: document.querySelector("body").clientWidth,
+          height: document.querySelector("body").clientHeight
+        };
+
         window.onscroll = function() {
           applyStickToFixedHeader();
         };
+        window.onload = function () {
+          let w = window.globalWindowDimensions.width;
+          if (w <= 600) {
+            hideCoreSpacer1();
+          }
+        };
+
+        function hideCoreSpacer1() {
+          document.querySelector(".core-spacer-1").style.display = 'none';
+        }
+
         /**
          * add back the fixed header css if started scrolling
          */
         function applyStickToFixedHeader() {
+          let pmenuOffset = 575;  // hard coded
+          let w = window.globalWindowDimensions.width;
+
+          // related to the media query settings...
+          /* @media only screen and (max-width: 360px) */
+          if (w <= 600) {
+            pmenuOffset = 60;
+          } else {
+            // console.log('page y offset:', window.pageYOffset); console.log('clientHeight:', a.clientHeight);
+            // console.log('offsetHeight:', a.offsetHeight); console.log('scrollHeight:', a.scrollHeight);
+            pmenuOffset = 575;  // hard coded
+
+          }
+          // common
           // fh-core (fixed header)
           if (window.pageYOffset > 20) {
             document.querySelector(".fh-core").classList.add('fh-rolling-background');
@@ -66,11 +96,8 @@
           }
           // pmenu-core (category menu)
           let pmenuObj = document.querySelector(".pmenu-core");
-          let pmenuOffset = 575;  // hard coded
           let a = document.querySelector(".cd-core-before");
           let endMenuOffsetY = a.clientHeight + pmenuOffset;
-          // console.log('page y offset:', window.pageYOffset); console.log('clientHeight:', a.clientHeight);
-          // console.log('offsetHeight:', a.offsetHeight); console.log('scrollHeight:', a.scrollHeight);
           if (pmenuObj) {
             // let pmenuObjOffsetTop = pmenuObj.offsetTop - 24;
             if (window.pageYOffset > pmenuOffset && window.pageYOffset < endMenuOffsetY) {

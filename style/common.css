@@ -14,7 +14,8 @@
 .core-display-inline-block {
     display: inline-block;
 }
-
+.core-spacer-1 {}
+.core-spacer-2 {}
 
 /* fixed-header: fh- */
 .fh-core {
@@ -281,15 +282,12 @@
 
 /* media queries */
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 600px) {
     .car-core {
         display: none;
     }
     .fh-label-1 {
         display: none;
-    }
-    .fh-core {
-        /* width: 360px; */
     }
     .pmenu-palete-container {
         width: 300px;
@@ -310,27 +308,24 @@
     .fh-hamburger-1 {
         display: inline-block;
     }
-    /*
-    .fh-hamburger-list {
-        display: inline-block;
-    }
-    */
     .am-content-container {
         position: relative;
         top: 30%;
         left: 10%;
         width: 200px;
     }
+    .cd-core-before {
+        margin-top: 40px;
+        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */
+        max-width: 600px;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-
-}
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+/*@media only screen and (min-width: 600px) {
 
 }
-
+*/
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
