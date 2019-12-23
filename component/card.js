@@ -21,6 +21,10 @@ Vue.component('card-listing', {
           instance.onCategoryChange(data);
         });
       }, 500);
+    } else {
+      window.eventBus.$on('on-category-change', function (data) {
+        instance.onCategoryChange(data);
+      });
     }
   },
   methods: {

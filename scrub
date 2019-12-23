@@ -7,17 +7,19 @@
 
  "listing": [
   {
+   "idx": 0,
    "cat": "awards",
+   "highlight": true,
    "preview": "portfolio/awards/000.jpg",
    "title": "windmill - 2019",
    "content": "1st honor prize in ABC photo contest SG"
   },
-  { "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "beach breeze", "content": "in Bali" },
-  { "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "STORM~" },
+  { "idx": 1, "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "beach breeze", "content": "in Bali", "highlight": false },
+  { "idx": 2, "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "STORM~", "highlight": true },
 
-  { "cat": "awards", "preview": "portfolio/awards/000.jpg", "title": "misc", "content": "testing on gridlayout" },
-  { "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "misc", "content": "testing on gridlayout again..." },
-  { "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "misc" }
+  { "idx": 3, "cat": "awards", "preview": "portfolio/awards/000.jpg", "title": "misc", "content": "testing on gridlayout", "highlight": false },
+  { "idx": 4, "cat": "portraits", "preview": "portfolio/portraits/000.jpg", "title": "misc", "content": "testing on gridlayout again...", "highlight": true },
+  { "idx": 5, "cat": "portraits", "preview": "portfolio/portraits/001.jpg", "title": "misc", "highlight": false }
  ],
 
  "about": {
