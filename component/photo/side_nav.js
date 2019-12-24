@@ -15,20 +15,28 @@ Vue.component('ph-side-nav', {
         _firstCat = val.category[0];
 
         this.currentCat = _firstCat.name;
-        this.preparePhotos(_firstCat.listing);
+        // only the first time ... need a delay so that the other components could be
+        // mounted before receiving the event
+        this.preparePhotos(_firstCat.listing, 500);
       }
     }
   },
   methods: {
-    preparePhotos: function(listing) {
-// TODO:
-// TODO:
-// TODO:
-// TODO:
-      window.eventBus.$emit('update-photo-displays', {
-        cat: this.currentCat,
-        listing: listing
-      });
+    preparePhotos: function(listing, delayInMS) {
+      let _cat = this.currentCat;
+      if (delayInMS) {
+        setTimeout(function () {
+          window.eventBus.$emit('update-photo-displays', {
+            cat: _cat,
+            listing: listing
+          });
+        }, 200);
+      } else {
+        window.eventBus.$emit('update-photo-displays', {
+          cat: this.currentCat,
+          listing: listing
+        });
+      }
     },
     onCatChange: function (data) {
       let _cat = data.cat;

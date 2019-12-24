@@ -542,6 +542,7 @@ __webpack_require__(17);
 __webpack_require__(19);
 __webpack_require__(20);
 __webpack_require__(21);
+__webpack_require__(22);
 
 /**
  * photo page related js...
@@ -582,7 +583,7 @@ if (content.locals) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(0);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n/* photo side nav */\n.ph-side-nav {\n    width: 240px;\n    height: 100%;\n    position: absolute;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    padding-top: 60px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.ph-hr-main {\n    border: solid 1px #0b0b0b;\n}\n.ph-display-name {\n    margin-top: 4px;\n}\n.ph-job-title {\n    margin-top: 24px;\n    font-size: 0.9em;\n    font-weight: 400;\n}\n.ph-bio {\n    margin-top: 4px;\n    font-size: 0.8em;\n    text-align: justify;\n    margin-bottom: 40px;\n}\n\n.ph-hr-cat:first-child {\n    border-top: 1px solid rgba(102,102,102, 0.6);\n    margin-bottom: 4px;\n}\n.ph-hr-cat-name {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    text-transform: uppercase;\n    padding-left: 16px;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n    font-size: 0.8em;\n    font-weight: 600;\n}\n.ph-hr-cat-name:hover {\n    background-color: rgba(170,170,170,0.2);\n}\n.ph-hr-cat-name-selected {\n    color: #c00;\n}\n.ph-contact-core {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    margin-bottom: 60px;\n    color: #999;\n}\n.ph-hr-contact {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    margin-bottom: 16px;\n}\n.ph-contact-spacer {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n", ""]);
+exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n/* photo side nav */\n.ph-side-nav {\n    width: 240px;\n    height: 100%;\n    position: absolute;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    padding-top: 60px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.ph-hr-main {\n    border: solid 1px #0b0b0b;\n}\n.ph-display-name {\n    margin-top: 4px;\n}\n.ph-job-title {\n    margin-top: 24px;\n    font-size: 0.9em;\n    font-weight: 400;\n}\n.ph-bio {\n    margin-top: 4px;\n    font-size: 0.8em;\n    text-align: justify;\n    margin-bottom: 40px;\n}\n\n.ph-hr-cat:first-child {\n    border-top: 1px solid rgba(102,102,102, 0.6);\n    margin-bottom: 4px;\n}\n.ph-hr-cat-name {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    text-transform: uppercase;\n    padding-left: 16px;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n    font-size: 0.8em;\n    font-weight: 600;\n}\n.ph-hr-cat-name:hover {\n    background-color: rgba(170,170,170,0.2);\n}\n.ph-hr-cat-name-selected {\n    color: #c00;\n}\n.ph-contact-core {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    margin-bottom: 60px;\n    color: #999;\n}\n.ph-hr-contact {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    margin-bottom: 16px;\n}\n.ph-contact-spacer {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n\n/* photo flex slide show */\n\n.ph-slide-core {\n    margin-left: 240px;\n}\n\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -693,7 +694,9 @@ Vue.component('fixed-hamburger', {
 /* 20 */
 /***/ (function(module, exports) {
 
-
+/**
+ * the side navigation bar
+ */
 Vue.component('ph-side-nav', {
   props: ['scrub'],
   data: function() {
@@ -708,20 +711,28 @@ Vue.component('ph-side-nav', {
         _firstCat = val.category[0];
 
         this.currentCat = _firstCat.name;
-        this.preparePhotos(_firstCat.listing);
+        // only the first time ... need a delay so that the other components could be
+        // mounted before receiving the event
+        this.preparePhotos(_firstCat.listing, 500);
       }
     }
   },
   methods: {
-    preparePhotos: function(listing) {
-// TODO:
-// TODO:
-// TODO:
-// TODO:
-      window.eventBus.$emit('update-photo-displays', {
-        cat: this.currentCat,
-        listing: listing
-      });
+    preparePhotos: function(listing, delayInMS) {
+      let _cat = this.currentCat;
+      if (delayInMS) {
+        setTimeout(function () {
+          window.eventBus.$emit('update-photo-displays', {
+            cat: _cat,
+            listing: listing
+          });
+        }, 200);
+      } else {
+        window.eventBus.$emit('update-photo-displays', {
+          cat: this.currentCat,
+          listing: listing
+        });
+      }
     },
     onCatChange: function (data) {
       let _cat = data.cat;
@@ -763,18 +774,14 @@ Vue.component('ph-side-nav', {
             <i class="fab fa-instagram ph-contact-spacer core-pointer"></i>
             <i class="fab fa-linkedin-in ph-contact-spacer core-pointer"></i>
         </div>
-        <!--div>
-            <span style="margin-left: 8px;">{{scrub.contact.instagram}}</span>
-        </div>
-        <div>
-            <span style="margin-left: 8px;">{{scrub.contact.linkedin}}</span>
-        </div-->
-        
     </div>
 </div>
   `
 });
 
+/**
+ * category entries
+ */
 Vue.component('ph-cat-nav', {
   props: ['item', 'idx', 'currentCat'],
   methods: {
@@ -812,6 +819,77 @@ Vue.component('ph-cat-nav', {
 
 /***/ }),
 /* 21 */
+/***/ (function(module, exports) {
+
+
+Vue.component('ph-flex-slide-show', {
+  data: function() {
+    return {
+      srcListing: [],
+      currentCat: '',
+      // actual column of images for the slide show
+      column_1: [],
+      column_2: [],
+      column_3: [],
+
+      COLS: 3
+    };
+  },
+  mounted: function() {
+    let instance = this;
+    if (!window.eventBus) {
+      setTimeout(function () {
+        window.eventBus.$on('update-photo-displays', function (data) {
+          instance.onUpdatePhotoDisplays(data);
+        });
+      }, 100);
+    } else {
+      window.eventBus.$on('update-photo-displays', function (data) {
+        instance.onUpdatePhotoDisplays(data);
+      });
+    }
+
+  },
+  methods: {
+    onUpdatePhotoDisplays: function (data) {
+      // should have "cat", "listing"
+      this.srcListing = data.listing;
+      this.currentCat = data.cat;
+      // separate the src-listing items into 3 columns of img(s)
+      this.column_1 = [];
+      this.column_2 = [];
+      this.column_3 = [];
+
+      for (let i=0; i<this.srcListing.length; i++) {
+        let _pick = i % this.COLS;
+        switch (_pick) {
+          case 0:
+            this.column_1.push(this.srcListing[i]);
+            break;
+          case 1:
+            this.column_2.push(this.srcListing[i]);
+            break;
+          case 2:
+            this.column_3.push(this.srcListing[i]);
+            break;
+        }
+      } // end -- for (srcListing items)
+    }
+
+  },
+  template: `
+<div class="ph-slide-core">
+    {{currentCat}}<br/>
+    -{{column_1}}<br/>
+    ={{column_2}}<br/>
+    #{{column_3}}<br/>
+</div>
+  `
+});
+
+
+/***/ }),
+/* 22 */
 /***/ (function(module, exports) {
 
 /**
