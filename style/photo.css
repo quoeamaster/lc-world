@@ -1,0 +1,70 @@
+/* common */
+* {
+    box-sizing: border-box;
+}
+
+/* photo side nav */
+.ph-side-nav {
+    width: 240px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 60px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.ph-hr-main {
+    border: solid 1px #0b0b0b;
+}
+.ph-display-name {
+    margin-top: 4px;
+}
+.ph-job-title {
+    margin-top: 24px;
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.ph-bio {
+    margin-top: 4px;
+    font-size: 0.8em;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.ph-hr-cat:first-child {
+    border-top: 1px solid rgba(102,102,102, 0.6);
+    margin-bottom: 4px;
+}
+.ph-hr-cat-name {
+    border-bottom: 1px solid rgba(102,102,102, 0.4);
+    text-transform: uppercase;
+    padding-left: 16px;
+    padding-bottom: 4px;
+    margin-bottom: 6px;
+    font-size: 0.8em;
+    font-weight: 600;
+}
+.ph-hr-cat-name:hover {
+    background-color: rgba(170,170,170,0.2);
+}
+.ph-hr-cat-name-selected {
+    color: #c00;
+}
+.ph-contact-core {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+    color: #999;
+}
+.ph-hr-contact {
+    border-bottom: 1px solid rgba(102,102,102, 0.4);
+    margin-bottom: 16px;
+}
+.ph-contact-spacer {
+    margin-left: 4px;
+    margin-right: 4px;
+}

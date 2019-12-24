@@ -14,28 +14,21 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet"> <!-- Material Design Bootstrap -->
     <link href="lib/maginficPopup.css" rel="stylesheet"> <!-- magnific popup css -->
-
-    <!-- link href="style/common.css" rel="stylesheet" --> <!-- in the bundle -->
 </head>
+<!-- oncontextmenu="return false;" -->
+<body>
+    <div id="app">
+        <norm-header></norm-header>
 
-<body oncontextmenu="return false;">
-    <div id="app" style="background: #fbfbfb;">
-        <fixed-header></fixed-header>
         <!-- filler for the fixed-header above -->
-        <div class="core-spacer-1" style="height: 80px;" >&nbsp;</div>
+        <div class="core-spacer-1" style="height: 40px;" >&nbsp;</div>
 
-        <carousel v-bind:scrub="scrub['featured']"></carousel>
-
-        <div class="core-spacer-2" style="height: 36px;" >&nbsp;</div>
-        <portfolio-menu></portfolio-menu>
-        <card-listing v-bind:listing="scrub['listing']"></card-listing>
-
-        <about-me v-bind:about="scrub['about']"></about-me>
-        <contact-me></contact-me>
-
-        <!-- dummy-text v-bind:scrub="scrub"></dummy-text -->
+        <!-- side nav and gallery carousel -->
+        <div>
+            <ph-side-nav v-bind:scrub="scrub"></ph-side-nav>
+        </div>
     </div>
     <!-- include the bundled javascript + css + certain photos -->
-    <script type="text/javascript" src="dist/index_bundle.js"></script>
+    <script type="text/javascript" src="dist/photo_bundle.js"></script>
 </body>
 </html>

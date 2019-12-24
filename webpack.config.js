@@ -1,8 +1,17 @@
 module.exports = {
+  /*
   entry: './main.js',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js'
+  },*/
+  entry: {
+    index: './main.js',
+    photo: './photo.js'
+  },
+  output: {
+    path: __dirname + '/dist',
+    filename: '[name]_bundle.js'
   },
   module: {
     loaders: [
