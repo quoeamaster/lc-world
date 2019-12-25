@@ -39,7 +39,7 @@ Vue.component('norm-header', {
 
   },
   template: `
-<div class="fh-core">
+<div class="fh-core norm-header-sticky">
     <div class="float-left">Welcome to Lilian.C's world</div>
     
     <!-- hamburger icon -->

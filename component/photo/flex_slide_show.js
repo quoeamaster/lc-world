@@ -27,6 +27,10 @@ Vue.component('ph-flex-slide-show', {
     }
     // calculate the height for the slide show area
     this.calculateSlideShowDivHeight();
+    // resize event
+    window.onresize = function() {
+      instance.calculateSlideShowDivHeight();
+    };
   },
   methods: {
     calculateSlideShowDivHeight: function() {

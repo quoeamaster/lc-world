@@ -51,6 +51,21 @@ Vue.component('ph-side-nav', {
           }
         } // end -- for (scrub.category)
       } // end -- if (cat check)
+    },
+    getCategoryList: function () {
+      let instance = this;
+      if (!this.scrub) {
+        setTimeout(function () {
+          return instance.scrub.category;
+        }, 200);
+      } else {
+        return instance.scrub.category;
+      }
+    },
+    invokeCatChange: function (pickedCat) {
+      return this.onCatChange({
+        'cat': pickedCat
+      });
     }
 
   },
@@ -79,6 +94,9 @@ Vue.component('ph-side-nav', {
             <i class="fab fa-linkedin-in ph-contact-spacer core-pointer"></i>
         </div>
     </div>
+    
+    <!-- for smaller screens, need a fixed navigator menu at the very top -->
+    <ph-cat-nav-small-menu v-bind:category="scrub.category"></ph-cat-nav-small-menu>
 </div>
   `
 });
@@ -116,6 +134,42 @@ Vue.component('ph-cat-nav', {
     v-on:click="raiseCatChangeEvent()"
 >
     {{item.name}}
+</div>
+  `
+});
+
+Vue.component('ph-cat-nav-small-menu', {
+  props:['category'],
+  watched: {
+    category: function (val) {
+      console.log(val);
+    }
+  },
+  methods: {
+    raiseCatChangeEvent: function (cat) {
+      this.$emit('cat-change', {
+        cat: cat
+      });
+    }
+  },
+  template: `
+<div class="ph-cat-nav-menu-fixed-core">
+    <a href="#"
+        style="display: inline-block; color: #0b0b0b; text-align: center; padding: 14px; text-decoration: none;"
+        v-for="item in category" 
+        v-on:click="raiseCatChangeEvent(item.name)">{{item.name}}</a>
+
+<!-- TODO
+    1. add back the "selected" class - simply red bottom border for the selected a-href
+    2. add back the lightbox preview on photo click
+-->
+        
+    <!-- ul class="ph-cat-nav-menu-fixed-item-1">
+        <li v-for="item in category"
+            class="ph-cat-nav-menu-fixed-item-2 core-pointer"
+            v-on:click="raiseCatChangeEvent(item.name)"
+        >{{item.name}}</li -->
+    </ul>
 </div>
   `
 });
