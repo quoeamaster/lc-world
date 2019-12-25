@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/photo/flex_slide_show.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/photo/flex_slide_show.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/photo/normal_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/photo/normal_header.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/photo/side_nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/photo/side_nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/photo_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/photo_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/photo.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/photo.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -104,7 +99,7 @@
         <entry file="file://$PROJECT_DIR$/component/photo/side_nav.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="619">
-              <caret line="163" column="51" selection-start-line="163" selection-start-column="51" selection-end-line="163" selection-end-column="51" />
+              <caret line="163" column="80" selection-start-line="163" selection-start-column="80" selection-end-line="163" selection-end-column="80" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -261,12 +256,12 @@
       <workItem from="1577091803634" duration="505000" />
       <workItem from="1577155762382" duration="13125000" />
       <workItem from="1577191931153" duration="3750000" />
-      <workItem from="1577254119975" duration="9387000" />
+      <workItem from="1577254119975" duration="9436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124034000" />
+    <option name="totallyTimeSpent" value="124083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -496,7 +491,7 @@
     <entry file="file://$PROJECT_DIR$/component/photo/side_nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
-          <caret line="163" column="51" selection-start-line="163" selection-start-column="51" selection-end-line="163" selection-end-column="51" />
+          <caret line="163" column="80" selection-start-line="163" selection-start-column="80" selection-end-line="163" selection-end-column="80" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
           </folding>

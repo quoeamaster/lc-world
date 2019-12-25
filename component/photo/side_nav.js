@@ -161,7 +161,9 @@ Vue.component('ph-cat-nav-small-menu', {
 
 <!-- TODO
     1. add back the "selected" class - simply red bottom border for the selected a-href
+    1.b. hide the original category section (since the menu bar is there now...)
     2. add back the lightbox preview on photo click
+    
 -->
         
     <!-- ul class="ph-cat-nav-menu-fixed-item-1">
