@@ -58,9 +58,26 @@ Vue.component('ph-flex-slide-show', {
 <div class="ph-slide-core">
     <div class="ph-flex-row">
         <div class="ph-flex-column">
-            
+            <img v-for="item in column_1"
+                v-bind:src="item.img"
+                class="ph-flex-slide-img core-pointer"
+            >
         </div>
-    </div>
+        
+        <div class="ph-flex-column">
+            <img v-for="item in column_2"
+                v-bind:src="item.img"
+                class="ph-flex-slide-img core-pointer"
+            >
+        </div>
+        
+        <div class="ph-flex-column">
+            <img v-for="item in column_3"
+                v-bind:src="item.img"
+                class="ph-flex-slide-img core-pointer"
+            >
+        </div>
+    </div> <!-- row -->
 </div>
   `
 });

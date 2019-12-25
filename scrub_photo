@@ -19,7 +19,16 @@
         { "img": "portfolio/photos/foto02.jpg" },
         { "img": "portfolio/photos/foto03.jpg" },
         { "img": "portfolio/photos/foto04.jpg" },
-        { "img": "portfolio/photos/foto05.jpg" }
+        { "img": "portfolio/photos/foto05.jpg" },
+
+        {
+          "img": "portfolio/photos/foto05.jpg"
+        },
+        { "img": "portfolio/photos/foto04.jpg" },
+        { "img": "portfolio/photos/foto03.jpg" },
+        { "img": "portfolio/photos/foto02.jpg" },
+        { "img": "portfolio/photos/foto01.jpg" },
+        { "img": "portfolio/photos/foto00.jpg" }
       ]
     },
     {
