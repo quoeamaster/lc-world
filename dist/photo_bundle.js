@@ -583,7 +583,7 @@ if (content.locals) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(0);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n/* photo side nav */\n.ph-side-nav {\n    width: 240px;\n    height: 100%;\n    position: absolute;\n    z-index: 1;\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    padding-top: 60px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.ph-hr-main {\n    border: solid 1px #0b0b0b;\n}\n.ph-display-name {\n    margin-top: 4px;\n}\n.ph-job-title {\n    margin-top: 24px;\n    font-size: 0.9em;\n    font-weight: 400;\n}\n.ph-bio {\n    margin-top: 4px;\n    font-size: 0.8em;\n    text-align: justify;\n    margin-bottom: 40px;\n}\n\n.ph-hr-cat:first-child {\n    border-top: 1px solid rgba(102,102,102, 0.6);\n    margin-bottom: 4px;\n}\n.ph-hr-cat-name {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    text-transform: uppercase;\n    padding-left: 16px;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n    font-size: 0.8em;\n    font-weight: 600;\n}\n.ph-hr-cat-name:hover {\n    background-color: rgba(170,170,170,0.2);\n}\n.ph-hr-cat-name-selected {\n    color: #c00;\n}\n.ph-contact-core {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    margin-bottom: 60px;\n    color: #999;\n}\n.ph-hr-contact {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    margin-bottom: 16px;\n}\n.ph-contact-spacer {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n\n/* photo flex slide show */\n\n.ph-slide-core {\n    margin-left: 240px;\n}\n.ph-flex-row {\n    display: -ms-flexbox; /* IE10 */\n    display: flex;\n\n    -ms-flex-wrap: wrap; /* IE10 */\n    flex-wrap: wrap;\n\n    padding: 4px 4px;\n}\n.ph-flex-column {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n\n    max-width: 33.3%;\n    padding: 0 4px;\n}\n.ph-flex-slide-img {\n    width: 100%;\n    padding: 4px 0;\n}\n", ""]);
+exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n/* photo side nav */\n.ph-side-nav {\n    width: 240px;\n    height: 100%;\n    position: absolute;\n    /*z-index: 0;*/\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    padding-top: 60px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.ph-hr-main {\n    border: solid 1px #0b0b0b;\n}\n.ph-display-name {\n    margin-top: 4px;\n}\n.ph-job-title {\n    margin-top: 24px;\n    font-size: 0.9em;\n    font-weight: 400;\n}\n.ph-bio {\n    margin-top: 4px;\n    font-size: 0.8em;\n    text-align: justify;\n    margin-bottom: 40px;\n}\n\n.ph-hr-cat:first-child {\n    border-top: 1px solid rgba(102,102,102, 0.6);\n    margin-bottom: 4px;\n}\n.ph-hr-cat-name {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    text-transform: uppercase;\n    padding-left: 16px;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n    font-size: 0.8em;\n    font-weight: 600;\n}\n.ph-hr-cat-name:hover {\n    background-color: rgba(170,170,170,0.2);\n}\n.ph-hr-cat-name-selected {\n    color: #c00;\n}\n.ph-contact-core {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    margin-bottom: 60px;\n    color: #999;\n}\n.ph-hr-contact {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    margin-bottom: 16px;\n}\n.ph-contact-spacer {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n\n/* photo flex slide show */\n\n.ph-slide-core {\n    margin-left: 240px;\n\n    /* added for scrollable pane */\n    overflow-y: scroll;\n    /*height: 90%; */\n}\n.ph-slide-core-inner {\n    overflow-y: hidden;\n}\n.ph-flex-row {\n    display: -ms-flexbox; /* IE10 */\n    display: flex;\n\n    -ms-flex-wrap: wrap; /* IE10 */\n    flex-wrap: wrap;\n\n    padding: 4px 4px;\n}\n.ph-flex-column {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n\n    max-width: 33.3%;\n    padding: 0 4px;\n}\n.ph-flex-slide-img {\n    width: 100%;\n    padding: 4px 0;\n}\n\n@media only screen and (max-width: 600px) {\n    .ph-side-nav {\n        position: relative;\n        width: 100%;\n        padding-top: 0;\n        padding-left: 12px;\n        padding-right: 12px;\n    }\n    .ph-bio {\n        margin-top: 40px;\n        font-size: 0.8em;\n        text-align: justify;\n        margin-bottom: 20px;\n    }\n\n    .ph-slide-core {\n        margin-left: 0;\n        width: 100%;\n        display: block;\n        /* added for scrollable pane */\n        /*overflow-y: scroll; */\n    }\n    .ph-slide-core-inner {\n        /*overflow-y: hidden;*/\n    }\n    .ph-flex-row {\n        display: -ms-flexbox; /* IE10 */\n        display: flex;\n\n        -ms-flex-wrap: wrap; /* IE10 */\n        flex-wrap: wrap;\n\n        padding: 4px 4px;\n    }\n    .ph-flex-column {\n        -ms-flex: 100%; /* IE10 */\n        flex: 100%;\n\n        max-width: 100%;\n        padding: 0 4px;\n    }\n    .ph-flex-slide-img {\n        width: 100%;\n        padding: 4px 0;\n    }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -626,7 +626,11 @@ Vue.component('norm-header', {
         } // end -- if ()
         this.isBurgerMenuShown = !this.isBurgerMenuShown;
       }
+    },
+    getLink: function (label) {
+      return 'index.html'+label;
     }
+
   },
   template: `
 <div class="fh-core">
@@ -640,11 +644,11 @@ Vue.component('norm-header', {
         v-bind:label="label"
     ></fixed-header-label>
     
-    <div class="fh-hamburger-list core-pointer animated">
+    <div class="fh-hamburger-list core-pointer animated" style="z-index: 100;">
       <ul>
-          <li><a href="#_portfolio_" v-on:click="onShowBurgerMenu()">Portfolio</a></li>
-          <li><a href="#_about_" v-on:click="onShowBurgerMenu()">About Me</a></li>
-          <li><a href="#_contact_" v-on:click="onShowBurgerMenu()">Contact</a></li>
+          <li><a v-bind:href="getLink('#_portfolio_')" v-on:click="onShowBurgerMenu()">Portfolio</a></li>
+          <li><a v-bind:href="getLink('#_about_')" v-on:click="onShowBurgerMenu()">About Me</a></li>
+          <li><a v-bind:href="getLink('#_contact_')" v-on:click="onShowBurgerMenu()">Contact</a></li>
       </ul>
     </div>
 </div>
@@ -848,9 +852,20 @@ Vue.component('ph-flex-slide-show', {
         instance.onUpdatePhotoDisplays(data);
       });
     }
-
+    // calculate the height for the slide show area
+    this.calculateSlideShowDivHeight();
   },
   methods: {
+    calculateSlideShowDivHeight: function() {
+      if (!window.matchMedia("(max-width: 600px)").matches) {
+        let docHeight = document.querySelector("body").clientHeight;
+        let headerHeight = document.querySelector(".fh-core").clientHeight;
+        let coreSpace1Height = document.querySelector('.core-spacer-1').clientHeight;
+        // console.log(docHeight, "vs", headerHeight, "vs", coreSpace1Height, " required height for slide view -> ", (docHeight-headerHeight-coreSpace1Height));
+        document.querySelector('.ph-slide-core').style.height = (docHeight-headerHeight-coreSpace1Height)+"px";
+      }
+
+    },
     onUpdatePhotoDisplays: function (data) {
       // should have "cat", "listing"
       this.srcListing = data.listing;
@@ -879,28 +894,30 @@ Vue.component('ph-flex-slide-show', {
   },
   template: `
 <div class="ph-slide-core">
-    <div class="ph-flex-row">
-        <div class="ph-flex-column">
-            <img v-for="item in column_1"
-                v-bind:src="item.img"
-                class="ph-flex-slide-img core-pointer"
-            >
-        </div>
-        
-        <div class="ph-flex-column">
-            <img v-for="item in column_2"
-                v-bind:src="item.img"
-                class="ph-flex-slide-img core-pointer"
-            >
-        </div>
-        
-        <div class="ph-flex-column">
-            <img v-for="item in column_3"
-                v-bind:src="item.img"
-                class="ph-flex-slide-img core-pointer"
-            >
-        </div>
-    </div> <!-- row -->
+    <div class="ph-slide-core-inner">
+        <div class="ph-flex-row">
+            <div class="ph-flex-column">
+                <img v-for="item in column_1"
+                    v-bind:src="item.img"
+                    class="ph-flex-slide-img core-pointer"
+                >
+            </div>
+            
+            <div class="ph-flex-column">
+                <img v-for="item in column_2"
+                    v-bind:src="item.img"
+                    class="ph-flex-slide-img core-pointer"
+                >
+            </div>
+            
+            <div class="ph-flex-column">
+                <img v-for="item in column_3"
+                    v-bind:src="item.img"
+                    class="ph-flex-slide-img core-pointer"
+                >
+            </div>
+        </div> <!-- row -->
+    </div>
 </div>
   `
 });

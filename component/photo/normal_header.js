@@ -32,7 +32,11 @@ Vue.component('norm-header', {
         } // end -- if ()
         this.isBurgerMenuShown = !this.isBurgerMenuShown;
       }
+    },
+    getLink: function (label) {
+      return 'index.html'+label;
     }
+
   },
   template: `
 <div class="fh-core">
@@ -46,11 +50,11 @@ Vue.component('norm-header', {
         v-bind:label="label"
     ></fixed-header-label>
     
-    <div class="fh-hamburger-list core-pointer animated">
+    <div class="fh-hamburger-list core-pointer animated" style="z-index: 100;">
       <ul>
-          <li><a href="#_portfolio_" v-on:click="onShowBurgerMenu()">Portfolio</a></li>
-          <li><a href="#_about_" v-on:click="onShowBurgerMenu()">About Me</a></li>
-          <li><a href="#_contact_" v-on:click="onShowBurgerMenu()">Contact</a></li>
+          <li><a v-bind:href="getLink('#_portfolio_')" v-on:click="onShowBurgerMenu()">Portfolio</a></li>
+          <li><a v-bind:href="getLink('#_about_')" v-on:click="onShowBurgerMenu()">About Me</a></li>
+          <li><a v-bind:href="getLink('#_contact_')" v-on:click="onShowBurgerMenu()">Contact</a></li>
       </ul>
     </div>
 </div>

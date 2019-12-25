@@ -25,9 +25,21 @@ Vue.component('ph-flex-slide-show', {
         instance.onUpdatePhotoDisplays(data);
       });
     }
-
+    // calculate the height for the slide show area
+    this.calculateSlideShowDivHeight();
   },
   methods: {
+    calculateSlideShowDivHeight: function() {
+      // media query match check -- only need to set the height when screen big enough; for mobile, let it scroll freely
+      if (!window.matchMedia("(max-width: 600px)").matches) {
+        let docHeight = document.querySelector("body").clientHeight;
+        let headerHeight = document.querySelector(".fh-core").clientHeight;
+        let coreSpace1Height = document.querySelector('.core-spacer-1').clientHeight;
+        // console.log(docHeight, "vs", headerHeight, "vs", coreSpace1Height, " required height for slide view -> ", (docHeight-headerHeight-coreSpace1Height));
+        document.querySelector('.ph-slide-core').style.height = (docHeight-headerHeight-coreSpace1Height)+"px";
+      }
+
+    },
     onUpdatePhotoDisplays: function (data) {
       // should have "cat", "listing"
       this.srcListing = data.listing;
@@ -56,28 +68,30 @@ Vue.component('ph-flex-slide-show', {
   },
   template: `
 <div class="ph-slide-core">
-    <div class="ph-flex-row">
-        <div class="ph-flex-column">
-            <img v-for="item in column_1"
-                v-bind:src="item.img"
-                class="ph-flex-slide-img core-pointer"
-            >
-        </div>
-        
-        <div class="ph-flex-column">
-            <img v-for="item in column_2"
-                v-bind:src="item.img"
-                class="ph-flex-slide-img core-pointer"
-            >
-        </div>
-        
-        <div class="ph-flex-column">
-            <img v-for="item in column_3"
-                v-bind:src="item.img"
-                class="ph-flex-slide-img core-pointer"
-            >
-        </div>
-    </div> <!-- row -->
+    <div class="ph-slide-core-inner">
+        <div class="ph-flex-row">
+            <div class="ph-flex-column">
+                <img v-for="item in column_1"
+                    v-bind:src="item.img"
+                    class="ph-flex-slide-img core-pointer"
+                >
+            </div>
+            
+            <div class="ph-flex-column">
+                <img v-for="item in column_2"
+                    v-bind:src="item.img"
+                    class="ph-flex-slide-img core-pointer"
+                >
+            </div>
+            
+            <div class="ph-flex-column">
+                <img v-for="item in column_3"
+                    v-bind:src="item.img"
+                    class="ph-flex-slide-img core-pointer"
+                >
+            </div>
+        </div> <!-- row -->
+    </div>
 </div>
   `
 });

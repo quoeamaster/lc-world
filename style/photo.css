@@ -8,7 +8,7 @@
     width: 240px;
     height: 100%;
     position: absolute;
-    z-index: 1;
+    /*z-index: 0;*/
     top: 0;
     left: 0;
     overflow-x: hidden;
@@ -73,6 +73,13 @@
 
 .ph-slide-core {
     margin-left: 240px;
+
+    /* added for scrollable pane */
+    overflow-y: scroll;
+    /*height: 90%; */
+}
+.ph-slide-core-inner {
+    overflow-y: hidden;
 }
 .ph-flex-row {
     display: -ms-flexbox; /* IE10 */
@@ -93,4 +100,51 @@
 .ph-flex-slide-img {
     width: 100%;
     padding: 4px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .ph-side-nav {
+        position: relative;
+        width: 100%;
+        padding-top: 0;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .ph-bio {
+        margin-top: 40px;
+        font-size: 0.8em;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .ph-slide-core {
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        /* added for scrollable pane */
+        /*overflow-y: scroll; */
+    }
+    .ph-slide-core-inner {
+        /*overflow-y: hidden;*/
+    }
+    .ph-flex-row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+
+        padding: 4px 4px;
+    }
+    .ph-flex-column {
+        -ms-flex: 100%; /* IE10 */
+        flex: 100%;
+
+        max-width: 100%;
+        padding: 0 4px;
+    }
+    .ph-flex-slide-img {
+        width: 100%;
+        padding: 4px 0;
+    }
 }
