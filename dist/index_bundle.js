@@ -628,6 +628,9 @@ Vue.component('portfolio-menu', {
         css['pmenu-palete-chosen'] = false;
       }
       return css;
+    },
+    forwardToPhoto: function (label) {
+      window.location.replace("photo.html");
     }
 
   },
@@ -636,7 +639,7 @@ Vue.component('portfolio-menu', {
     <div class="pmenu-palete-container">
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('')" v-on:click="raiseCategoryChangeEvent('')">Highlights</div>
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('awards')" v-on:click="raiseCategoryChangeEvent('awards')">Awards</div>
-      <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('photos')" v-on:click="raiseCategoryChangeEvent('photos')">Photos</div>
+      <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('photos')" v-on:click="forwardToPhoto('photos')">Photos</div>
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('sketches')" v-on:click="raiseCategoryChangeEvent('sketches')">Sketches</div>
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('portraits')" v-on:click="raiseCategoryChangeEvent('portraits')">Portraits</div>
     </div>
