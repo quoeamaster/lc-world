@@ -96,7 +96,10 @@ Vue.component('ph-side-nav', {
     </div>
     
     <!-- for smaller screens, need a fixed navigator menu at the very top -->
-    <ph-cat-nav-small-menu v-bind:category="scrub.category"></ph-cat-nav-small-menu>
+    <ph-cat-nav-small-menu 
+        v-on:cat-change="onCatChange"
+        v-bind:category="scrub.category"
+    ></ph-cat-nav-small-menu>
 </div>
   `
 });
@@ -161,7 +164,7 @@ Vue.component('ph-cat-nav-small-menu', {
 
 <!-- TODO
     1. add back the "selected" class - simply red bottom border for the selected a-href
-    1.b. hide the original category section (since the menu bar is there now...)
+    (ok) 1.b. hide the original category section (since the menu bar is there now...)
     2. add back the lightbox preview on photo click
     
 -->

@@ -132,6 +132,7 @@
     .ph-side-nav {
         position: relative;
         width: 100%;
+        height: auto;
         padding-top: 60px;
         padding-left: 12px;
         padding-right: 12px;
@@ -189,5 +190,15 @@
         top: 0;
         width: 100%;
         background: white;
+    }
+
+    .ph-hr-cat {
+        display: none;
+    }
+    .ph-contact-core {
+        width: 100%;
+        position: relative;
+        margin-bottom: 60px;
+        color: #999;
     }
 }
