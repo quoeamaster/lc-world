@@ -10,6 +10,8 @@ Vue.component('ph-flex-slide-show', {
       column_3: [],
 
       COLS: 3
+      // is pop-up init(ed)
+      // isPopupInited: false
     };
   },
   mounted: function() {
@@ -31,8 +33,35 @@ Vue.component('ph-flex-slide-show', {
     window.onresize = function() {
       instance.calculateSlideShowDivHeight();
     };
+    // add back lighbox feature to the photos
+    setTimeout(function () {
+      instance.addLightBoxEffectOnImages();
+    }, 500);
   },
   methods: {
+    /**
+     * method to add back lightbox effects on images; when to call?
+     * a. during init (mounted)
+     * b. when the category list (columns) changed
+     */
+    addLightBoxEffectOnImages: function() {
+      setTimeout(function () {
+        jQuery('.meta-lightbox').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          fixedContentPos: true,
+          image: {
+            verticalFit: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300
+          }
+          // other options
+        });
+      }, Math.random()*1000);
+    },
     calculateSlideShowDivHeight: function() {
       // media query match check -- only need to set the height when screen big enough; for mobile, let it scroll freely
       if (!window.matchMedia("(max-width: 600px)").matches) {
@@ -67,6 +96,29 @@ Vue.component('ph-flex-slide-show', {
             break;
         }
       } // end -- for (srcListing items)
+      // re-apply lightbox effects on the images
+      this.addLightBoxEffectOnImages();
+    },
+    onPopupInit: function(data) {
+      if (this.isPopupInited === false) {
+        this.isPopupInited = true;
+        setTimeout(function () {
+          jQuery(data['className']).magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            closeBtnInside: false,
+            fixedContentPos: true,
+            image: {
+              verticalFit: true
+            },
+            zoom: {
+              enabled: true,
+              duration: 300
+            }
+            // other options
+          });
+        }, 500);
+      }
     }
 
   },
@@ -75,24 +127,39 @@ Vue.component('ph-flex-slide-show', {
     <div class="ph-slide-core-inner">
         <div class="ph-flex-row">
             <div class="ph-flex-column">
-                <img v-for="item in column_1"
-                    v-bind:src="item.img"
-                    class="ph-flex-slide-img core-pointer"
+                <a class="meta-lightbox"
+                    v-for="item in column_1"
+                    v-bind:href="item.img"
                 >
+                    <img v-bind:src="item.img"
+                        class="ph-flex-slide-img core-pointer meta-lightbox">
+                </a>
+                <!--a class="meta-lightbox" v-bind:href="item.img">
+                    <img v-for="item in column_1"
+                        v-bind:src="item.img"
+                        class="ph-flex-slide-img core-pointer meta-lightbox"
+                    >
+                </a-->
             </div>
             
             <div class="ph-flex-column">
-                <img v-for="item in column_2"
-                    v-bind:src="item.img"
-                    class="ph-flex-slide-img core-pointer"
+                <a class="meta-lightbox"
+                    v-for="item in column_2"
+                    v-bind:href="item.img"
                 >
+                    <img v-bind:src="item.img"
+                        class="ph-flex-slide-img core-pointer meta-lightbox">
+                </a>
             </div>
             
             <div class="ph-flex-column">
-                <img v-for="item in column_3"
-                    v-bind:src="item.img"
-                    class="ph-flex-slide-img core-pointer"
+                <a class="meta-lightbox"
+                    v-for="item in column_3"
+                    v-bind:href="item.img"
                 >
+                    <img v-bind:src="item.img"
+                        class="ph-flex-slide-img core-pointer meta-lightbox">
+                </a>
             </div>
         </div> <!-- row -->
     </div>

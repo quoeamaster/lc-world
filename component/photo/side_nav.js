@@ -143,29 +143,47 @@ Vue.component('ph-cat-nav', {
 
 Vue.component('ph-cat-nav-small-menu', {
   props:['category'],
-  watched: {
-    category: function (val) {
-      console.log(val);
+  data: function() {
+    return {
+      chosenCat: ''
+    };
+  },
+  mounted: function() {
+    if (this.category && this.category.length>0) {
+      this.chosenCat = this.category[0].name;
     }
   },
   methods: {
     raiseCatChangeEvent: function (cat) {
+      this.chosenCat = cat;
       this.$emit('cat-change', {
         cat: cat
       });
+    },
+    getChosenCatClass: function (itemCat) {
+      if (itemCat === this.chosenCat) {
+        return {
+          'ph-cat-nav-menu-fixed-item-chosen': true
+        };
+      }
+      return {
+        'ph-cat-nav-menu-fixed-item-chosen': false
+      };
     }
+
   },
   template: `
 <div class="ph-cat-nav-menu-fixed-core">
     <a href="#"
         style="display: inline-block; color: #0b0b0b; text-align: center; padding: 14px; text-decoration: none;"
         v-for="item in category" 
+        v-bind:class="getChosenCatClass(item.name)"
         v-on:click="raiseCatChangeEvent(item.name)">{{item.name}}</a>
 
 <!-- TODO
-    1. add back the "selected" class - simply red bottom border for the selected a-href
+    (ok) 1. add back the "selected" class - simply red bottom border for the selected a-href
     (ok) 1.b. hide the original category section (since the menu bar is there now...)
-    2. add back the lightbox preview on photo click
+    (ok) 2. add back the lightbox preview on photo click
     
 -->
         
