@@ -1,0 +1,15 @@
+
+{
+  "story": [
+    {
+      "comment_1": "a top level linkage of all story/work related scrub details",
+      "comment_2": "the rationale to separate the entries with its detailed contents is for maintainability...",
+      "comment_3": "[story-id] is any arbitrary name provided plus the creation timestamp [yyyy-mm-dd]",
+      "comment_4": "actual story detail file is located at { stories_scrub } folder",
+      "title": "[sample] MikeShoes.com re-design works",
+      "story_id": "mike-shoes_2019-12-26",
+      "featured_photo": "portfolio/story/spt_01.jpg"
+    }
+
+  ]
+}

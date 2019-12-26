@@ -179,19 +179,6 @@ Vue.component('ph-cat-nav-small-menu', {
         v-for="item in category" 
         v-bind:class="getChosenCatClass(item.name)"
         v-on:click="raiseCatChangeEvent(item.name)">{{item.name}}</a>
-
-<!-- TODO
-    (ok) 1. add back the "selected" class - simply red bottom border for the selected a-href
-    (ok) 1.b. hide the original category section (since the menu bar is there now...)
-    (ok) 2. add back the lightbox preview on photo click
-    
--->
-        
-    <!-- ul class="ph-cat-nav-menu-fixed-item-1">
-        <li v-for="item in category"
-            class="ph-cat-nav-menu-fixed-item-2 core-pointer"
-            v-on:click="raiseCatChangeEvent(item.name)"
-        >{{item.name}}</li -->
     </ul>
 </div>
   `

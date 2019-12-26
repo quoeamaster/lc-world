@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+/* main featured photo for the story / work */
+.st-main-photo {
+    width: 100%;
+}
+
+/* strong label (bold) */
+.st-overview-strong {
+    font-weight: 600;
+}
+
+/* non decorated list */
+.st-over-list-item-1 {
+    list-style-type: none;
+}
+.st-over-list-item-2 {
+    margin: 0;
+    padding: 0;
+}

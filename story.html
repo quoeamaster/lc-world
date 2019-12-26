@@ -8,28 +8,20 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script> <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="lib/magnificPopup.min.js"></script> <!-- magnific popup -->
+    <!-- script type="text/javascript" src="lib/magnificPopup.min.js"></script --> <!-- magnific popup -->
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"> <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap core CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet"> <!-- Material Design Bootstrap -->
-    <link href="lib/maginficPopup.css" rel="stylesheet"> <!-- magnific popup css -->
+    <!-- link href="lib/maginficPopup.css" rel="stylesheet" --> <!-- magnific popup css -->
 </head>
-<!-- oncontextmenu="return false;" -->
-<body oncontextmenu="return false;">
+<!--  oncontextmenu="return false;" -->
+<body>
     <div id="app">
-        <norm-header></norm-header>
-
-        <!-- filler for the fixed-header above -->
-        <div class="core-spacer-1" style="height: 40px;" >&nbsp;</div>
-
-        <!-- side nav and gallery carousel -->
-        <div>
-            <ph-side-nav v-bind:scrub="scrub"></ph-side-nav>
-        </div>
-        <ph-flex-slide-show></ph-flex-slide-show>
+        scrub_story => <br/>
+        {{scrub_story}}
     </div>
     <!-- include the bundled javascript + css + certain photos -->
-    <script type="text/javascript" src="dist/photo_bundle.js"></script>
+    <script type="text/javascript" src="dist/story_bundle.js"></script>
 </body>
 </html>

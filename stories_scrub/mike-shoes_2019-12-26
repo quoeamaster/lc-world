@@ -1,0 +1,36 @@
+{
+  "comment": "{ story-id } is for checking purpose; basically the filename should have the same name as the { story-id }",
+  "story_id": "m-shoes_2019-12-26",
+  "sections": [
+    {
+      "comment": "each story / work is composed by multiple sections with formatted content",
+      "thx": "Photo by Dominik Martin on Unsplash",
+      "s_idx": 0,
+      "upper_s_id": 0,
+      "type": "word_0",
+      "type-comment": "word_0 : plain text and nothing else",
+      "content": {
+        "col_1": "<h3>MikeShoes.com</h3>"
+      }
+    },
+    {
+      "s_idx": 1,
+      "upper_s_id": 0,
+      "type": "word_0",
+      "content": {
+        "col_1": "Hired as product manager on a <b>Re-Design</b of a sports-shoe company's website"
+      }
+    },
+    {
+      "s_idx": 2,
+      "upper_s_id": 0,
+      "type": "row_0",
+      "type-comment": "row_0: means rows of formatted data to be shown",
+      "content": {
+        "row_1": "<img src='' class='st-main-photo'>",
+        "row_2": "<ul class='st-over-list-item-1'> <li class='st-over-list-item-2'><span class='st-overview-strong'>Duration</span>: 7 months</li> <li class='st-over-list-item-2'><span class='st-overview-strong'>Role</span>: Product Designer</li> <li class='st-over-list-item-2'><span class='st-overview-strong'>Platform</span>: SPA webpage</li> <li class='st-over-list-item-2'><span class='st-overview-strong'>Tools</span>: vue.js, sketch, mdboostrap</li> </ul>"
+      }
+    }
+
+  ]
+}

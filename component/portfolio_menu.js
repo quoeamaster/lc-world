@@ -30,6 +30,9 @@ Vue.component('portfolio-menu', {
     },
     forwardToPhoto: function (label) {
       window.location.replace("photo.html");
+    },
+    forwardToStory: function (label) {
+      window.location.replace("story.html");
     }
 
   },
@@ -41,7 +44,14 @@ Vue.component('portfolio-menu', {
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('photos')" v-on:click="forwardToPhoto('photos')">Photos</div>
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('sketches')" v-on:click="raiseCategoryChangeEvent('sketches')">Sketches</div>
       <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('portraits')" v-on:click="raiseCategoryChangeEvent('portraits')">Portraits</div>
+      <div class="pmenu-palete core-pointer" v-bind:class="getPaleteChosenClass('works')" v-on:click="forwardToStory('story')">Works</div>
     </div>
 </div>
   `
 });
+
+/*
+ *  TODO:
+ *  1. palete menu items should be dynamic (now is hard-coded)
+ *  1a. palete menu needs to horizontal scrollable, copy from the photo.html components!!!!
+ */
