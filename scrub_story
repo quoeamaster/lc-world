@@ -8,7 +8,22 @@
       "comment_4": "actual story detail file is located at { stories_scrub } folder",
       "title": "[sample] MikeShoes.com re-design works",
       "story_id": "mike-shoes_2019-12-26",
-      "featured_photo": "portfolio/story/spt_01.jpg"
+      "featured_photo": "portfolio/story/mike-shoes_2019-12-26/spt_01.jpg"
+    },
+    {
+      "title": "[sample] COPY - MikeShoes.com re-design works",
+      "story_id": "mike-shoes_2019-12-26",
+      "featured_photo": "portfolio/story/mike-shoes_2019-12-26/spt_00.jpg"
+    },
+    {
+      "title": "[sample] COPY (2) - MikeShoes.com re-design works",
+      "story_id": "mike-shoes_2019-12-26",
+      "featured_photo": "portfolio/story/mike-shoes_2019-12-26/spt_01.jpg"
+    },
+    {
+      "title": "[sample] COPY (3) - MikeShoes.com re-design works",
+      "story_id": "mike-shoes_2019-12-26",
+      "featured_photo": "portfolio/story/mike-shoes_2019-12-26/spt_00.jpg"
     }
 
   ]

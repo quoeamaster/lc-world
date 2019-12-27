@@ -17,6 +17,13 @@
 .core-spacer-1 {}
 .core-spacer-2 {}
 
+.core-text-align-center {
+    text-align: center;
+}
+.core-text-align-left{
+    text-align: left;
+}
+
 /* fixed-header: fh- */
 .fh-core {
     z-index: 10;

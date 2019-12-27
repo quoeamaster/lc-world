@@ -18,8 +18,13 @@
 <!--  oncontextmenu="return false;" -->
 <body>
     <div id="app">
-        scrub_story => <br/>
-        {{scrub_story}}
+        <norm-header></norm-header>
+
+        <!-- filler for the fixed-header above -->
+        <div class="core-spacer-1" style="height: 40px;" >&nbsp;</div>
+
+        <st-container v-bind:scrub="scrub_story"></st-container>
+
     </div>
     <!-- include the bundled javascript + css + certain photos -->
     <script type="text/javascript" src="dist/story_bundle.js"></script>

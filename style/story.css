@@ -1,10 +1,39 @@
+/* common */
 * {
     box-sizing: border-box;
+}
+
+/* for the norm-header from photo/norm-header.js */
+.norm-header-sticky {}
+
+.st-core-container {
+    /*max-width: 800px;
+    margin: auto;*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.st-story-container {
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.st-word-0-core {
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+.st-row-0-core {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 /* main featured photo for the story / work */
 .st-main-photo {
     width: 100%;
+    margin-bottom: 8px;
 }
 
 /* strong label (bold) */
@@ -15,8 +44,136 @@
 /* non decorated list */
 .st-over-list-item-1 {
     list-style-type: none;
-}
-.st-over-list-item-2 {
     margin: 0;
     padding: 0;
+}
+.st-over-list-item-2 {
+    /*margin: 0;*/
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    padding: 0;
+}
+
+/* flex-row */
+.st-flex-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+
+    padding: 0 4px;
+}
+.st-flex-col {
+    -ms-flex: 33.3%; /* IE10 */
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+}
+.st-flex-img {
+    margin-top: 8px;
+    /*vertical-align: middle;*/
+    width: 100%;
+}
+.st-flex-img-caption {
+    text-align: center;
+    padding: 4px;
+}
+
+.st-section-rule-1 {
+    border-bottom: 1px solid #999999;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* title caption class */
+.st-caption-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+/* col_0 component related */
+.st-col-flex-2 {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.st-col-flex-3 {
+    -ms-flex: 33.3%; /* IE10 */
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 0 4px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+.st-col-flex-4 {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+    .norm-header-sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: white;
+    }
+
+    .st-flex-col {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 4px;
+    }
+
+    .st-core-container {
+        /*max-width: 800px;
+        margin: auto;*/
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .st-row-0-core {
+        width: auto;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+
+    .st-col-flex-2 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 8px;
+        margin-top: 4px;
+    }
+    .st-col-flex-3 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 8px;
+        margin-top: 4px;
+    }
+    .st-col-flex-4 {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin-bottom: 8px;
+        margin-top: 4px;
+    }
+
 }

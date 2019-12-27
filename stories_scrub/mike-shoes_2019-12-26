@@ -18,7 +18,7 @@
       "upper_s_id": 0,
       "type": "word_0",
       "content": {
-        "col_1": "Hired as product manager on a <b>Re-Design</b of a sports-shoe company's website"
+        "col_1": "Hired as product manager on a <b>Re-Design</b> of a sports-shoe company's website"
       }
     },
     {
@@ -27,10 +27,118 @@
       "type": "row_0",
       "type-comment": "row_0: means rows of formatted data to be shown",
       "content": {
-        "row_1": "<img src='' class='st-main-photo'>",
+        "num_of_rows": 2,
+        "row_1": "<img src='portfolio/story/mike-shoes_2019-12-26/spt_00.jpg' class='st-main-photo'>",
         "row_2": "<ul class='st-over-list-item-1'> <li class='st-over-list-item-2'><span class='st-overview-strong'>Duration</span>: 7 months</li> <li class='st-over-list-item-2'><span class='st-overview-strong'>Role</span>: Product Designer</li> <li class='st-over-list-item-2'><span class='st-overview-strong'>Platform</span>: SPA webpage</li> <li class='st-over-list-item-2'><span class='st-overview-strong'>Tools</span>: vue.js, sketch, mdboostrap</li> </ul>"
       }
+    },
+
+    {
+      "s_idx": 3,
+      "upper_s_id": 0,
+      "type": "word_0",
+      "content": {
+        "col_1": "<div class='st-row-0-core st-section-rule-1'></div>"
+      }
+    },
+    {
+      "s_idx": 4,
+      "upper_s_id": 1,
+      "type": "word_0",
+      "content": {
+        "col_1": "<div class='core-text-align-left st-caption-title'>OBJECTIVE</div>"
+      }
+    },
+    {
+      "s_idx": 5,
+      "upper_s_id": 1,
+      "type": "word_0",
+      "content": {
+        "col_1": "<div class='core-text-align-left '> Re-design Mike's website to add back the &quot;<span class='st-overview-strong'>Fans Corner</span>&quot;, &quot;<span class='st-overview-strong'>New Arrivals</span>&quot; AND &quot;<span class='st-overview-strong'>Shopping Cart</span>&quot; </div>"
+      }
+    },
+
+    {
+      "s_idx": 6,
+      "upper_s_id": 2,
+      "type": "word_0",
+      "content": {
+        "col_1": "<div class='st-row-0-core st-section-rule-1'></div>"
+      }
+    },
+    {
+      "thx": "Photo by Jimmy Conover on Unsplash",
+      "s_idx": 7,
+      "upper_s_id": 2,
+      "type": "col_0",
+      "type-comment": "col-0: is a column based component; the num_of_cols is either 2 or 3 or 4 ONLY",
+      "content": {
+        "num_of_cols": 2,
+        "col_0": [
+          "<span class='st-overview-strong'>Fans Corner</span>",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "col_1": [
+          "<img src='portfolio/story/mike-shoes_2019-12-26/spt_02.jpg' class='st-main-photo'>"
+        ]
+      }
+    },
+    {
+      "thx": "Photo by Alexandra Gorn on Unsplash",
+      "s_idx": 8,
+      "upper_s_id": 2,
+      "type": "col_0",
+      "content": {
+        "num_of_cols": 3,
+        "col_0": [
+          "<span class='st-overview-strong'>New Arrivals</span>",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "col_1": [
+          "<img src='portfolio/story/mike-shoes_2019-12-26/spt_03.jpg' class='st-main-photo'>"
+        ],
+        "col_2": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ]
+      }
+    },
+    {
+      "thx": "",
+      "s_idx": 9,
+      "upper_s_id": 2,
+      "type": "col_0",
+      "content": {
+        "num_of_cols": 4,
+        "col_0": [
+          "<span class='st-overview-strong'>Shopping Cart</span>",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "col_1": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "col_2": [
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ],
+        "col_3": [
+          "<img src='portfolio/story/mike-shoes_2019-12-26/spt_04.jpg' class='st-main-photo'>"
+        ]
+      }
+    },
+    {
+      "s_idx": 10,
+      "upper_s_id": 2,
+      "type": "col_0",
+      "content": {
+        "num_of_cols": 5,
+        "col_0": [
+          "<span class='st-overview-strong'>New Arrivals</span>",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        ]
+      }
     }
+
+
+
 
   ]
 }
