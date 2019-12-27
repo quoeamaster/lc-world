@@ -43,10 +43,10 @@ Vue.component('col_0-2', {
   template: `
 <div class="st-row-0-core" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;">
     <div class="st-col-flex-2">
-        <div v-for="content in section.content.col_0" v-html="content"></div>
+        <div v-for="content in section.content.col_1" v-html="content"></div>
     </div>
     <div class="st-col-flex-2">
-        <div v-for="content in section.content.col_1" v-html="content"></div>
+        <div v-for="content in section.content.col_2" v-html="content"></div>
     </div>
 </div>
   `
@@ -57,13 +57,13 @@ Vue.component('col_0-3', {
   template: `
 <div class="st-row-0-core" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;">
     <div class="st-col-flex-3">
-        <div v-for="content in section.content.col_0" v-html="content"></div>
-    </div>
-    <div class="st-col-flex-3">
         <div v-for="content in section.content.col_1" v-html="content"></div>
     </div>
     <div class="st-col-flex-3">
         <div v-for="content in section.content.col_2" v-html="content"></div>
+    </div>
+    <div class="st-col-flex-3">
+        <div v-for="content in section.content.col_3" v-html="content"></div>
     </div>
 </div>
   `
@@ -74,9 +74,6 @@ Vue.component('col_0-4', {
   template: `
 <div class="st-row-0-core" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;">
     <div class="st-col-flex-4">
-        <div v-for="content in section.content.col_0" v-html="content"></div>
-    </div>
-    <div class="st-col-flex-4">
         <div v-for="content in section.content.col_1" v-html="content"></div>
     </div>
     <div class="st-col-flex-4">
@@ -84,6 +81,9 @@ Vue.component('col_0-4', {
     </div>
     <div class="st-col-flex-4">
         <div v-for="content in section.content.col_3" v-html="content"></div>
+    </div>
+    <div class="st-col-flex-4">
+        <div v-for="content in section.content.col_4" v-html="content"></div>
     </div>
 </div>
   `

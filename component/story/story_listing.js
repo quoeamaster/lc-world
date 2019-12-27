@@ -13,7 +13,9 @@ Vue.component('st-container', {
       column_2: [],
       column_3: [],
       // chosen story from the listing....
-      chosenStory: {}
+      chosenStory: {},
+      // store the original url
+      oriUrl: window.location.href
     };
   },
   mounted: function() {
@@ -44,12 +46,53 @@ Vue.component('st-container', {
     },
     onStoryChosen: function (data) {
       this.chosenStory = data.story;
+      window.location.href=this.oriUrl+'#_story_';
+    },
+    onPrevStoryChosen: function (data) {
+      // find the prev, next story
+      let _p = {};
+      for (let i=0; i<this.scrub.story.length; i++) {
+        // previous
+        if (i === 0) {
+          _p = this.scrub.story[this.scrub.story.length - 1];
+        } else {
+          _p = this.scrub.story[i-1];
+        }
+        // found?
+        let _c = this.scrub.story[i];
+        if (_c.story_id === data.story.story_id) {
+          this.chosenStory = _p;
+          break;
+        }
+      } // end -- for (scrub.story iterate)
+      window.location.href=this.oriUrl+'#_story_';
+    },
+    onNextStoryChosen: function (data) {
+      // find the prev, next story
+      let _n = {};
+      for (let i=0; i<this.scrub.story.length; i++) {
+        // found?
+        let _c = this.scrub.story[i];
+        if (_c.story_id === data.story.story_id) {
+          // next
+          if ((i+1) === this.scrub.story.length) {
+            _n = this.scrub.story[0];
+          } else {
+            _n = this.scrub.story[i + 1];
+          }
+          this.chosenStory = _n;
+          break;
+        }
+      } // end -- for (scrub.story iterate)
+      window.location.href=this.oriUrl+'#_story_';
     }
 
   },
   template: `
-<div>
-    <st-chosen-story v-bind:story="chosenStory"></st-chosen-story>
+<div id="_story_">
+    <st-chosen-story v-bind:story="chosenStory"
+        v-on:next-story-chosen="onNextStoryChosen" 
+        v-on:prev-story-chosen="onPrevStoryChosen"></st-chosen-story>
     
     <div class="st-flex-row st-core-container">
         <div class="st-flex-col">
@@ -99,6 +142,9 @@ Vue.component('st-list-flex-item', {
 });
 
 
+/**
+ * display of the chosen story
+ */
 Vue.component('st-chosen-story', {
   props: ['story'],
   data: function() {
@@ -152,7 +198,17 @@ Vue.component('st-chosen-story', {
       if ('col_0' === contentType) {
         return 'st-col-0';
       }
-
+      // TODO: add other listing...
+    },
+    raisePrevStoryEvent: function () {
+      this.$emit('prev-story-chosen', {
+        story: this.story
+      });
+    },
+    raiseNextStoryEvent: function () {
+      this.$emit('next-story-chosen', {
+        story: this.story
+      });
     }
 
   },
@@ -165,6 +221,12 @@ Vue.component('st-chosen-story', {
     <div v-for="section in contents.sections">
         <!-- actual component -->
         <component :is="getContentComponent(section.type)" v-bind:section="section"></component>
+    </div>
+    <!-- next/prev button -->
+    <div class="st-row-0-core core-text-align-right">
+        <div class="core-pointer core-display-inline-block" v-on:click="raisePrevStoryEvent()">prev</div>
+        <div class="core-display-inline-block" style="margin-left: 2px; margin-right: 2px;">/</div>
+        <div class="core-pointer core-display-inline-block" v-on:click="raiseNextStoryEvent()">next</div>
     </div>
     
 </div>

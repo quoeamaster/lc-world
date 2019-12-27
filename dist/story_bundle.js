@@ -467,7 +467,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(5);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "/* common */\n.core-pointer {\n    cursor: pointer;\n}\n.core-pointer-zoom-in {\n    cursor: zoom-in;\n}\n.core-display-none {\n    display: none;\n}\n.core-display-block {\n    display: block;\n}\n.core-display-inline-block {\n    display: inline-block;\n}\n.core-spacer-1 {}\n.core-spacer-2 {}\n\n.core-text-align-center {\n    text-align: center;\n}\n.core-text-align-left{\n    text-align: left;\n}\n\n/* fixed-header: fh- */\n.fh-core {\n    z-index: 10;\n    padding: 10px 16px;\n    color: #666;\n}\n.fh-label-1 {\n    margin-left: 16px;\n    margin-right: 16px;\n}\n.fh-font-1 {\n    font-size: 0.95em;\n    font-weight: bold;\n}\n.fh-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%\n}\n.fh-rolling-background {\n    background: #ffffff;\n    box-shadow: 0 1px 3px #ccc;\n}\n.fh-hamburger-1 {\n    display: none;\n}\n.fh-hamburger-list {\n    margin-top: 28px;\n    display: none;\n\n    position: absolute;\n    left: 0;\n\n    width: 100%;\n}\n.fh-hamburger-list ul {\n    list-style-type: none;\n    padding-left: 16px;\n    width: 100%;\n    /*background: #000046;*/\n    background: linear-gradient(225deg, rgb(0,0,70), rgb(113, 74, 253));\n}\n.fh-hamburger-list ul li {\n    color: #F3F3F3;\n    font-size: 20px;\n    padding-bottom: 2px;\n    padding-top: 2px;\n    margin-top: 8px;\n    margin-bottom: 4px;\n}\n.fh-hamburger-list ul li:first-child {\n    padding-top: 12px;\n}\n.fh-hamburger-list ul li:last-child {\n    padding-bottom: 12px;\n}\n.fh-hamburger-list ul li a {\n    color: #F3F3F3;\n}\n.fh-core a {\n    color: #666;\n}\n\n\n/* carousel */\n.car-flyer-core {\n    z-index: 5;\n    background-color: #cccccc;\n    height: 500px;\n    /* width: 1000px; */\n    width: 100%;\n\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.car-flyer-container {\n    /*width: 1000px; */\n    width: 100%;\n\n    height: 500px;\n    margin: auto;\n}\n.car-core {\n    width: 100%;\n    margin: auto;\n    display: inline-block;\n}\n.car-control-color-1 {\n    color: gray;\n}\n.car-control-color-2 {\n    color: white;\n}\n.car-dots {\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    transform: translate(-50%);\n    font-size: 0.8em;\n}\n.car-dots-spacer-1 {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n.car-swipe-left {\n    text-align: left;\n    position: absolute;\n    top: 50%;\n    left: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n.car-swipe-right {\n    text-align: right;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n\n\n/* card */\n.cd-core-before {\n    margin-top: 100px;\n    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n    max-width: 1280px;\n}\n.cd-container {\n    /*margin: 4px;\n    border: 1px solid blue;\n    height: 320px;*/\n\n    /* border: 1px solid blue; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 320px;\n}\n.cd-preview {\n    /* border-radius: 50%; */\n    border-radius: 4px;\n    width: 100%;\n    height: 280px;\n    position: relative;\n}\n.cd-preview-hover {\n    position: relative;\n    top: -8px;\n    box-shadow: 4px 4px 2px #cccccc;\n}\n/* somehow didn't work as expected\n.cd-content-pane {\n    position: absolute;\n    bottom: 0;\n    background: rgba(0, 0, 0, 0.5);\n    color: #f1f1f1;\n    margin: 4px;\n    width: 100%;\n    transition: .5s ease;\n    opacity:0;\n    font-size: 16px;\n    padding: 20px;\n    text-align: center;\n}\n.meta-lightbox:hover .cd-content-pane {\n    opacity: 1;\n}\n*/\n\n/* portfolio menu related */\n.pmenu-core {\n    padding-left: 12px;\n    padding-right: 12px;\n    border: 1px solid rgba(200,200,200,0.5);\n    /*border-radius: 20px;*/\n    height: 64px;\n    z-index: 8;\n    background: white;\n}\n.pmenu-core-rolling-background {\n    position: fixed;\n    top: 44px; /* kind of hard-coded */\n    width: 100%;\n}\n.pmenu-palete-container {\n    /* important as this width determines how to centerize the palete options later on */\n    width: 520px;\n    margin: auto;\n}\n.pmenu-palete {\n    /* vertical-align: center; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 56px;\n    line-height: 56px;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n    color: #666;\n}\n.pmenu-palete:hover {\n    color: #c0bfc3;\n}\n.pmenu-palete-chosen {\n    /* adding background with gradient color */\n    /*color: white;\n    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));\n    border-radius: 30px; */\n    color: orange;\n}\n\n/* about me */\n.am-core {\n    margin-top: 100px;\n    /*margin-left: 20px;\n    margin-right: 20px;*/\n\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n\n    position: relative;\n    height: 600px;\n    /*border-radius: 6px; */\n    /* box-shadow: 0 0 4px 8px #ccc; */\n}\n.am-content-container {\n    position: relative;\n    top: 30%;\n    left: 10%;\n    width: 400px;\n}\n.am-h3 {\n    color: #c0bfc3;\n    font-size: 2em;\n}\n.am-h4 {\n    margin-top: 12px;\n    margin-bottom: 12px;\n    color: #F3F3F3;\n    font-size: 1em;\n}\n\n/* contact me */\n.cm-core {\n    /* margin-top: 100px; */\n    padding: 100px 48px 48px 48px;\n    background: #F3F3F3;\n    width: 100%;\n    min-height: 100px;\n    text-align: center;\n}\n.cm-caption {\n    font-size: 2em;\n    font-weight: bold;\n    color: #0b0b0b;\n}\n.cm-social-media {\n    margin-top: 60px;\n}\n.cm-social-item {\n    color: #495057;\n    font-size: 2.4em;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n/* media queries */\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .car-core {\n        display: none;\n    }\n    .fh-label-1 {\n        display: none;\n    }\n    .pmenu-palete-container {\n        width: 300px;\n        margin: auto;\n    }\n    .pmenu-palete {\n        /* vertical-align: center; */\n        margin-top: 4px;\n        margin-bottom: 4px;\n        height: 56px;\n        line-height: 56px;\n        display: inline-block;\n        padding-left: 4px;\n        padding-right: 4px;\n        color: #666;\n        font-size: 12px;\n    }\n    .fh-hamburger-1 {\n        display: inline-block;\n    }\n    .am-content-container {\n        position: relative;\n        top: 30%;\n        left: 10%;\n        width: 200px;\n    }\n    .cd-core-before {\n        margin-top: 40px;\n        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n        max-width: 600px;\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n/*@media only screen and (min-width: 600px) {\n\n}\n*/\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {\n\n}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {\n\n}\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n@media only screen and (min-width: 1200px) {\n\n}\n", ""]);
+exports.push([module.i, "/* common */\n.core-pointer {\n    cursor: pointer;\n}\n.core-pointer-zoom-in {\n    cursor: zoom-in;\n}\n.core-display-none {\n    display: none;\n}\n.core-display-block {\n    display: block;\n}\n.core-display-inline-block {\n    display: inline-block;\n}\n.core-spacer-1 {}\n.core-spacer-2 {}\n\n.core-text-align-center {\n    text-align: center;\n}\n.core-text-align-left {\n    text-align: left;\n}\n.core-text-align-right {\n    text-align: right;\n}\n\n/* fixed-header: fh- */\n.fh-core {\n    z-index: 10;\n    padding: 10px 16px;\n    color: #666;\n}\n.fh-label-1 {\n    margin-left: 16px;\n    margin-right: 16px;\n}\n.fh-font-1 {\n    font-size: 0.95em;\n    font-weight: bold;\n}\n.fh-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%\n}\n.fh-rolling-background {\n    background: #ffffff;\n    box-shadow: 0 1px 3px #ccc;\n}\n.fh-hamburger-1 {\n    display: none;\n}\n.fh-hamburger-list {\n    margin-top: 28px;\n    display: none;\n\n    position: absolute;\n    left: 0;\n\n    width: 100%;\n}\n.fh-hamburger-list ul {\n    list-style-type: none;\n    padding-left: 16px;\n    width: 100%;\n    /*background: #000046;*/\n    background: linear-gradient(225deg, rgb(0,0,70), rgb(113, 74, 253));\n}\n.fh-hamburger-list ul li {\n    color: #F3F3F3;\n    font-size: 20px;\n    padding-bottom: 2px;\n    padding-top: 2px;\n    margin-top: 8px;\n    margin-bottom: 4px;\n}\n.fh-hamburger-list ul li:first-child {\n    padding-top: 12px;\n}\n.fh-hamburger-list ul li:last-child {\n    padding-bottom: 12px;\n}\n.fh-hamburger-list ul li a {\n    color: #F3F3F3;\n}\n.fh-core a {\n    color: #666;\n}\n\n\n/* carousel */\n.car-flyer-core {\n    z-index: 5;\n    background-color: #cccccc;\n    height: 500px;\n    /* width: 1000px; */\n    width: 100%;\n\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.car-flyer-container {\n    /*width: 1000px; */\n    width: 100%;\n\n    height: 500px;\n    margin: auto;\n}\n.car-core {\n    width: 100%;\n    margin: auto;\n    display: inline-block;\n}\n.car-control-color-1 {\n    color: gray;\n}\n.car-control-color-2 {\n    color: white;\n}\n.car-dots {\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    transform: translate(-50%);\n    font-size: 0.8em;\n}\n.car-dots-spacer-1 {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n.car-swipe-left {\n    text-align: left;\n    position: absolute;\n    top: 50%;\n    left: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n.car-swipe-right {\n    text-align: right;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n\n\n/* card */\n.cd-core-before {\n    margin-top: 100px;\n    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n    max-width: 1280px;\n}\n.cd-container {\n    /*margin: 4px;\n    border: 1px solid blue;\n    height: 320px;*/\n\n    /* border: 1px solid blue; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 320px;\n}\n.cd-preview {\n    /* border-radius: 50%; */\n    border-radius: 4px;\n    width: 100%;\n    height: 280px;\n    position: relative;\n}\n.cd-preview-hover {\n    position: relative;\n    top: -8px;\n    box-shadow: 4px 4px 2px #cccccc;\n}\n/* somehow didn't work as expected\n.cd-content-pane {\n    position: absolute;\n    bottom: 0;\n    background: rgba(0, 0, 0, 0.5);\n    color: #f1f1f1;\n    margin: 4px;\n    width: 100%;\n    transition: .5s ease;\n    opacity:0;\n    font-size: 16px;\n    padding: 20px;\n    text-align: center;\n}\n.meta-lightbox:hover .cd-content-pane {\n    opacity: 1;\n}\n*/\n\n/* portfolio menu related */\n.pmenu-core {\n    padding-left: 12px;\n    padding-right: 12px;\n    border: 1px solid rgba(200,200,200,0.5);\n    /*border-radius: 20px;*/\n    height: 64px;\n    z-index: 8;\n    background: white;\n}\n.pmenu-core-rolling-background {\n    position: fixed;\n    top: 44px; /* kind of hard-coded */\n    width: 100%;\n}\n.pmenu-palete-container {\n    /* important as this width determines how to centerize the palete options later on */\n    width: 520px;\n    margin: auto;\n}\n.pmenu-palete {\n    /* vertical-align: center; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 56px;\n    line-height: 56px;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n    color: #666;\n}\n.pmenu-palete:hover {\n    color: #c0bfc3;\n}\n.pmenu-palete-chosen {\n    /* adding background with gradient color */\n    /*color: white;\n    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));\n    border-radius: 30px; */\n    color: orange;\n}\n\n/* about me */\n.am-core {\n    margin-top: 100px;\n    /*margin-left: 20px;\n    margin-right: 20px;*/\n\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n\n    position: relative;\n    height: 600px;\n    /*border-radius: 6px; */\n    /* box-shadow: 0 0 4px 8px #ccc; */\n}\n.am-content-container {\n    position: relative;\n    top: 30%;\n    left: 10%;\n    width: 400px;\n}\n.am-h3 {\n    color: #c0bfc3;\n    font-size: 2em;\n}\n.am-h4 {\n    margin-top: 12px;\n    margin-bottom: 12px;\n    color: #F3F3F3;\n    font-size: 1em;\n}\n\n/* contact me */\n.cm-core {\n    /* margin-top: 100px; */\n    padding: 100px 48px 48px 48px;\n    background: #F3F3F3;\n    width: 100%;\n    min-height: 100px;\n    text-align: center;\n}\n.cm-caption {\n    font-size: 2em;\n    font-weight: bold;\n    color: #0b0b0b;\n}\n.cm-social-media {\n    margin-top: 60px;\n}\n.cm-social-item {\n    color: #495057;\n    font-size: 2.4em;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n/* media queries */\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .car-core {\n        display: none;\n    }\n    .fh-label-1 {\n        display: none;\n    }\n    .pmenu-palete-container {\n        width: 300px;\n        margin: auto;\n    }\n    .pmenu-palete {\n        /* vertical-align: center; */\n        margin-top: 4px;\n        margin-bottom: 4px;\n        height: 56px;\n        line-height: 56px;\n        display: inline-block;\n        padding-left: 4px;\n        padding-right: 4px;\n        color: #666;\n        font-size: 12px;\n    }\n    .fh-hamburger-1 {\n        display: inline-block;\n    }\n    .am-content-container {\n        position: relative;\n        top: 30%;\n        left: 10%;\n        width: 200px;\n    }\n    .cd-core-before {\n        margin-top: 40px;\n        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n        max-width: 600px;\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n/*@media only screen and (min-width: 600px) {\n\n}\n*/\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {\n\n}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {\n\n}\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n@media only screen and (min-width: 1200px) {\n\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -749,10 +749,10 @@ Vue.component('col_0-2', {
   template: `
 <div class="st-row-0-core" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;">
     <div class="st-col-flex-2">
-        <div v-for="content in section.content.col_0" v-html="content"></div>
+        <div v-for="content in section.content.col_1" v-html="content"></div>
     </div>
     <div class="st-col-flex-2">
-        <div v-for="content in section.content.col_1" v-html="content"></div>
+        <div v-for="content in section.content.col_2" v-html="content"></div>
     </div>
 </div>
   `
@@ -763,13 +763,13 @@ Vue.component('col_0-3', {
   template: `
 <div class="st-row-0-core" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;">
     <div class="st-col-flex-3">
-        <div v-for="content in section.content.col_0" v-html="content"></div>
-    </div>
-    <div class="st-col-flex-3">
         <div v-for="content in section.content.col_1" v-html="content"></div>
     </div>
     <div class="st-col-flex-3">
         <div v-for="content in section.content.col_2" v-html="content"></div>
+    </div>
+    <div class="st-col-flex-3">
+        <div v-for="content in section.content.col_3" v-html="content"></div>
     </div>
 </div>
   `
@@ -780,9 +780,6 @@ Vue.component('col_0-4', {
   template: `
 <div class="st-row-0-core" style="display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; padding: 0 4px;">
     <div class="st-col-flex-4">
-        <div v-for="content in section.content.col_0" v-html="content"></div>
-    </div>
-    <div class="st-col-flex-4">
         <div v-for="content in section.content.col_1" v-html="content"></div>
     </div>
     <div class="st-col-flex-4">
@@ -790,6 +787,9 @@ Vue.component('col_0-4', {
     </div>
     <div class="st-col-flex-4">
         <div v-for="content in section.content.col_3" v-html="content"></div>
+    </div>
+    <div class="st-col-flex-4">
+        <div v-for="content in section.content.col_4" v-html="content"></div>
     </div>
 </div>
   `
@@ -860,7 +860,9 @@ Vue.component('st-container', {
       column_2: [],
       column_3: [],
       // chosen story from the listing....
-      chosenStory: {}
+      chosenStory: {},
+      // store the original url
+      oriUrl: window.location.href
     };
   },
   mounted: function() {
@@ -891,12 +893,53 @@ Vue.component('st-container', {
     },
     onStoryChosen: function (data) {
       this.chosenStory = data.story;
+      window.location.href=this.oriUrl+'#_story_';
+    },
+    onPrevStoryChosen: function (data) {
+      // find the prev, next story
+      let _p = {};
+      for (let i=0; i<this.scrub.story.length; i++) {
+        // previous
+        if (i === 0) {
+          _p = this.scrub.story[this.scrub.story.length - 1];
+        } else {
+          _p = this.scrub.story[i-1];
+        }
+        // found?
+        let _c = this.scrub.story[i];
+        if (_c.story_id === data.story.story_id) {
+          this.chosenStory = _p;
+          break;
+        }
+      } // end -- for (scrub.story iterate)
+      window.location.href=this.oriUrl+'#_story_';
+    },
+    onNextStoryChosen: function (data) {
+      // find the prev, next story
+      let _n = {};
+      for (let i=0; i<this.scrub.story.length; i++) {
+        // found?
+        let _c = this.scrub.story[i];
+        if (_c.story_id === data.story.story_id) {
+          // next
+          if ((i+1) === this.scrub.story.length) {
+            _n = this.scrub.story[0];
+          } else {
+            _n = this.scrub.story[i + 1];
+          }
+          this.chosenStory = _n;
+          break;
+        }
+      } // end -- for (scrub.story iterate)
+      window.location.href=this.oriUrl+'#_story_';
     }
 
   },
   template: `
-<div>
-    <st-chosen-story v-bind:story="chosenStory"></st-chosen-story>
+<div id="_story_">
+    <st-chosen-story v-bind:story="chosenStory"
+        v-on:next-story-chosen="onNextStoryChosen" 
+        v-on:prev-story-chosen="onPrevStoryChosen"></st-chosen-story>
     
     <div class="st-flex-row st-core-container">
         <div class="st-flex-col">
@@ -946,6 +989,9 @@ Vue.component('st-list-flex-item', {
 });
 
 
+/**
+ * display of the chosen story
+ */
 Vue.component('st-chosen-story', {
   props: ['story'],
   data: function() {
@@ -999,7 +1045,17 @@ Vue.component('st-chosen-story', {
       if ('col_0' === contentType) {
         return 'st-col-0';
       }
-
+      // TODO: add other listing...
+    },
+    raisePrevStoryEvent: function () {
+      this.$emit('prev-story-chosen', {
+        story: this.story
+      });
+    },
+    raiseNextStoryEvent: function () {
+      this.$emit('next-story-chosen', {
+        story: this.story
+      });
     }
 
   },
@@ -1012,6 +1068,12 @@ Vue.component('st-chosen-story', {
     <div v-for="section in contents.sections">
         <!-- actual component -->
         <component :is="getContentComponent(section.type)" v-bind:section="section"></component>
+    </div>
+    <!-- next/prev button -->
+    <div class="st-row-0-core core-text-align-right">
+        <div class="core-pointer core-display-inline-block" v-on:click="raisePrevStoryEvent()">prev</div>
+        <div class="core-display-inline-block" style="margin-left: 2px; margin-right: 2px;">/</div>
+        <div class="core-pointer core-display-inline-block" v-on:click="raiseNextStoryEvent()">next</div>
     </div>
     
 </div>

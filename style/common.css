@@ -20,8 +20,11 @@
 .core-text-align-center {
     text-align: center;
 }
-.core-text-align-left{
+.core-text-align-left {
     text-align: left;
+}
+.core-text-align-right {
+    text-align: right;
 }
 
 /* fixed-header: fh- */
