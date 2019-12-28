@@ -89,7 +89,7 @@ Vue.component('st-container', {
 
   },
   template: `
-<div id="_story_">
+<div>
     <st-chosen-story v-bind:story="chosenStory"
         v-on:next-story-chosen="onNextStoryChosen" 
         v-on:prev-story-chosen="onPrevStoryChosen"></st-chosen-story>
@@ -223,7 +223,7 @@ Vue.component('st-chosen-story', {
         <component :is="getContentComponent(section.type)" v-bind:section="section"></component>
     </div>
     <!-- next/prev button -->
-    <div class="st-row-0-core core-text-align-right">
+    <div class="st-row-0-core core-text-align-right st-row-0-core-prevnext">
         <div class="core-pointer core-display-inline-block" v-on:click="raisePrevStoryEvent()">prev</div>
         <div class="core-display-inline-block" style="margin-left: 2px; margin-right: 2px;">/</div>
         <div class="core-pointer core-display-inline-block" v-on:click="raiseNextStoryEvent()">next</div>

@@ -4,7 +4,12 @@
 }
 
 /* for the norm-header from photo/norm-header.js */
-.norm-header-sticky {}
+.norm-header-sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+}
 
 .st-core-container {
     /*max-width: 800px;
@@ -29,6 +34,7 @@
     padding-left: 4px;
     padding-right: 4px;
 }
+.st-row-0-core-prevnext {}
 
 /* main featured photo for the story / work */
 .st-main-photo {
@@ -152,6 +158,9 @@
         margin-right: auto;
         padding-left: 4px;
         padding-right: 4px;
+    }
+    .st-row-0-core-prevnext {
+        margin-right: 16px;
     }
 
     .st-col-flex-2 {
