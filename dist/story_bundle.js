@@ -695,7 +695,7 @@ if (content.locals) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(0);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n/* for the norm-header from photo/norm-header.js */\n.norm-header-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%;\n    background: white;\n}\n\n.st-core-container {\n    /*max-width: 800px;\n    margin: auto;*/\n    margin-left: 20px;\n    margin-right: 20px;\n}\n\n.st-story-container {\n    margin-top: 20px;\n    margin-bottom: 80px;\n}\n\n.st-word-0-core {\n    margin-top: 4px;\n    margin-bottom: 16px;\n}\n.st-row-0-core {\n    max-width: 1024px;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 4px;\n    padding-right: 4px;\n}\n.st-row-0-core-prevnext {}\n\n/* main featured photo for the story / work */\n.st-main-photo {\n    width: 100%;\n    margin-bottom: 8px;\n}\n\n/* strong label (bold) */\n.st-overview-strong {\n    font-weight: 600;\n}\n\n/* non decorated list */\n.st-over-list-item-1 {\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n}\n.st-over-list-item-2 {\n    /*margin: 0;*/\n    margin-left: 0;\n    margin-right: 0;\n    margin-top: 8px;\n    margin-bottom: 8px;\n\n    padding: 0;\n}\n\n/* flex-row */\n.st-flex-row {\n    display: -ms-flexbox; /* IE10 */\n    display: flex;\n\n    -ms-flex-wrap: wrap; /* IE10 */\n    flex-wrap: wrap;\n\n    padding: 0 4px;\n}\n.st-flex-col {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n    max-width: 33.3%;\n    padding: 0 4px;\n}\n.st-flex-img {\n    margin-top: 8px;\n    /*vertical-align: middle;*/\n    width: 100%;\n}\n.st-flex-img-caption {\n    text-align: center;\n    padding: 4px;\n}\n\n.st-section-rule-1 {\n    border-bottom: 1px solid #999999;\n    padding-left: 8px;\n    padding-right: 8px;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n/* title caption class */\n.st-caption-title {\n    font-size: 1.3em;\n    font-weight: 600;\n}\n\n/* col_0 component related */\n.st-col-flex-2 {\n    -ms-flex: 50%; /* IE10 */\n    flex: 50%;\n    max-width: 50%;\n    padding: 0 4px;\n    margin-bottom: 8px;\n    margin-top: 8px;\n}\n.st-col-flex-3 {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n    max-width: 33.3%;\n    padding: 0 4px;\n    margin-bottom: 8px;\n    margin-top: 8px;\n}\n.st-col-flex-4 {\n    -ms-flex: 25%; /* IE10 */\n    flex: 25%;\n    max-width: 25%;\n    padding: 0 4px;\n    margin-bottom: 8px;\n    margin-top: 8px;\n}\n\n@media only screen and (max-width: 600px) {\n    .norm-header-sticky {\n        position: fixed;\n        top: 0;\n        width: 100%;\n        background: white;\n    }\n\n    .st-flex-col {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        padding: 0 4px;\n    }\n\n    .st-core-container {\n        /*max-width: 800px;\n        margin: auto;*/\n        margin-left: 8px;\n        margin-right: 8px;\n    }\n\n    .st-row-0-core {\n        width: auto;\n        max-width: 100%;\n        margin-left: auto;\n        margin-right: auto;\n        padding-left: 4px;\n        padding-right: 4px;\n    }\n    .st-row-0-core-prevnext {\n        margin-right: 16px;\n    }\n\n    .st-col-flex-2 {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        margin-bottom: 8px;\n        margin-top: 4px;\n    }\n    .st-col-flex-3 {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        margin-bottom: 8px;\n        margin-top: 4px;\n    }\n    .st-col-flex-4 {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        margin-bottom: 8px;\n        margin-top: 4px;\n    }\n\n}\n", ""]);
+exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n/* for the norm-header from photo/norm-header.js */\n.norm-header-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%;\n    background: white;\n}\n\n.st-core-container {\n    /*max-width: 800px;\n    margin: auto;*/\n    margin-left: 20px;\n    margin-right: 20px;\n}\n\n.st-story-container {\n    margin-top: 20px;\n    margin-bottom: 80px;\n}\n\n.st-word-0-core {\n    margin-top: 4px;\n    margin-bottom: 16px;\n}\n.st-row-0-core {\n    max-width: 720px;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 4px;\n    padding-right: 4px;\n}\n.st-row-0-core-prevnext {}\n\n/* main featured photo for the story / work */\n.st-main-photo {\n    width: 100%;\n    margin-bottom: 8px;\n}\n\n/* strong label (bold) */\n.st-overview-strong {\n    font-weight: 600;\n}\n\n/* non decorated list */\n.st-over-list-item-1 {\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n}\n.st-over-list-item-2 {\n    /*margin: 0;*/\n    margin-left: 0;\n    margin-right: 0;\n    margin-top: 8px;\n    margin-bottom: 8px;\n\n    padding: 0;\n}\n\n/* flex-row */\n.st-flex-row {\n    display: -ms-flexbox; /* IE10 */\n    display: flex;\n\n    -ms-flex-wrap: wrap; /* IE10 */\n    flex-wrap: wrap;\n\n    padding: 0 4px;\n}\n.st-flex-col {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n    max-width: 33.3%;\n    padding: 0 4px;\n}\n.st-flex-img {\n    margin-top: 8px;\n    /*vertical-align: middle;*/\n    width: 100%;\n}\n.st-flex-img-caption {\n    text-align: center;\n    padding: 4px;\n}\n\n.st-section-rule-1 {\n    border-bottom: 1px solid #999999;\n    padding-left: 8px;\n    padding-right: 8px;\n    margin-top: 40px;\n    margin-bottom: 40px;\n}\n\n/* title caption class */\n.st-caption-title {\n    font-size: 1.3em;\n    font-weight: 600;\n}\n\n/* col_0 component related */\n.st-col-flex-2 {\n    -ms-flex: 50%; /* IE10 */\n    flex: 50%;\n    max-width: 50%;\n    padding: 0 4px;\n    margin-bottom: 8px;\n    margin-top: 8px;\n}\n.st-col-flex-3 {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n    max-width: 33.3%;\n    padding: 0 4px;\n    margin-bottom: 8px;\n    margin-top: 8px;\n}\n.st-col-flex-4 {\n    -ms-flex: 25%; /* IE10 */\n    flex: 25%;\n    max-width: 25%;\n    padding: 0 4px;\n    margin-bottom: 8px;\n    margin-top: 8px;\n}\n\n@media only screen and (max-width: 600px) {\n    .norm-header-sticky {\n        position: fixed;\n        top: 0;\n        width: 100%;\n        background: white;\n    }\n\n    .st-flex-col {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        padding: 0 4px;\n    }\n\n    .st-core-container {\n        /*max-width: 800px;\n        margin: auto;*/\n        margin-left: 8px;\n        margin-right: 8px;\n    }\n\n    .st-row-0-core {\n        width: auto;\n        max-width: 100%;\n        margin-left: auto;\n        margin-right: auto;\n        padding-left: 4px;\n        padding-right: 4px;\n    }\n    .st-row-0-core-prevnext {\n        margin-right: 16px;\n    }\n\n    .st-col-flex-2 {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        margin-bottom: 8px;\n        margin-top: 4px;\n    }\n    .st-col-flex-3 {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        margin-bottom: 8px;\n        margin-top: 4px;\n    }\n    .st-col-flex-4 {\n        -ms-flex: 100%;\n        flex: 100%;\n        max-width: 100%;\n        margin-bottom: 8px;\n        margin-top: 4px;\n    }\n\n}\n\n@media only screen and (min-width: 960px) {\n    .st-row-0-core {\n        max-width: 840px;\n        margin-left: auto;\n        margin-right: auto;\n        padding-left: 4px;\n        padding-right: 4px;\n    }\n}\n\n@media only screen and (min-width: 1200px) {\n    .st-row-0-core {\n        max-width: 1024px;\n        margin-left: auto;\n        margin-right: auto;\n        padding-left: 4px;\n        padding-right: 4px;\n    }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -893,7 +893,8 @@ Vue.component('st-container', {
     },
     onStoryChosen: function (data) {
       this.chosenStory = data.story;
-      window.location.href=this.oriUrl+'#_story_';
+      this.forwardToStoryTop();
+      // window.location.href=this.oriUrl+'#_story_';
     },
     onPrevStoryChosen: function (data) {
       // find the prev, next story
@@ -912,7 +913,8 @@ Vue.component('st-container', {
           break;
         }
       } // end -- for (scrub.story iterate)
-      window.location.href=this.oriUrl+'#_story_';
+      this.forwardToStoryTop();
+      //window.location.href=this.oriUrl+'#_story_';
     },
     onNextStoryChosen: function (data) {
       // find the prev, next story
@@ -931,7 +933,17 @@ Vue.component('st-container', {
           break;
         }
       } // end -- for (scrub.story iterate)
-      window.location.href=this.oriUrl+'#_story_';
+      this.forwardToStoryTop();
+      //window.location.href=this.oriUrl+'#_story_';
+    },
+    forwardToStoryTop: function () {
+      let _url = window.location.href;
+      if (_url.lastIndexOf('#_story_') !== -1) {
+        let _newUrl = window.location.href;
+        window.location.href = _newUrl;
+      } else {
+        window.location.href = window.location.href+'#_story_';
+      }
     }
 
   },

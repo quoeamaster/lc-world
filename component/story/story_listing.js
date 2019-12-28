@@ -46,7 +46,8 @@ Vue.component('st-container', {
     },
     onStoryChosen: function (data) {
       this.chosenStory = data.story;
-      window.location.href=this.oriUrl+'#_story_';
+      this.forwardToStoryTop();
+      // window.location.href=this.oriUrl+'#_story_';
     },
     onPrevStoryChosen: function (data) {
       // find the prev, next story
@@ -65,7 +66,8 @@ Vue.component('st-container', {
           break;
         }
       } // end -- for (scrub.story iterate)
-      window.location.href=this.oriUrl+'#_story_';
+      this.forwardToStoryTop();
+      //window.location.href=this.oriUrl+'#_story_';
     },
     onNextStoryChosen: function (data) {
       // find the prev, next story
@@ -84,7 +86,17 @@ Vue.component('st-container', {
           break;
         }
       } // end -- for (scrub.story iterate)
-      window.location.href=this.oriUrl+'#_story_';
+      this.forwardToStoryTop();
+      //window.location.href=this.oriUrl+'#_story_';
+    },
+    forwardToStoryTop: function () {
+      let _url = window.location.href;
+      if (_url.lastIndexOf('#_story_') !== -1) {
+        let _newUrl = window.location.href;
+        window.location.href = _newUrl;
+      } else {
+        window.location.href = window.location.href+'#_story_';
+      }
     }
 
   },

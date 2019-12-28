@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/story/story_listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/story/story_listing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/story_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/story_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story.html" beforeDir="false" afterPath="$PROJECT_DIR$/story.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style/story.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/story.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -76,20 +75,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/component/story/story_listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+            <state relative-caret-position="119">
+              <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style/story.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="307">
+              <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -98,7 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>hambur</find>
       <find>ph-contact-core</find>
       <find>height</find>
       <find>raiseCatChangeEvent</find>
@@ -128,6 +126,7 @@
       <find>.norm-header-sticky {}</find>
       <find>.norm-header-sticky</find>
       <find>sticky</find>
+      <find>1024</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,9 +171,9 @@
         <option value="$PROJECT_DIR$/stories_scrub/mike-shoes-A_2019-12-26" />
         <option value="$PROJECT_DIR$/stories_scrub/mike-shoes-B_2019-12-26" />
         <option value="$PROJECT_DIR$/stories_scrub/mike-shoes-C_2019-12-26" />
-        <option value="$PROJECT_DIR$/style/story.css" />
         <option value="$PROJECT_DIR$/story.html" />
         <option value="$PROJECT_DIR$/component/story/story_listing.js" />
+        <option value="$PROJECT_DIR$/style/story.css" />
       </list>
     </option>
   </component>
@@ -290,12 +289,12 @@
       <workItem from="1577332771492" duration="8607000" />
       <workItem from="1577421200923" duration="15736000" />
       <workItem from="1577452714423" duration="4046000" />
-      <workItem from="1577500350590" duration="651000" />
+      <workItem from="1577500350590" duration="1550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153147000" />
+    <option name="totallyTimeSpent" value="154046000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -599,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/story.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/story.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -618,8 +610,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/component/story/story_listing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="91" column="4" selection-start-line="91" selection-start-column="4" selection-end-line="91" selection-end-column="4" />
+        <state relative-caret-position="119">
+          <caret line="49" column="53" selection-start-line="49" selection-start-column="53" selection-end-line="49" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/story.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
         </state>
       </provider>
     </entry>
