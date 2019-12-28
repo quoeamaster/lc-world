@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/story/col_0.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/story/col_0.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/story/story_listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/story/story_listing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/photo_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/photo_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/story_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/story_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrub_story" beforeDir="false" afterPath="$PROJECT_DIR$/scrub_story" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stories_scrub/mike-shoes_2019-12-26" beforeDir="false" afterPath="$PROJECT_DIR$/stories_scrub/mike-shoes_2019-12-26" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/common.css" afterDir="false" />
-    </list>
+    <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -74,7 +64,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component/story/story_listing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
+            <state relative-caret-position="259">
               <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
               <folding>
                 <element signature="e#2042#2453#0" />
@@ -282,12 +272,12 @@
       <workItem from="1577254119975" duration="9460000" />
       <workItem from="1577332771492" duration="8607000" />
       <workItem from="1577421200923" duration="15736000" />
-      <workItem from="1577452714423" duration="3932000" />
+      <workItem from="1577452714423" duration="4046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152382000" />
+    <option name="totallyTimeSpent" value="152496000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -610,7 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/component/story/story_listing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
+        <state relative-caret-position="259">
           <caret line="48" column="50" selection-start-line="48" selection-start-column="50" selection-end-line="48" selection-end-column="50" />
           <folding>
             <element signature="e#2042#2453#0" />
