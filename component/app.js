@@ -15,7 +15,8 @@ new Vue({
     let instance = this;
     $.getJSON('./../scrub', function(data) {
       if (data) {
-        instance._data.scrub = data;
+        // instance._data.scrub = data;
+        instance.scrub = data;
       }
     });
   }

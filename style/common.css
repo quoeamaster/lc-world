@@ -240,6 +240,13 @@
     color: orange;
 }
 
+.pmenu-hscroll-core {
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
 /* about me */
 .am-core {
     margin-top: 100px;

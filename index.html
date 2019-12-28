@@ -27,7 +27,7 @@
         <carousel v-bind:scrub="scrub['featured']"></carousel>
 
         <div class="core-spacer-2" style="height: 36px;" >&nbsp;</div>
-        <portfolio-menu></portfolio-menu>
+        <portfolio-menu v-bind:listing="scrub['listing']"></portfolio-menu>
         <card-listing v-bind:listing="scrub['listing']"></card-listing>
 
         <about-me v-bind:about="scrub['about']"></about-me>
