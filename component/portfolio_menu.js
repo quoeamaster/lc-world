@@ -27,8 +27,8 @@ Vue.component('portfolio-menu', {
   },
   data: function() {
     return {
-      // cat(egory) picked, '' = all (default as well)
-      'cat': '',
+      // cat(egory) picked, Featured is the DEFAULT value
+      'cat': 'Featured',
       // list of all available category(s) - dynamic
       'catList': []
     };

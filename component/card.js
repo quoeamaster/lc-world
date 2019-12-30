@@ -6,8 +6,8 @@ Vue.component('card-listing', {
   data: function() {
     return {
       isPopupInited: false,
-      // cat == '' means "all"
-      cat: ''
+      // cat == 'Featured' is the DEFAULT
+      cat: 'Featured'
     };
   },
   mounted: function() {
@@ -59,25 +59,49 @@ Vue.component('card-listing', {
       return '__card__'+idx;
     },
     _getAnimationClass: function(item, idx, cardObj) {
-      if (this.cat === '' || this.cat === item.cat) {
+      // should be "Featured" instead of '' (HARD-CODED)
+      // this.cat === '' ||
+      //  || this.cat === 'Featured'
+      if (this.cat === item.cat) {
+        console.log('cat matched', cardObj.attr('id'));
         cardObj.addClass('core-display-block').removeClass('core-display-none');
         cardObj.addClass('zoomIn').removeClass('zoomOut');
       } else {
+        console.log(cardObj.attr('id'));
         cardObj.addClass('zoomOut').removeClass('zoomIn');
         cardObj.addClass('core-display-none').removeClass('core-display-block');
       }
     },
-    getAnimationClass: function (item, idx) {
+    getAnimationClass: async function (item, idx) {
+      /*
+      let instance = this;
+      let pCardObj = new Promise(function (resolve) {
+        setTimeout(function () {
+          let cardObj = jQuery('#'+instance.getCardId(idx));
+          //console.log(cardObj.attr('id'));
+          resolve(cardObj);
+        }, 100);
+      });
+      let realCardObj = null;
+      await pCardObj.then(function (data) {
+        realCardObj = data;
+        instance._getAnimationClass(item, idx, realCardObj);
+      });
+      */
+
+
+      /*
       let instance = this;
       let cardObj = jQuery('#'+instance.getCardId(idx));
       if (!cardObj) {
         setTimeout(function () {
           cardObj = jQuery('#'+instance.getCardId(idx));
           instance._getAnimationClass(item, idx, cardObj);
-        }, 100);
+        }, 500);
       } else {
         this._getAnimationClass(item, idx, cardObj);
       }
+      */
     }
 
   },
@@ -86,9 +110,9 @@ Vue.component('card-listing', {
   <div class="row">
     <div v-for="(item, idx) in listing"
         v-bind:id="getCardId(idx)"
+        class="animated col-lg-3 col-md-4 col-sm-12 core-display-none"
         v-bind:class="getAnimationClass(item, idx)"
-        style="-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s;"
-        class="animated col-lg-3 col-md-4 col-sm-12">
+        style="-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s;" >
         <card v-bind:presentation="item"
             v-on:popup-init="onPopupInit"
         ></card>    
@@ -98,6 +122,13 @@ Vue.component('card-listing', {
 </div>
   `
 });
+/**
+ * TODO:
+ * TODO:
+ * TODO:
+ *  1. listing should be "updated" based on "cat" (default cat is "Featured")
+ *  2. the updated list / card would have the animation effects...
+ */
 
 /**
  * card - presenting a particular portfolio

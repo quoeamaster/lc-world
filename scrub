@@ -7,41 +7,46 @@
 
  "listing": [
   {
-   "idx": -1,
+   "idx": 0,
    "cat": "Featured",
+   "sub_cat": "story",
    "highlight": false,
-   "preview": "nil.jpg",
-   "comment": "[featured] category"
+   "preview": "portfolio/story/mike-shoes_2019-12-26/spt_01.jpg",
+   "comment": "[featured] category",
+   "comment_sub_cat": "story means it would be forwarded to the 'story' page and show its content..."
   },
   {
-   "idx": -2,
+   "idx": 1,
    "cat": "Photos",
    "highlight": false,
-   "preview": "nil.jpg",
+   "preview": "portfolio/others/about_me.jpg",
    "comment": "[photos] category"
   },
   {
-   "idx": -3,
+   "idx": 2,
    "cat": "Works",
    "highlight": false,
-   "preview": "nil.jpg",
+   "preview": "portfolio/others/about_me.jpg",
    "comment": "[works] category"
   },
 
   {
-   "idx": 0,
+   "idx": 3,
+   "cat": "Featured",
+   "sub_cat": "photo",
+   "highlight": false,
+   "preview": "portfolio/photos/foto00.jpg",
+   "comment": "[featured] category",
+   "comment_sub_cat": "photo type means that it is just a photo"
+  },
+  {
+   "idx": 4,
    "cat": "Awards",
    "highlight": true,
    "preview": "portfolio/awards/000.jpg",
    "title": "windmill - 2019",
    "content": "1st honor prize in ABC photo contest SG"
-  },
-  { "idx": 1, "cat": "Portraits", "preview": "portfolio/portraits/000.jpg", "title": "beach breeze", "content": "in Bali", "highlight": false },
-  { "idx": 2, "cat": "Portraits", "preview": "portfolio/portraits/001.jpg", "title": "STORM~", "highlight": true },
-
-  { "idx": 3, "cat": "Awards", "preview": "portfolio/awards/000.jpg", "title": "misc", "content": "testing on gridlayout", "highlight": false },
-  { "idx": 4, "cat": "Portraits", "preview": "portfolio/portraits/000.jpg", "title": "misc", "content": "testing on gridlayout again...", "highlight": true },
-  { "idx": 5, "cat": "Portraits", "preview": "portfolio/portraits/001.jpg", "title": "misc", "highlight": false }
+  }
  ],
 
  "about": {
