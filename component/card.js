@@ -223,3 +223,8 @@ Vue.component('card', {
 
   }
 });
+
+/**
+ *  TODO: CARD
+ *  1. presentation and forward (story => forward; photo just show photo as is)
+ */
