@@ -7,7 +7,9 @@ Vue.component('card-listing', {
     return {
       isPopupInited: false,
       // cat == 'Featured' is the DEFAULT
-      cat: 'Featured'
+      cat: 'Featured',
+      // cat-listing = the actual listing to be shown based on the chosen cat (default is Featured)
+      catListing: []
     };
   },
   mounted: function() {
@@ -26,12 +28,32 @@ Vue.component('card-listing', {
         instance.onCategoryChange(data);
       });
     }
+
+    setTimeout(function () {
+      if (instance.listing) {
+        // update the catListing
+        instance.updateCatListing(instance);
+      }
+    }, 100);
+
   },
   methods: {
+    updateCatListing: function(instance) {
+      instance.catListing = [];
+      for (let i=0; i<instance.listing.length; i++) {
+        let item = instance.listing[i];
+        if (item.cat === instance.cat) {
+          instance.catListing.push(item);
+        }
+      } // end -- for (listing iteration)
+      //console.log(instance.catListing);
+    },
     onCategoryChange: function(data) {
       if (data) {
         // possible values '', awards, photos, sketches
         this.cat = data.cat;
+        // also update the actual listing for display (on cards)
+        this.updateCatListing(this);
       }
     },
     onPopupInit: function(data) {
@@ -73,7 +95,6 @@ Vue.component('card-listing', {
       }
     },
     getAnimationClass: async function (item, idx) {
-      /*
       let instance = this;
       let pCardObj = new Promise(function (resolve) {
         setTimeout(function () {
@@ -85,10 +106,12 @@ Vue.component('card-listing', {
       let realCardObj = null;
       await pCardObj.then(function (data) {
         realCardObj = data;
-        instance._getAnimationClass(item, idx, realCardObj);
+        //instance._getAnimationClass(item, idx, realCardObj);
+        realCardObj.addClass('core-vis-hide').removeClass('zoomIn');
+        setTimeout(function () {
+          realCardObj.removeClass('core-vis-hide').addClass('zoomIn');
+        }, 10);
       });
-      */
-
 
       /*
       let instance = this;
@@ -108,9 +131,12 @@ Vue.component('card-listing', {
   template: `
 <div class="container cd-core-before">
   <div class="row">
-    <div v-for="(item, idx) in listing"
+    <!-- listing -->
+    <!-- v-bind:class="getAnimationClass(item, idx)" -->
+    <!-- class="animated col-lg-3 col-md-4 col-sm-12" -->
+    <div v-for="(item, idx) in catListing"
         v-bind:id="getCardId(idx)"
-        class="animated col-lg-3 col-md-4 col-sm-12 core-display-none"
+        class="animated col-lg-3 col-md-4 col-sm-12"
         v-bind:class="getAnimationClass(item, idx)"
         style="-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s;" >
         <card v-bind:presentation="item"

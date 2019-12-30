@@ -8,6 +8,9 @@
 .core-display-none {
     display: none;
 }
+.core-vis-hide {
+    visibility: hidden;
+}
 .core-display-block {
     display: block;
 }
