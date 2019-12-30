@@ -1092,9 +1092,9 @@ Vue.component('card-listing', {
     getCardId: function(idx) {
       return '__card__'+idx;
     },
+    /*
     _getAnimationClass: function(item, idx, cardObj) {
       // should be "Featured" instead of '' (HARD-CODED)
-      // this.cat === '' ||
       //  || this.cat === 'Featured'
       if (this.cat === item.cat) {
         console.log('cat matched', cardObj.attr('id'));
@@ -1106,6 +1106,7 @@ Vue.component('card-listing', {
         cardObj.addClass('core-display-none').removeClass('core-display-block');
       }
     },
+    */
     getAnimationClass: async function (item, idx) {
       let instance = this;
       let pCardObj = new Promise(function (resolve) {
@@ -1160,13 +1161,6 @@ Vue.component('card-listing', {
 </div>
   `
 });
-/**
- * TODO:
- * TODO:
- * TODO:
- *  1. listing should be "updated" based on "cat" (default cat is "Featured")
- *  2. the updated list / card would have the animation effects...
- */
 
 /**
  * card - presenting a particular portfolio
