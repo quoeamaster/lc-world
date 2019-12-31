@@ -5,7 +5,7 @@ Vue.component('card-listing', {
   props: ['listing'],
   data: function() {
     return {
-      isPopupInited: false,
+      //isPopupInited: false,
       // cat == 'Featured' is the DEFAULT
       cat: 'Featured',
       // cat-listing = the actual listing to be shown based on the chosen cat (default is Featured)
@@ -57,8 +57,11 @@ Vue.component('card-listing', {
       }
     },
     onPopupInit: function(data) {
-      if (this.isPopupInited === false) {
-        this.isPopupInited = true;
+      // this.isPopupInited === false
+      // PS: since the design is changed... it is not possible to init the popup class for ONCE,
+      // instead every time the listing changes, the popup init should be re-do again
+      if (1 === 1) {
+        //this.isPopupInited = true;
         setTimeout(function () {
           jQuery(data['className']).magnificPopup({
             type: 'image',
@@ -174,19 +177,41 @@ Vue.component('card', {
   template: `
 <div class="cd-container" >
     <div class="">
-        <a class="meta-lightbox" v-bind:href="getPresentationImg()">
-          <img v-bind:src="getPresentationImg()"
+        <a class="meta-lightbox" v-bind:href="presentation.preview" v-on:click="onPreviewClick()">
+            <div class="cd-preview core-pointer-zoom-in meta-lightbox cd-div-preview"
+                v-bind:class="getPresentatonImgClass()"
+                v-on:mouseover="acceptHoverEvent()" 
+                v-on:mouseleave="acceptHoverLeaveEvent();"
+                v-bind:style="getDivStyle()"
+            ></div>
+          <!--img v-bind:src="getPresentationImg()"
               v-bind:class="getPresentatonImgClass()"
               v-on:mouseover="acceptHoverEvent()" 
               v-on:mouseleave="acceptHoverLeaveEvent();" 
-              class="cd-preview core-pointer-zoom-in meta-lightbox">
-          <!-- div class="cd-content-pane">{{getPresentationContent()}}</div -->
+              class="cd-preview core-pointer-zoom-in meta-lightbox"-->
         </a>
         <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
     </div>
 </div>
   `,
   methods: {
+    onPreviewClick: function() {
+      let item = this.presentation;
+      if (item.cat === 'Featured' && item.sub_cat === 'story') {
+        window.location.href = 'story.html?story_id=' + item.story_id;
+      } else {
+        this.initPopupAgain();
+      }
+    },
+    initPopupAgain: function() {
+      this.$emit('popup-init', {
+        'className': '.meta-lightbox'
+      });
+    },
+    getDivStyle: function() {
+      return 'background-image: url('+this.presentation.preview+');';
+    },
+    /*
     getPresentationImg: function () {
       if (this.presentation) {
         return this.presentation.preview;
@@ -204,6 +229,7 @@ Vue.component('card', {
       }
       return "";
     },
+    */
     acceptHoverEvent: function () {
       this.isHovered = true;
     },
@@ -227,4 +253,5 @@ Vue.component('card', {
 /**
  *  TODO: CARD
  *  1. presentation and forward (story => forward; photo just show photo as is)
+ *  (ok) 2. should use div background instead of img
  */

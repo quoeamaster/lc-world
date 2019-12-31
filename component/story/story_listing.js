@@ -5,7 +5,7 @@
  *  - the actual chosen story
  */
 Vue.component('st-container', {
-  props: ['scrub'],
+  props: ['scrub', 'story_id'],
   data: function() {
     return {
       // column_x = the 3 cols of story entries (split the scrub.story into 3 equal columns)
@@ -24,7 +24,24 @@ Vue.component('st-container', {
   watch: {
     scrub: function (val) {
       this.onPrepareImageLists();
+    },
+    story_id: async function (val) {
+      let instance = this;
+      if (this.story_id !== '') {
+        setTimeout(function () {
+          // find the story that matches the chosenStory
+          let items = instance.scrub.story;
+          for (let i=0; i<items.length; i++) {
+            if (items[i].story_id === instance.story_id) {
+              instance.chosenStory = items[i];
+              instance.forwardToStoryTop();
+              break;
+            }
+          }
+        }, 100);
+      }
     }
+
   },
   methods: {
     onPrepareImageLists: function () {

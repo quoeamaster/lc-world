@@ -8,7 +8,9 @@ new Vue({
   el: '#app',
   data: function() {
     return {
-      scrub_story: {}
+      scrub_story: {},
+      // if any story id was provided
+      story_id: ''
     };
   },
   mounted: function() {
@@ -19,5 +21,11 @@ new Vue({
         instance._data.scrub_story = data;
       }
     });
+    // story_id (if provided)
+    let urlParams = new URLSearchParams(window.location.search);
+    this.story_id = urlParams.get('story_id');
+    if (this.story_id === null) {
+      this.story_id = '';
+    }
   }
 });

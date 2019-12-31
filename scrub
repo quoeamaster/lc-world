@@ -10,7 +10,7 @@
    "idx": 0,
    "cat": "Featured",
    "sub_cat": "story",
-   "highlight": false,
+   "story_id": "mike-shoes_2019-12-26",
    "preview": "portfolio/story/mike-shoes_2019-12-26/spt_01.jpg",
    "comment": "[featured] category",
    "comment_sub_cat": "story means it would be forwarded to the 'story' page and show its content..."
@@ -18,14 +18,12 @@
   {
    "idx": 1,
    "cat": "Photos",
-   "highlight": false,
    "preview": "portfolio/others/about_me.jpg",
    "comment": "[photos] category"
   },
   {
    "idx": 2,
    "cat": "Works",
-   "highlight": false,
    "preview": "portfolio/others/about_me.jpg",
    "comment": "[works] category"
   },
@@ -34,7 +32,6 @@
    "idx": 3,
    "cat": "Featured",
    "sub_cat": "photo",
-   "highlight": false,
    "preview": "portfolio/photos/foto04.jpg",
    "comment": "[featured] category",
    "comment_sub_cat": "photo type means that it is just a photo"
@@ -42,7 +39,6 @@
   {
    "idx": 4,
    "cat": "Awards",
-   "highlight": true,
    "preview": "portfolio/awards/000.jpg",
    "title": "windmill - 2019",
    "content": "1st honor prize in ABC photo contest SG"
