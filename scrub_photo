@@ -1,55 +1,56 @@
 {
+  "category": [
+    {
+      "name": "Booth Design",
+      "listing": [
+        {
+          "img": "portfolio/photos/KingRichard_Booth1566147657223.jpg"
+        },
+        {
+          "img": "portfolio/photos/WeddingInvitationCard340342083980.jpg",
+          "caption": "wedding invitation card"
+        }
+      ]
+    },
+    {
+      "name": "Webpage Design",
+      "listing": [
+        {
+          "img": "portfolio/photos/OKDEAL_Concept01_Book-01_LR511544533165.jpg",
+          "caption": "travelling website brand new design"
+        },
+        {
+          "img": "portfolio/photos/OKDEAL_Concept01_ChooseDestination-01_LR805159654869.jpg"
+        },
+        {
+          "img": "portfolio/photos/OKDEAL_Concept01_FP-01_LR822443817554.jpg"
+        }
+      ]
+    },
+    {
+      "name": "Movie Poster",
+      "listing": [
+        {
+          "img": "portfolio/photos/Film_2018_dragon_horizontal261305514464.jpg"
+        },
+        {
+          "img": "portfolio/photos/Film_2018_dragon1191191057198.jpg"
+        },
+        {
+          "img": "portfolio/photos/Film_2019_criminal679718994575.jpg"
+        },
+        {
+          "img": "portfolio/photos/Film_2019_kingOfCards1091476940092.jpg"
+        }
+      ]
+    }
+  ],
   "author": {
     "comment": "this section is about the author's bio",
     "display_name": "Lilian Chan",
     "job_title": "Contemporary artist, HongKong",
     "bio": "Lorem ipsum dolor sit amet, <b>consectetur</b> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Vitae elementum curabitur vitae nunc sed. Enim lobortis scelerisque fermentum dui faucibus in ornare. Ornare massa eget egestas purus viverra. Proin libero nunc consequat interdum varius sit amet mattis vulputate. Adipiscing commodo elit at imperdiet dui accumsan sit amet. Hendrerit dolor magna eget est lorem ipsum dolor. Turpis massa tincidunt dui ut ornare lectus sit. Leo in vitae turpis massa sed elementum tempus egestas. Nulla aliquet enim tortor at auctor urna nunc id."
   },
-
-  "category": [
-    {
-      "comment": "name => name of the cat, listing => img listing for this category",
-      "name": "awards",
-      "listing": [
-        {
-          "img": "portfolio/photos/foto00.jpg",
-          "caption": "optional caption of the photo"
-        },
-        { "img": "portfolio/photos/foto01.jpg" },
-        { "img": "portfolio/photos/foto02.jpg" },
-        { "img": "portfolio/photos/foto03.jpg" },
-        { "img": "portfolio/photos/foto04.jpg" },
-        { "img": "portfolio/photos/foto05.jpg" },
-
-        {
-          "img": "portfolio/photos/foto05.jpg"
-        },
-        { "img": "portfolio/photos/foto04.jpg" },
-        { "img": "portfolio/photos/foto03.jpg" },
-        { "img": "portfolio/photos/foto02.jpg" },
-        { "img": "portfolio/photos/foto01.jpg" },
-        { "img": "portfolio/photos/foto00.jpg" }
-      ]
-    },
-    {
-      "name": "scenes",
-      "listing": [
-        { "img": "portfolio/photos/foto03.jpg" },
-        { "img": "portfolio/photos/foto01.jpg" },
-        { "img": "portfolio/photos/foto02.jpg" }
-      ]
-    },
-    {
-      "name": "animals",
-      "listing": [
-        { "img": "portfolio/photos/foto05.jpg" },
-        { "img": "portfolio/photos/foto04.jpg" },
-        { "img": "portfolio/photos/foto02.jpg" },
-        { "img": "portfolio/photos/foto03.jpg" }
-      ]
-    }
-  ],
-
   "contact": {
     "email": "xxx@abc.com",
     "twitter": "xxx@abc.com",

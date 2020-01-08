@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrub" beforeDir="false" afterPath="$PROJECT_DIR$/scrub" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrub_photo" beforeDir="false" afterPath="$PROJECT_DIR$/scrub_photo" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scrub">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+            <state relative-caret-position="600">
+              <caret line="25" column="6" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="25" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -28,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/scrub_photo">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1440">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -133,8 +135,8 @@
         <option value="$PROJECT_DIR$/component/story/story_listing.js" />
         <option value="$PROJECT_DIR$/component/card.js" />
         <option value="$PROJECT_DIR$/style/common.css" />
-        <option value="$PROJECT_DIR$/scrub" />
         <option value="$PROJECT_DIR$/style/photo.css" />
+        <option value="$PROJECT_DIR$/scrub" />
       </list>
     </option>
   </component>
@@ -227,12 +229,12 @@
       <workItem from="1577932377846" duration="2187000" />
       <workItem from="1578289194748" duration="3059000" />
       <workItem from="1578362359408" duration="2745000" />
-      <workItem from="1578444182529" duration="6010000" />
+      <workItem from="1578444182529" duration="7432000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187460000" />
+    <option name="totallyTimeSpent" value="188882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -582,14 +584,14 @@
     <entry file="file://$PROJECT_DIR$/scrub_photo">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrub">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        <state relative-caret-position="600">
+          <caret line="25" column="6" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="25" selection-end-column="6" />
         </state>
       </provider>
     </entry>
