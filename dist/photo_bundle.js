@@ -531,9 +531,9 @@ Vue.component('norm-header', {
   data: function() {
     return {
       labels: [
-        {label: 'Links',      'link': '_link_'},
+        //{label: 'Links',      'link': '_link_'},
         {label: 'Contact',    'link': 'index.html#_contact_'},
-        {label: 'Resume',     'link': '_resume_'},
+        //{label: 'Resume',     'link': '_resume_'},
         {label: 'About me',   'link': 'index.html#_about_'},
         {label: 'Portfolio',  'link': 'index.html#_portfolio_'}
       ],
@@ -657,6 +657,9 @@ __webpack_require__(22);
 // event bus
 window.eventBus = new Vue();
 
+// util - cache object
+window.cacheObject = new CacheObject(20);
+
 
 /***/ }),
 /* 18 */
@@ -737,7 +740,40 @@ Vue.component('ph-side-nav', {
           listing: listing
         });
       }
+      // preload the prev and next listing of images
+      this.preloadImages();
     },
+
+    preloadImages: function () {
+      let preListing = [];
+      let postListing = [];
+
+      for (let i=0; i<this.scrub.category.length; i++) {
+        let currentCatObject = this.scrub.category[i];
+        if (currentCatObject.name === this.currentCat) {
+          if (i > 0) {
+            preListing = this.scrub.category[i-1].listing;
+          }
+          if ((i+1) < this.scrub.category.length) {
+            postListing = this.scrub.category[i+1].listing;
+          }
+          break;
+        }
+      }
+      // TODO: tuning... should it be just loading the 1st n items instead???
+      preListing.forEach(function (item) {
+        new Promise(function(resolve) {
+          resolve(window.cacheObject.add(item.img, item.img));
+        });
+      });
+      postListing.forEach(function (item) {
+        new Promise(function(resolve) {
+          resolve(window.cacheObject.add(item.img, item.img));
+        });
+      });
+
+    },
+
     onCatChange: function (data) {
       let _cat = data.cat;
       if (_cat !== this.currentCat) {

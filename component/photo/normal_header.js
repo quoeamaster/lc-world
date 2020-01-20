@@ -5,9 +5,9 @@ Vue.component('norm-header', {
   data: function() {
     return {
       labels: [
-        {label: 'Links',      'link': '_link_'},
+        //{label: 'Links',      'link': '_link_'},
         {label: 'Contact',    'link': 'index.html#_contact_'},
-        {label: 'Resume',     'link': '_resume_'},
+        //{label: 'Resume',     'link': '_resume_'},
         {label: 'About me',   'link': 'index.html#_about_'},
         {label: 'Portfolio',  'link': 'index.html#_portfolio_'}
       ],

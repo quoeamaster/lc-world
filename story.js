@@ -14,3 +14,6 @@ require('./component/story/app');
 
 // event bus
 window.eventBus = new Vue();
+
+// util - cache object
+window.cacheObject = new CacheObject(20);

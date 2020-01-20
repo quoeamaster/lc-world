@@ -35,6 +35,8 @@ Vue.component('st-container', {
             if (items[i].story_id === instance.story_id) {
               instance.chosenStory = items[i];
               instance.forwardToStoryTop();
+              // TODO: preload stories
+              instance.preloadImagesForStory(items, i);
               break;
             }
           }
@@ -44,6 +46,10 @@ Vue.component('st-container', {
 
   },
   methods: {
+    preloadImagesForStory: function(stories, idx) {
+      console.log('TBD', idx, stories.length);
+    },
+
     onPrepareImageLists: function () {
       let items = this.scrub.story;
       for (let i=0; i<items.length; i++) {
@@ -80,6 +86,8 @@ Vue.component('st-container', {
         let _c = this.scrub.story[i];
         if (_c.story_id === data.story.story_id) {
           this.chosenStory = _p;
+          // TODO: preload prev prev story if available
+          this.preloadImagesForStory(this.scrub.story, i);
           break;
         }
       } // end -- for (scrub.story iterate)
@@ -100,6 +108,8 @@ Vue.component('st-container', {
             _n = this.scrub.story[i + 1];
           }
           this.chosenStory = _n;
+          // TODO: preload prev prev story if available
+          this.preloadImagesForStory(this.scrub.story, i);
           break;
         }
       } // end -- for (scrub.story iterate)
