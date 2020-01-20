@@ -3,18 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/photo/normal_header.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/photo/normal_header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/photo/side_nav.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/photo/side_nav.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/story/story_listing.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/story/story_listing.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/photo_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/photo_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/story_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/story_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo.html" beforeDir="false" afterPath="$PROJECT_DIR$/photo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/photo.js" beforeDir="false" afterPath="$PROJECT_DIR$/photo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story.html" beforeDir="false" afterPath="$PROJECT_DIR$/story.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/story.js" beforeDir="false" afterPath="$PROJECT_DIR$/story.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -66,11 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component/contact.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="79" />
+            <state relative-caret-position="96">
+              <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -78,20 +70,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/component/photo/side_nav.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="197">
+              <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/component/story/story_listing.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -159,14 +142,12 @@
         <option value="$PROJECT_DIR$/stories_scrub/mike-shoes-B_2019-12-26" />
         <option value="$PROJECT_DIR$/stories_scrub/mike-shoes-C_2019-12-26" />
         <option value="$PROJECT_DIR$/style/story.css" />
-        <option value="$PROJECT_DIR$/component/app.js" />
         <option value="$PROJECT_DIR$/component/portfolio_menu.js" />
         <option value="$PROJECT_DIR$/component/story/app.js" />
         <option value="$PROJECT_DIR$/component/card.js" />
         <option value="$PROJECT_DIR$/style/common.css" />
         <option value="$PROJECT_DIR$/scrub" />
         <option value="$PROJECT_DIR$/component/fixed_header.js" />
-        <option value="$PROJECT_DIR$/component/contact.js" />
         <option value="$PROJECT_DIR$/style/photo.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/photo.html" />
@@ -176,8 +157,10 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/photo.js" />
         <option value="$PROJECT_DIR$/story.js" />
-        <option value="$PROJECT_DIR$/component/photo/side_nav.js" />
         <option value="$PROJECT_DIR$/component/story/story_listing.js" />
+        <option value="$PROJECT_DIR$/component/app.js" />
+        <option value="$PROJECT_DIR$/component/photo/side_nav.js" />
+        <option value="$PROJECT_DIR$/component/contact.js" />
       </list>
     </option>
   </component>
@@ -206,17 +189,6 @@
               <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
               <item name="component" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="component" type="462c0819:PsiDirectoryNode" />
-              <item name="story" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="stories_scrub" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -292,12 +264,12 @@
       <workItem from="1578553885747" duration="526000" />
       <workItem from="1578797493134" duration="492000" />
       <workItem from="1579507296453" duration="114000" />
-      <workItem from="1579507500701" duration="7335000" />
+      <workItem from="1579507500701" duration="8415000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="199385000" />
+    <option name="totallyTimeSpent" value="200465000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -429,13 +401,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="11" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/portfolio/story/mike-shoes_2019-12-26/spt_00.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -500,13 +465,6 @@
     <entry file="file://$PROJECT_DIR$/portfolio/photos/foto04.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrub_story">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -531,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/carousel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="146" column="18" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/component/fixed_header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -545,29 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/contact.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="79" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/photo.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="739">
           <caret line="226" column="23" selection-start-line="226" selection-start-column="23" selection-end-line="226" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="66" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -654,16 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/photo/side_nav.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="53" column="21" lean-forward="true" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stories_scrub/mike-shoes-A_2019-12-26">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3312">
@@ -675,6 +590,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
           <caret line="49" column="46" selection-start-line="49" selection-start-column="46" selection-end-line="49" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-629">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="43" lean-forward="true" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/carousel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3504">
+          <caret line="146" column="18" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/photo/side_nav.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="107" column="57" selection-start-line="107" selection-start-column="57" selection-end-line="107" selection-end-column="57" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/contact.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="57" selection-start-line="4" selection-start-column="57" selection-end-line="4" selection-end-column="57" />
         </state>
       </provider>
     </entry>

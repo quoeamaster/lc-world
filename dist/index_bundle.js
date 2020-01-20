@@ -585,7 +585,7 @@ Vue.component('about-me', {
 Vue.component('contact-me', {
   methods: {
     openInstagramLink: function () {
-      window.open('', 'social');
+      window.open('https://www.instagram.com/lalamomentt/', 'social');
     },
     openLinkedInLink: function () {
       window.open('https://www.linkedin.com/in/lilian-yc-712684a9/', 'social');
@@ -1303,8 +1303,22 @@ new Vue({
       if (data) {
         // instance._data.scrub = data;
         instance.scrub = data;
+        // TODO: preload images
+        instance.preloadImages();
       }
     });
+  },
+  methods: {
+    preloadImages: function () {
+      let _imglisting = this.scrub.listing;
+      if (_imglisting) {
+        _imglisting.forEach(function (item) {
+          new Promise(function(resolve) {
+            resolve(window.cacheObject.add(item.preview, item.preview));
+          });
+        });
+      }
+    }
   }
 });
 

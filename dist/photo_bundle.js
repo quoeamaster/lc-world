@@ -808,7 +808,7 @@ Vue.component('ph-side-nav', {
       // window.location.href="mailto:k@abc.com";
     },
     openInstagramLink: function () {
-      window.open('', 'social');
+      window.open('https://www.instagram.com/lalamomentt/', 'social');
     },
     openLinkedInLink: function () {
       window.open('https://www.linkedin.com/in/lilian-yc-712684a9/', 'social');

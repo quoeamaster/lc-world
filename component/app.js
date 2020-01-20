@@ -17,7 +17,21 @@ new Vue({
       if (data) {
         // instance._data.scrub = data;
         instance.scrub = data;
+        // TODO: preload images
+        instance.preloadImages();
       }
     });
+  },
+  methods: {
+    preloadImages: function () {
+      let _imglisting = this.scrub.listing;
+      if (_imglisting) {
+        _imglisting.forEach(function (item) {
+          new Promise(function(resolve) {
+            resolve(window.cacheObject.add(item.preview, item.preview));
+          });
+        });
+      }
+    }
   }
 });
