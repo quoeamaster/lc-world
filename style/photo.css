@@ -36,6 +36,14 @@
     margin-bottom: 40px;
 }
 
+.ph-hr-cat {
+    overflow: hidden;
+}
+.ph-hr-cat-outer-container {
+    height: 150px;
+    overflow: auto;
+}
+
 .ph-hr-cat:first-child {
     border-top: 1px solid rgba(102,102,102, 0.6);
     margin-bottom: 4px;
@@ -208,10 +216,14 @@
     .ph-hr-cat {
         display: none;
     }
+    .ph-hr-cat-outer-container {
+        display: none;
+    }
     .ph-contact-core {
-        width: 100%;
         position: relative;
-        margin-bottom: 60px;
-        color: #999;
+    }
+    .ph-contact-spacer {
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }

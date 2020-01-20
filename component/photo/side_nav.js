@@ -66,6 +66,16 @@ Vue.component('ph-side-nav', {
       return this.onCatChange({
         'cat': pickedCat
       });
+    },
+
+    openEmailLink: function () {
+      // window.location.href="mailto:k@abc.com";
+    },
+    openInstagramLink: function () {
+      window.open('', 'social');
+    },
+    openLinkedInLink: function () {
+      window.open('https://www.linkedin.com/in/lilian-yc-712684a9/', 'social');
     }
 
   },
@@ -77,21 +87,23 @@ Vue.component('ph-side-nav', {
     <div class="ph-job-title">{{scrub.author.job_title}}</div>
     <div class="ph-bio" v-html="scrub.author.bio"></div>
     
-    <div class="ph-hr-cat">
-        <ph-cat-nav v-for="(item, idx) in scrub.category"
-            v-bind:item="item"
-            v-bind:idx="idx"
-            v-bind:currentCat="currentCat"
-            v-on:cat-change="onCatChange"
-        ></ph-cat-nav>
+    <div class="ph-hr-cat-outer-container">
+        <div class="ph-hr-cat">
+            <ph-cat-nav v-for="(item, idx) in scrub.category"
+                v-bind:item="item"
+                v-bind:idx="idx"
+                v-bind:currentCat="currentCat"
+                v-on:cat-change="onCatChange"
+            ></ph-cat-nav>
+        </div>
     </div>
     
     <div class="ph-contact-core">
         <div class="ph-hr-contact"></div>
         <div>
-            <i class="fas fa-envelope ph-contact-spacer core-pointer"></i><!--span style="margin-left: 8px;">{{scrub.contact.email}}</span-->
-            <i class="fab fa-instagram ph-contact-spacer core-pointer"></i>
-            <i class="fab fa-linkedin-in ph-contact-spacer core-pointer"></i>
+            <i class="fas fa-envelope ph-contact-spacer core-pointer" v-on:click="openEmailLink()"></i><!--span style="margin-left: 8px;">{{scrub.contact.email}}</span-->
+            <i class="fab fa-instagram ph-contact-spacer core-pointer" v-on:click="openInstagramLink()"></i>
+            <i class="fab fa-linkedin-in ph-contact-spacer core-pointer" v-on:click="openLinkedInLink()"></i>
         </div>
     </div>
     

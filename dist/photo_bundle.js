@@ -689,7 +689,7 @@ if (content.locals) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(0);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n.norm-header-sticky {}\n\n/* photo side nav */\n.ph-side-nav {\n    width: 240px;\n    height: 100%;\n    position: absolute;\n    /*z-index: 0;*/\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    padding-top: 60px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.ph-hr-main {\n    border: solid 1px #0b0b0b;\n}\n.ph-display-name {\n    margin-top: 4px;\n}\n.ph-job-title {\n    margin-top: 24px;\n    font-size: 0.9em;\n    font-weight: 400;\n}\n.ph-bio {\n    margin-top: 4px;\n    font-size: 0.8em;\n    text-align: justify;\n    margin-bottom: 40px;\n}\n\n.ph-hr-cat:first-child {\n    border-top: 1px solid rgba(102,102,102, 0.6);\n    margin-bottom: 4px;\n}\n.ph-hr-cat-name {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    text-transform: uppercase;\n    padding-left: 16px;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n    font-size: 0.8em;\n    font-weight: 600;\n}\n.ph-hr-cat-name:hover {\n    background-color: rgba(170,170,170,0.2);\n}\n.ph-hr-cat-name-selected {\n    color: #c00;\n}\n.ph-contact-core {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    margin-bottom: 60px;\n    color: #999;\n}\n.ph-hr-contact {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    margin-bottom: 16px;\n}\n.ph-contact-spacer {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n\n/* photo flex slide show */\n\n.ph-slide-core {\n    margin-left: 240px;\n\n    /* added for scrollable pane */\n    overflow-y: scroll;\n    /*height: 90%; */\n}\n.ph-slide-core-inner {\n    overflow-y: hidden;\n}\n.ph-flex-row {\n    display: -ms-flexbox; /* IE10 */\n    display: flex;\n\n    -ms-flex-wrap: wrap; /* IE10 */\n    flex-wrap: wrap;\n\n    padding: 4px 4px;\n}\n.ph-flex-column {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n\n    max-width: 33.3%;\n    padding: 0 4px;\n}\n.ph-flex-slide-img {\n    width: 100%;\n    padding: 4px 0;\n}\n\n/* fixed category nav menu -- for smaller screens only */\n\n.ph-cat-nav-menu-fixed-core {\n    position: fixed;\n    top: 30px;\n    width: 100%;\n    display: none;\n    background: #F3F3F3;\n    padding-left: 4px;\n    padding-right: 4px;\n    padding-bottom: 4px;\n\n}\n.ph-cat-nav-menu-fixed-item-1 {\n    list-style: none;\n    margin: 0;\n    padding-left: 0;\n}\n.ph-cat-nav-menu-fixed-item-2 {\n    color: #666;\n    display: inline-block;\n    float: left;\n    text-decoration: none;\n    padding: 1rem;\n    position: relative;\n    transition-duration: 0.5s;\n}\n.ph-cat-nav-menu-fixed-item-chosen {\n    border-bottom: 1px solid orangered;\n    /* color: orange; */\n}\n\n@media only screen and (max-width: 600px) {\n    .ph-side-nav {\n        position: relative;\n        width: 100%;\n        height: auto;\n        padding-top: 60px;\n        padding-left: 12px;\n        padding-right: 12px;\n    }\n    .ph-hr-main {\n        border: solid 1px #0b0b0b;\n        margin-top: 20px;\n        display: none;\n    }\n    .ph-bio {\n        margin-top: 40px;\n        font-size: 0.8em;\n        text-align: justify;\n        margin-bottom: 20px;\n    }\n\n    .ph-slide-core {\n        margin-left: 0;\n        width: 100%;\n        display: block;\n        /* added for scrollable pane */\n        /*overflow-y: scroll; */\n    }\n    .ph-slide-core-inner {\n        /*overflow-y: hidden;*/\n    }\n    .ph-flex-row {\n        display: -ms-flexbox; /* IE10 */\n        display: flex;\n\n        -ms-flex-wrap: wrap; /* IE10 */\n        flex-wrap: wrap;\n\n        padding: 4px 4px;\n    }\n    .ph-flex-column {\n        -ms-flex: 100%; /* IE10 */\n        flex: 100%;\n\n        max-width: 100%;\n        padding: 0 4px;\n    }\n    .ph-flex-slide-img {\n        width: 100%;\n        padding: 4px 0;\n    }\n\n    .ph-cat-nav-menu-fixed-core {\n        position: fixed;\n        top: 40px;\n        display: block;\n        transform: translateX(-12px);\n\n        overflow: auto;\n        white-space: nowrap;\n    }\n\n    .norm-header-sticky {\n        position: fixed;\n        top: 0;\n        width: 100%;\n        background: white;\n    }\n\n    .ph-hr-cat {\n        display: none;\n    }\n    .ph-contact-core {\n        width: 100%;\n        position: relative;\n        margin-bottom: 60px;\n        color: #999;\n    }\n}\n", ""]);
+exports.push([module.i, "/* common */\n* {\n    box-sizing: border-box;\n}\n\n.norm-header-sticky {}\n\n/* photo side nav */\n.ph-side-nav {\n    width: 240px;\n    height: 100%;\n    position: absolute;\n    /*z-index: 0;*/\n    top: 0;\n    left: 0;\n    overflow-x: hidden;\n    padding-top: 60px;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n.ph-hr-main {\n    border: solid 1px #0b0b0b;\n}\n.ph-display-name {\n    margin-top: 4px;\n}\n.ph-job-title {\n    margin-top: 24px;\n    font-size: 0.9em;\n    font-weight: 400;\n}\n.ph-bio {\n    margin-top: 4px;\n    font-size: 0.8em;\n    text-align: justify;\n    margin-bottom: 40px;\n}\n\n.ph-hr-cat {\n    overflow: hidden;\n}\n.ph-hr-cat-outer-container {\n    height: 150px;\n    overflow: auto;\n}\n\n.ph-hr-cat:first-child {\n    border-top: 1px solid rgba(102,102,102, 0.6);\n    margin-bottom: 4px;\n}\n.ph-hr-cat-name {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    text-transform: uppercase;\n    padding-left: 16px;\n    padding-bottom: 4px;\n    margin-bottom: 6px;\n    font-size: 0.8em;\n    font-weight: 600;\n}\n.ph-hr-cat-name:hover {\n    background-color: rgba(170,170,170,0.2);\n}\n.ph-hr-cat-name-selected {\n    color: #c00;\n}\n.ph-contact-core {\n    width: 100%;\n    position: absolute;\n    bottom: 0;\n    margin-bottom: 60px;\n    color: #999;\n}\n.ph-hr-contact {\n    border-bottom: 1px solid rgba(102,102,102, 0.4);\n    margin-bottom: 16px;\n}\n.ph-contact-spacer {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n\n/* photo flex slide show */\n\n.ph-slide-core {\n    margin-left: 240px;\n\n    /* added for scrollable pane */\n    overflow-y: scroll;\n    /*height: 90%; */\n}\n.ph-slide-core-inner {\n    overflow-y: hidden;\n}\n.ph-flex-row {\n    display: -ms-flexbox; /* IE10 */\n    display: flex;\n\n    -ms-flex-wrap: wrap; /* IE10 */\n    flex-wrap: wrap;\n\n    padding: 4px 4px;\n}\n.ph-flex-column {\n    -ms-flex: 33.3%; /* IE10 */\n    flex: 33.3%;\n\n    max-width: 33.3%;\n    padding: 0 4px;\n}\n.ph-flex-slide-img {\n    width: 100%;\n    padding: 4px 0;\n}\n\n/* fixed category nav menu -- for smaller screens only */\n\n.ph-cat-nav-menu-fixed-core {\n    position: fixed;\n    top: 30px;\n    width: 100%;\n    display: none;\n    background: #F3F3F3;\n    padding-left: 4px;\n    padding-right: 4px;\n    padding-bottom: 4px;\n\n}\n.ph-cat-nav-menu-fixed-item-1 {\n    list-style: none;\n    margin: 0;\n    padding-left: 0;\n}\n.ph-cat-nav-menu-fixed-item-2 {\n    color: #666;\n    display: inline-block;\n    float: left;\n    text-decoration: none;\n    padding: 1rem;\n    position: relative;\n    transition-duration: 0.5s;\n}\n.ph-cat-nav-menu-fixed-item-chosen {\n    border-bottom: 1px solid orangered;\n    /* color: orange; */\n}\n\n@media only screen and (max-width: 600px) {\n    .ph-side-nav {\n        position: relative;\n        width: 100%;\n        height: auto;\n        padding-top: 60px;\n        padding-left: 12px;\n        padding-right: 12px;\n    }\n    .ph-hr-main {\n        border: solid 1px #0b0b0b;\n        margin-top: 20px;\n        display: none;\n    }\n    .ph-bio {\n        margin-top: 40px;\n        font-size: 0.8em;\n        text-align: justify;\n        margin-bottom: 20px;\n    }\n\n    .ph-slide-core {\n        margin-left: 0;\n        width: 100%;\n        display: block;\n        /* added for scrollable pane */\n        /*overflow-y: scroll; */\n    }\n    .ph-slide-core-inner {\n        /*overflow-y: hidden;*/\n    }\n    .ph-flex-row {\n        display: -ms-flexbox; /* IE10 */\n        display: flex;\n\n        -ms-flex-wrap: wrap; /* IE10 */\n        flex-wrap: wrap;\n\n        padding: 4px 4px;\n    }\n    .ph-flex-column {\n        -ms-flex: 100%; /* IE10 */\n        flex: 100%;\n\n        max-width: 100%;\n        padding: 0 4px;\n    }\n    .ph-flex-slide-img {\n        width: 100%;\n        padding: 4px 0;\n    }\n\n    .ph-cat-nav-menu-fixed-core {\n        position: fixed;\n        top: 40px;\n        display: block;\n        transform: translateX(-12px);\n\n        overflow: auto;\n        white-space: nowrap;\n    }\n\n    .norm-header-sticky {\n        position: fixed;\n        top: 0;\n        width: 100%;\n        background: white;\n    }\n\n    .ph-hr-cat {\n        display: none;\n    }\n    .ph-hr-cat-outer-container {\n        display: none;\n    }\n    .ph-contact-core {\n        position: relative;\n    }\n    .ph-contact-spacer {\n        margin-left: 8px;\n        margin-right: 8px;\n    }\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -766,6 +766,16 @@ Vue.component('ph-side-nav', {
       return this.onCatChange({
         'cat': pickedCat
       });
+    },
+
+    openEmailLink: function () {
+      // window.location.href="mailto:k@abc.com";
+    },
+    openInstagramLink: function () {
+      window.open('', 'social');
+    },
+    openLinkedInLink: function () {
+      window.open('https://www.linkedin.com/in/lilian-yc-712684a9/', 'social');
     }
 
   },
@@ -777,21 +787,23 @@ Vue.component('ph-side-nav', {
     <div class="ph-job-title">{{scrub.author.job_title}}</div>
     <div class="ph-bio" v-html="scrub.author.bio"></div>
     
-    <div class="ph-hr-cat">
-        <ph-cat-nav v-for="(item, idx) in scrub.category"
-            v-bind:item="item"
-            v-bind:idx="idx"
-            v-bind:currentCat="currentCat"
-            v-on:cat-change="onCatChange"
-        ></ph-cat-nav>
+    <div class="ph-hr-cat-outer-container">
+        <div class="ph-hr-cat">
+            <ph-cat-nav v-for="(item, idx) in scrub.category"
+                v-bind:item="item"
+                v-bind:idx="idx"
+                v-bind:currentCat="currentCat"
+                v-on:cat-change="onCatChange"
+            ></ph-cat-nav>
+        </div>
     </div>
     
     <div class="ph-contact-core">
         <div class="ph-hr-contact"></div>
         <div>
-            <i class="fas fa-envelope ph-contact-spacer core-pointer"></i><!--span style="margin-left: 8px;">{{scrub.contact.email}}</span-->
-            <i class="fab fa-instagram ph-contact-spacer core-pointer"></i>
-            <i class="fab fa-linkedin-in ph-contact-spacer core-pointer"></i>
+            <i class="fas fa-envelope ph-contact-spacer core-pointer" v-on:click="openEmailLink()"></i><!--span style="margin-left: 8px;">{{scrub.contact.email}}</span-->
+            <i class="fab fa-instagram ph-contact-spacer core-pointer" v-on:click="openInstagramLink()"></i>
+            <i class="fab fa-linkedin-in ph-contact-spacer core-pointer" v-on:click="openLinkedInLink()"></i>
         </div>
     </div>
     

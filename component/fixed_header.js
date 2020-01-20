@@ -5,9 +5,9 @@ Vue.component('fixed-header', {
   data: function() {
     return {
       labels: [
-        {label: 'Links',      'link': '_link_'},
+        //{label: 'Links',      'link': '_link_'},
         {label: 'Contact',    'link': '_contact_'},
-        {label: 'Resume',     'link': '_resume_'},
+        //{label: 'Resume',     'link': '_resume_'},
         {label: 'About me',   'link': '_about_'},
         {label: 'Portfolio',  'link': '_portfolio_'}
       ],
