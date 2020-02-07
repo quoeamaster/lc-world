@@ -19,16 +19,19 @@
     <!-- link href="style/common.css" rel="stylesheet" --> <!-- in the bundle -->
 </head>
 
-<body oncontextmenu="return false;">
+<!-- oncontextmenu="return false;" -->
+<body>
     <div id="app" style="background: #fbfbfb;">
         <fixed-header></fixed-header>
         <!-- filler for the fixed-header above -->
-        <div class="core-spacer-1" style="height: 80px;" >&nbsp;</div>
+        <div class="core-spacer-1" style="height: 56px;" >&nbsp;</div>
 
         <carousel v-bind:scrub="scrub['featured']"></carousel>
 
-        <div class="core-spacer-2" style="height: 36px;" >&nbsp;</div>
-        <portfolio-menu v-bind:listing="scrub['listing']"></portfolio-menu>
+        <!-- spacer -->
+        <div class="core-spacer-2" style="height: 1px;" >&nbsp;</div>
+        <portfolio-menu v-bind:listing="scrubNew['listing']"></portfolio-menu>
+
         <card-listing v-bind:listing="scrub['listing']"></card-listing>
 
         <about-me v-bind:about="scrub['about']"></about-me>

@@ -29,12 +29,23 @@
 .core-text-align-right {
     text-align: right;
 }
+.core-no-hilight {
+    -webkit-user-select: none; /* Chrome/Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+
+    /* Not implemented yet */
+    -o-user-select: none;
+    user-select: none;
+}
 
 /* fixed-header: fh- */
 .fh-core {
     z-index: 10;
-    padding: 10px 16px;
-    color: #666;
+    padding: 16px 16px;
+    /*color: #666;*/
+    color: white;
+    background: black;
 }
 .fh-label-1 {
     margin-left: 16px;
@@ -50,8 +61,10 @@
     width: 100%
 }
 .fh-rolling-background {
+    /*
     background: #ffffff;
     box-shadow: 0 1px 3px #ccc;
+    */
 }
 .fh-hamburger-1 {
     display: none;
@@ -213,9 +226,9 @@
 .pmenu-core {
     padding-left: 12px;
     padding-right: 12px;
-    border: 1px solid rgba(200,200,200,0.5);
+    /* border: 1px solid rgba(200,200,200,0.5); */
     /*border-radius: 20px;*/
-    height: 64px;
+    /* height: 64px; */
     z-index: 8;
     background: white;
 }
@@ -250,6 +263,119 @@
     border-radius: 30px; */
     color: orange;
 }
+
+.pmenu-dpad {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 50%;
+    /* 40px height - 8px margin-bottom of the core options */
+    position: relative;
+    top: -32px;
+}
+.pmenu-dpad:hover {
+    color: orange;
+    box-shadow: 1px 1px 3px #666;
+}
+.pmenu-dpad-dot-btn {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #666;
+    border-radius: 6px;
+    font-size: 1.5em;
+
+    /* 40px height - 8px margin-bottom of the core options */
+    position: relative;
+    top: -32px;
+}
+.pmenu-dpad-dot-btn:hover {
+    color: orange;
+    box-shadow: 1px 1px 3px #666;
+}
+.pmenu-dpad-40 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+.pmenu-dpad-icon-40 {
+    font-size: 1.4em;
+    height: 40px;
+    line-height: 40px;
+}
+.pmenu-options-container {
+    padding-top: 16px;
+
+    text-align: center;
+    display: inline-block;
+
+    overflow: auto;
+    white-space: nowrap;
+
+    /*height: 40px;
+    line-height: 40px;*/
+}
+.pmenu-option {
+    border: 1px solid #888;
+    border-radius: 4px;
+    display: inline-block;
+
+    margin-left: 6px;
+    margin-right: 8px;
+    padding: 8px 16px;
+
+    margin-bottom: 16px;
+}
+.pmenu-option:hover {
+    box-shadow: 1px 1px 3px #444;
+}
+.pmenu-option-label {
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.pmenu-option-label:hover {
+    color: orange;
+}
+.pmenu-option-label-selected {
+    color: blue;
+}
+.pmenu-advance-option-container {
+    box-shadow: 1px 1px 3px #666;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+
+    height: 0;
+    width: 840px;
+    position: relative;
+    top: -24px;
+
+    transition: height 0.8s;
+}
+.pmenu-advance-option {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    width: 180px;
+    height: 72px;
+    line-height: 72px;
+    vertical-align: middle;
+
+    /* padding: 12px 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 12px 8px;: 12px;
+
+    text-align: center;
+    display: inline-block;
+
+    border-radius: 4px;
+    color: #FFFFFF;
+}
+
+
 
 .pmenu-hscroll-core {
     overflow: auto;

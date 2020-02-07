@@ -8,8 +8,8 @@ Vue.component('fixed-header', {
         //{label: 'Links',      'link': '_link_'},
         {label: 'Contact',    'link': '_contact_'},
         //{label: 'Resume',     'link': '_resume_'},
-        {label: 'About me',   'link': '_about_'},
-        {label: 'Portfolio',  'link': '_portfolio_'}
+        {label: 'About me',   'link': '_about_'}
+        //{label: 'Portfolio',  'link': '_portfolio_'}
       ],
       isBurgerMenuShown: false
     };
@@ -36,8 +36,10 @@ Vue.component('fixed-header', {
   },
   template: `
 <div class="fh-core fh-sticky">
-    <div class="float-left">Welcome to Lilian.C's world</div>
-    
+    <!--div class="float-left">Welcome to Lilian.C's world</div-->
+    <div class="float-left">
+      <img src="../portfolio/others/lc-world-header-logo.png" style="height: 25px;">
+    </div>
     <!-- hamburger icon -->
     <fixed-hamburger v-on:show-burger-menu="onShowBurgerMenu"></fixed-hamburger>
     
@@ -48,7 +50,7 @@ Vue.component('fixed-header', {
     
     <div class="fh-hamburger-list core-pointer animated">
       <ul>
-          <li><a href="#_portfolio_" v-on:click="onShowBurgerMenu()">Portfolio</a></li>
+          <!--li><a href="#_portfolio_" v-on:click="onShowBurgerMenu()">Portfolio</a></li-->
           <li><a href="#_about_" v-on:click="onShowBurgerMenu()">About Me</a></li>
           <li><a href="#_contact_" v-on:click="onShowBurgerMenu()">Contact</a></li>
       </ul>

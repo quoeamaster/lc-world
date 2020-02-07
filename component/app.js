@@ -7,7 +7,8 @@ new Vue({
   el: '#app',
   data: function() {
     return {
-      scrub: {}
+      scrub: {},
+      scrubNew: {}
     };
   },
   mounted: function() {
@@ -17,10 +18,19 @@ new Vue({
       if (data) {
         // instance._data.scrub = data;
         instance.scrub = data;
-        // TODO: preload images
+        // preload images
         instance.preloadImages();
       }
     });
+    $.getJSON('./../scrub_new', function(data) {
+      if (data) {
+        // instance._data.scrub = data;
+        instance.scrubNew = data;
+        // TODO: preload images
+        //instance.preloadImages();
+      }
+    });
+
   },
   methods: {
     preloadImages: function () {

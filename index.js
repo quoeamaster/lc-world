@@ -49,6 +49,7 @@ function applyStickToFixedHeader() {
     document.querySelector(".fh-core").classList.remove('fh-rolling-background');
   }
   // pmenu-core (category menu)
+  /*
   let pmenuObj = document.querySelector(".pmenu-core");
   let a = document.querySelector(".cd-core-before");
   let endMenuOffsetY = a.clientHeight + pmenuOffset;
@@ -60,5 +61,5 @@ function applyStickToFixedHeader() {
       pmenuObj.classList.remove("pmenu-core-rolling-background");
     }
   }
-
+  */
 }

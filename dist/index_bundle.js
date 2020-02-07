@@ -467,7 +467,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(5);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "/* common */\n.core-pointer {\n    cursor: pointer;\n}\n.core-pointer-zoom-in {\n    cursor: zoom-in;\n}\n.core-display-none {\n    display: none;\n}\n.core-vis-hide {\n    visibility: hidden;\n}\n.core-display-block {\n    display: block;\n}\n.core-display-inline-block {\n    display: inline-block;\n}\n.core-spacer-1 {}\n.core-spacer-2 {}\n\n.core-text-align-center {\n    text-align: center;\n}\n.core-text-align-left {\n    text-align: left;\n}\n.core-text-align-right {\n    text-align: right;\n}\n\n/* fixed-header: fh- */\n.fh-core {\n    z-index: 10;\n    padding: 10px 16px;\n    color: #666;\n}\n.fh-label-1 {\n    margin-left: 16px;\n    margin-right: 16px;\n}\n.fh-font-1 {\n    font-size: 0.95em;\n    font-weight: bold;\n}\n.fh-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%\n}\n.fh-rolling-background {\n    background: #ffffff;\n    box-shadow: 0 1px 3px #ccc;\n}\n.fh-hamburger-1 {\n    display: none;\n}\n.fh-hamburger-list {\n    margin-top: 28px;\n    display: none;\n\n    position: absolute;\n    left: 0;\n\n    width: 100%;\n}\n.fh-hamburger-list ul {\n    list-style-type: none;\n    padding-left: 16px;\n    width: 100%;\n    /*background: #000046;*/\n    background: linear-gradient(225deg, rgb(0,0,70), rgb(113, 74, 253));\n}\n.fh-hamburger-list ul li {\n    color: #F3F3F3;\n    font-size: 20px;\n    padding-bottom: 2px;\n    padding-top: 2px;\n    margin-top: 8px;\n    margin-bottom: 4px;\n}\n.fh-hamburger-list ul li:first-child {\n    padding-top: 12px;\n}\n.fh-hamburger-list ul li:last-child {\n    padding-bottom: 12px;\n}\n.fh-hamburger-list ul li a {\n    color: #F3F3F3;\n}\n.fh-core a {\n    color: #666;\n}\n\n\n/* carousel */\n.car-flyer-core {\n    z-index: 5;\n    background-color: #cccccc;\n    height: 500px;\n    /* width: 1000px; */\n    width: 100%;\n\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.car-flyer-container {\n    /*width: 1000px; */\n    width: 100%;\n\n    height: 500px;\n    margin: auto;\n}\n.car-core {\n    width: 100%;\n    margin: auto;\n    display: inline-block;\n}\n.car-control-color-1 {\n    color: gray;\n}\n.car-control-color-2 {\n    color: white;\n}\n.car-dots {\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    transform: translate(-50%);\n    font-size: 0.8em;\n}\n.car-dots-spacer-1 {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n.car-swipe-left {\n    text-align: left;\n    position: absolute;\n    top: 50%;\n    left: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n.car-swipe-right {\n    text-align: right;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n\n\n/* card */\n.cd-core-before {\n    margin-top: 100px;\n    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n    max-width: 1280px;\n}\n.cd-container {\n    /*margin: 4px;\n    border: 1px solid blue;\n    height: 320px;*/\n\n    /* border: 1px solid blue; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    /*height: 320px;*/\n    height: 230px;\n}\n.cd-preview {\n    /* border-radius: 50%; */\n    border-radius: 4px;\n    width: 100%;\n    /*height: 280px;*/\n    height: 200px;\n    position: relative;\n}\n.cd-preview-hover {\n    position: relative;\n    top: -8px;\n    box-shadow: 4px 4px 2px #cccccc;\n}\n.cd-div-preview {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n/* somehow didn't work as expected\n.cd-content-pane {\n    position: absolute;\n    bottom: 0;\n    background: rgba(0, 0, 0, 0.5);\n    color: #f1f1f1;\n    margin: 4px;\n    width: 100%;\n    transition: .5s ease;\n    opacity:0;\n    font-size: 16px;\n    padding: 20px;\n    text-align: center;\n}\n.meta-lightbox:hover .cd-content-pane {\n    opacity: 1;\n}\n*/\n\n/* portfolio menu related */\n.pmenu-core {\n    padding-left: 12px;\n    padding-right: 12px;\n    border: 1px solid rgba(200,200,200,0.5);\n    /*border-radius: 20px;*/\n    height: 64px;\n    z-index: 8;\n    background: white;\n}\n.pmenu-core-rolling-background {\n    position: fixed;\n    top: 44px; /* kind of hard-coded */\n    width: 100%;\n}\n.pmenu-palete-container {\n    /* important as this width determines how to centerize the palete options later on */\n    width: 520px;\n    margin: auto;\n}\n.pmenu-palete {\n    /* vertical-align: center; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 56px;\n    line-height: 56px;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n    color: #666;\n}\n.pmenu-palete:hover {\n    color: #c0bfc3;\n}\n.pmenu-palete-chosen {\n    /* adding background with gradient color */\n    /*color: white;\n    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));\n    border-radius: 30px; */\n    color: orange;\n}\n\n.pmenu-hscroll-core {\n    overflow: auto;\n    white-space: nowrap;\n    padding-left: 16px;\n    padding-right: 16px;\n}\n\n/* about me */\n.am-core {\n    margin-top: 100px;\n    /*margin-left: 20px;\n    margin-right: 20px;*/\n\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n\n    position: relative;\n    height: 600px;\n    /*border-radius: 6px; */\n    /* box-shadow: 0 0 4px 8px #ccc; */\n}\n.am-content-container {\n    position: relative;\n    top: 30%;\n    left: 10%;\n    width: 400px;\n}\n.am-h3 {\n    color: #c0bfc3;\n    font-size: 2em;\n}\n.am-h4 {\n    margin-top: 12px;\n    margin-bottom: 12px;\n    color: #F3F3F3;\n    font-size: 1em;\n}\n\n/* contact me */\n.cm-core {\n    /* margin-top: 100px; */\n    padding: 100px 48px 48px 48px;\n    background: #F3F3F3;\n    width: 100%;\n    min-height: 100px;\n    text-align: center;\n}\n.cm-caption {\n    font-size: 2em;\n    font-weight: bold;\n    color: #0b0b0b;\n}\n.cm-social-media {\n    margin-top: 60px;\n}\n.cm-social-item {\n    color: #495057;\n    font-size: 2.4em;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n/* media queries */\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .car-core {\n        display: none;\n    }\n    .fh-label-1 {\n        display: none;\n    }\n    .pmenu-palete-container {\n        width: 300px;\n        margin: auto;\n    }\n    .pmenu-palete {\n        /* vertical-align: center; */\n        margin-top: 4px;\n        margin-bottom: 4px;\n        height: 56px;\n        line-height: 56px;\n        display: inline-block;\n        padding-left: 4px;\n        padding-right: 4px;\n        color: #666;\n        font-size: 12px;\n    }\n    .fh-hamburger-1 {\n        display: inline-block;\n    }\n    .am-content-container {\n        position: relative;\n        top: 30%;\n        left: 10%;\n        width: 200px;\n    }\n    .cd-core-before {\n        margin-top: 40px;\n        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n        max-width: 600px;\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n/*@media only screen and (min-width: 600px) {\n\n}\n*/\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {\n\n}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {\n\n}\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n@media only screen and (min-width: 1200px) {\n\n}\n", ""]);
+exports.push([module.i, "/* common */\n.core-pointer {\n    cursor: pointer;\n}\n.core-pointer-zoom-in {\n    cursor: zoom-in;\n}\n.core-display-none {\n    display: none;\n}\n.core-vis-hide {\n    visibility: hidden;\n}\n.core-display-block {\n    display: block;\n}\n.core-display-inline-block {\n    display: inline-block;\n}\n.core-spacer-1 {}\n.core-spacer-2 {}\n\n.core-text-align-center {\n    text-align: center;\n}\n.core-text-align-left {\n    text-align: left;\n}\n.core-text-align-right {\n    text-align: right;\n}\n.core-no-hilight {\n    -webkit-user-select: none; /* Chrome/Safari */\n    -moz-user-select: none; /* Firefox */\n    -ms-user-select: none; /* IE10+ */\n\n    /* Not implemented yet */\n    -o-user-select: none;\n    user-select: none;\n}\n\n/* fixed-header: fh- */\n.fh-core {\n    z-index: 10;\n    padding: 16px 16px;\n    /*color: #666;*/\n    color: white;\n    background: black;\n}\n.fh-label-1 {\n    margin-left: 16px;\n    margin-right: 16px;\n}\n.fh-font-1 {\n    font-size: 0.95em;\n    font-weight: bold;\n}\n.fh-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%\n}\n.fh-rolling-background {\n    /*\n    background: #ffffff;\n    box-shadow: 0 1px 3px #ccc;\n    */\n}\n.fh-hamburger-1 {\n    display: none;\n}\n.fh-hamburger-list {\n    margin-top: 28px;\n    display: none;\n\n    position: absolute;\n    left: 0;\n\n    width: 100%;\n}\n.fh-hamburger-list ul {\n    list-style-type: none;\n    padding-left: 16px;\n    width: 100%;\n    /*background: #000046;*/\n    background: linear-gradient(225deg, rgb(0,0,70), rgb(113, 74, 253));\n}\n.fh-hamburger-list ul li {\n    color: #F3F3F3;\n    font-size: 20px;\n    padding-bottom: 2px;\n    padding-top: 2px;\n    margin-top: 8px;\n    margin-bottom: 4px;\n}\n.fh-hamburger-list ul li:first-child {\n    padding-top: 12px;\n}\n.fh-hamburger-list ul li:last-child {\n    padding-bottom: 12px;\n}\n.fh-hamburger-list ul li a {\n    color: #F3F3F3;\n}\n.fh-core a {\n    color: #666;\n}\n\n\n/* carousel */\n.car-flyer-core {\n    z-index: 5;\n    background-color: #cccccc;\n    height: 500px;\n    /* width: 1000px; */\n    width: 100%;\n\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.car-flyer-container {\n    /*width: 1000px; */\n    width: 100%;\n\n    height: 500px;\n    margin: auto;\n}\n.car-core {\n    width: 100%;\n    margin: auto;\n    display: inline-block;\n}\n.car-control-color-1 {\n    color: gray;\n}\n.car-control-color-2 {\n    color: white;\n}\n.car-dots {\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    transform: translate(-50%);\n    font-size: 0.8em;\n}\n.car-dots-spacer-1 {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n.car-swipe-left {\n    text-align: left;\n    position: absolute;\n    top: 50%;\n    left: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n.car-swipe-right {\n    text-align: right;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n\n\n/* card */\n.cd-core-before {\n    margin-top: 100px;\n    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n    max-width: 1280px;\n}\n.cd-container {\n    /*margin: 4px;\n    border: 1px solid blue;\n    height: 320px;*/\n\n    /* border: 1px solid blue; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    /*height: 320px;*/\n    height: 230px;\n}\n.cd-preview {\n    /* border-radius: 50%; */\n    border-radius: 4px;\n    width: 100%;\n    /*height: 280px;*/\n    height: 200px;\n    position: relative;\n}\n.cd-preview-hover {\n    position: relative;\n    top: -8px;\n    box-shadow: 4px 4px 2px #cccccc;\n}\n.cd-div-preview {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n/* somehow didn't work as expected\n.cd-content-pane {\n    position: absolute;\n    bottom: 0;\n    background: rgba(0, 0, 0, 0.5);\n    color: #f1f1f1;\n    margin: 4px;\n    width: 100%;\n    transition: .5s ease;\n    opacity:0;\n    font-size: 16px;\n    padding: 20px;\n    text-align: center;\n}\n.meta-lightbox:hover .cd-content-pane {\n    opacity: 1;\n}\n*/\n\n/* portfolio menu related */\n.pmenu-core {\n    padding-left: 12px;\n    padding-right: 12px;\n    /* border: 1px solid rgba(200,200,200,0.5); */\n    /*border-radius: 20px;*/\n    /* height: 64px; */\n    z-index: 8;\n    background: white;\n}\n.pmenu-core-rolling-background {\n    position: fixed;\n    top: 44px; /* kind of hard-coded */\n    width: 100%;\n}\n.pmenu-palete-container {\n    /* important as this width determines how to centerize the palete options later on */\n    width: 520px;\n    margin: auto;\n}\n.pmenu-palete {\n    /* vertical-align: center; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 56px;\n    line-height: 56px;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n    color: #666;\n}\n.pmenu-palete:hover {\n    color: #c0bfc3;\n}\n.pmenu-palete-chosen {\n    /* adding background with gradient color */\n    /*color: white;\n    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));\n    border-radius: 30px; */\n    color: orange;\n}\n\n.pmenu-dpad {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #666;\n    border-radius: 50%;\n    /* 40px height - 8px margin-bottom of the core options */\n    position: relative;\n    top: -32px;\n}\n.pmenu-dpad:hover {\n    color: orange;\n    box-shadow: 1px 1px 3px #666;\n}\n.pmenu-dpad-dot-btn {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #666;\n    border-radius: 6px;\n    font-size: 1.5em;\n\n    /* 40px height - 8px margin-bottom of the core options */\n    position: relative;\n    top: -32px;\n}\n.pmenu-dpad-dot-btn:hover {\n    color: orange;\n    box-shadow: 1px 1px 3px #666;\n}\n.pmenu-dpad-40 {\n    width: 40px;\n    height: 40px;\n    line-height: 40px;\n}\n.pmenu-dpad-icon-40 {\n    font-size: 1.4em;\n    height: 40px;\n    line-height: 40px;\n}\n.pmenu-options-container {\n    padding-top: 16px;\n\n    text-align: center;\n    display: inline-block;\n\n    overflow: auto;\n    white-space: nowrap;\n\n    /*height: 40px;\n    line-height: 40px;*/\n}\n.pmenu-option {\n    border: 1px solid #888;\n    border-radius: 4px;\n    display: inline-block;\n\n    margin-left: 6px;\n    margin-right: 8px;\n    padding: 8px 16px;\n\n    margin-bottom: 16px;\n}\n.pmenu-option:hover {\n    box-shadow: 1px 1px 3px #444;\n}\n.pmenu-option-label {\n    font-size: 0.8em;\n    font-weight: bold;\n}\n.pmenu-option-label:hover {\n    color: orange;\n}\n.pmenu-option-label-selected {\n    color: blue;\n}\n.pmenu-advance-option-container {\n    box-shadow: 1px 1px 3px #666;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n\n    height: 0;\n    width: 840px;\n    position: relative;\n    top: -24px;\n\n    transition: height 0.8s;\n}\n.pmenu-advance-option {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n\n    width: 180px;\n    height: 72px;\n    line-height: 72px;\n    vertical-align: middle;\n\n    /* padding: 12px 20px; */\n    padding-left: 20px;\n    padding-right: 20px;\n    margin: 12px 8px;: 12px;\n\n    text-align: center;\n    display: inline-block;\n\n    border-radius: 4px;\n    color: #FFFFFF;\n}\n\n\n\n.pmenu-hscroll-core {\n    overflow: auto;\n    white-space: nowrap;\n    padding-left: 16px;\n    padding-right: 16px;\n}\n\n/* about me */\n.am-core {\n    margin-top: 100px;\n    /*margin-left: 20px;\n    margin-right: 20px;*/\n\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n\n    position: relative;\n    height: 600px;\n    /*border-radius: 6px; */\n    /* box-shadow: 0 0 4px 8px #ccc; */\n}\n.am-content-container {\n    position: relative;\n    top: 30%;\n    left: 10%;\n    width: 400px;\n}\n.am-h3 {\n    color: #c0bfc3;\n    font-size: 2em;\n}\n.am-h4 {\n    margin-top: 12px;\n    margin-bottom: 12px;\n    color: #F3F3F3;\n    font-size: 1em;\n}\n\n/* contact me */\n.cm-core {\n    /* margin-top: 100px; */\n    padding: 100px 48px 48px 48px;\n    background: #F3F3F3;\n    width: 100%;\n    min-height: 100px;\n    text-align: center;\n}\n.cm-caption {\n    font-size: 2em;\n    font-weight: bold;\n    color: #0b0b0b;\n}\n.cm-social-media {\n    margin-top: 60px;\n}\n.cm-social-item {\n    color: #495057;\n    font-size: 2.4em;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n/* media queries */\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .car-core {\n        display: none;\n    }\n    .fh-label-1 {\n        display: none;\n    }\n    .pmenu-palete-container {\n        width: 300px;\n        margin: auto;\n    }\n    .pmenu-palete {\n        /* vertical-align: center; */\n        margin-top: 4px;\n        margin-bottom: 4px;\n        height: 56px;\n        line-height: 56px;\n        display: inline-block;\n        padding-left: 4px;\n        padding-right: 4px;\n        color: #666;\n        font-size: 12px;\n    }\n    .fh-hamburger-1 {\n        display: inline-block;\n    }\n    .am-content-container {\n        position: relative;\n        top: 30%;\n        left: 10%;\n        width: 200px;\n    }\n    .cd-core-before {\n        margin-top: 40px;\n        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n        max-width: 600px;\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n/*@media only screen and (min-width: 600px) {\n\n}\n*/\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {\n\n}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {\n\n}\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n@media only screen and (min-width: 1200px) {\n\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -618,74 +618,138 @@ Vue.component('portfolio-menu', {
   props: ['listing'],
   watch: {
     listing: function (val) {
-      if (this.listing.length > 0) {
-        let _catList = [];
-        let _p = '';
-        for (let i=0; i<this.listing.length; i++) {
-          let _c = this.listing[i];
-          if (_c.cat !== _p) {
-            // updates only if the cat is a non-exist once
-            if (_catList.indexOf(_c.cat) === -1) {
-              _catList.push(_c.cat);
-            }
-            _p = _c.cat;
-          }
-        } // end -- for (listing iteration)
-        if (_catList.length > 0) {
-          this.catList = _catList;
-        }
-      } // end -- if (listing length > 0 ??)
+
     }
 
   },
   data: function() {
     return {
-      // cat(egory) picked, Featured is the DEFAULT value
-      'cat': 'Featured',
+      // cat(egory) picked, Featured is the "all" value
+      "id": "all",
       // list of all available category(s) - dynamic
-      'catList': []
+      'catList': [],
+
+      // actual optionDiv's width
+      optionDivWidth: 0,
+      optionDivEl: null, // dom element of the optionDiv
+      scrollDelta: 40,
+
+      shouldOptionAdvShow: false
+
     };
   },
   methods: {
-    raiseCategoryChangeEvent: function (newCat) {
-      if (this.cat !== newCat) {
-        this.cat = newCat;
-        if (this.cat === 'Photos') {
-          this.forwardToPhoto(this.cat);
-        } else if (this.cat === 'Works') {
-          this.forwardToStory(this.cat);
-        } else if (window.eventBus) {
-          window.eventBus.$emit('on-category-change', {
-            'cat': newCat
-          });
-        } // end -- if (eventBus)
-      } // end -- if (cat comparison)
-    },
-    getPaleteChosenClass: function (currentCat) {
-      let css = {};
-      if (currentCat === this.cat) {
-        css['pmenu-palete-chosen'] = true;
-      } else {
-        css['pmenu-palete-chosen'] = false;
+    // *** handlers *** //
+    onLeftArrowClick: function() {
+      if (this.optionDivWidth === 0) {
+        this.optionDivWidth = this.calculateOptionDivWidth();
       }
-      return css;
+      // current location
+      let loc = this.optionDivEl.scrollLeft;
+      if ((loc - this.scrollDelta) < 0) {
+        loc = 0;
+      } else {
+        loc = loc - this.scrollDelta;
+      }
+      this.optionDivEl.scrollLeft = loc;
     },
-    forwardToPhoto: function (label) {
-      window.location.replace("photo.html");
+    onRightArrowClick: function() {
+      if (this.optionDivWidth === 0) {
+        this.optionDivWidth = this.calculateOptionDivWidth();
+      }
+      // current location
+      let loc = this.optionDivEl.scrollLeft;
+      if ((loc + this.scrollDelta) > this.optionDivWidth) {
+        loc = this.optionDivWidth;
+      } else {
+        loc = loc + this.scrollDelta;
+      }
+      this.optionDivEl.scrollLeft = loc;
     },
-    forwardToStory: function (label) {
-      window.location.replace("story.html");
+    calculateOptionDivWidth: function() {
+      if (!this.optionDivEl) {
+        this.optionDivEl = document.querySelector(".pmenu-options-container");
+      }
+      if (this.optionDivEl) {
+        return this.optionDivEl.clientWidth;
+      }
+      return 0;
+    },
+
+    onCategoryClick: function(item) {
+      this.id = item.id;
+      this.shouldOptionAdvShow = false; // close the hidden tab
+      // TODO: raise event to update the contents based on id
+    },
+    onMoreClick: function() {
+      // show the hidden menu
+      this.shouldOptionAdvShow = !this.shouldOptionAdvShow;
+    },
+
+
+    // *** css methods *** //
+    getMenuCoreWidth: function () {
+      // 40 per button + 20 padding + 1x40 ... button
+      return {
+        width: (document.querySelector("body").clientWidth - 160)+'px'
+      };
+    },
+    getLabelClass: function (id) {
+      let c = {
+        'pmenu-option-label-selected': false
+      };
+      if (id === this.id) {
+        c['pmenu-option-label-selected'] = true;
+      }
+      return c;
+    },
+    getAdvanceOptionStyle: function () {
+      let hWidth = 840;
+      // PS: transition ONLY works for attribute changes e.g. height from 0 to 300px
+      return {
+        // 500 is width, but 20 is padding
+        'margin-left': (document.querySelector('body').clientWidth - hWidth - 28)+'px',
+        "overflow": "hidden",
+        "height": (this.shouldOptionAdvShow === true)?'300px':'0'
+      };
+    },
+    getAdvanceOptionBtnStyle: function (item) {
+      return {
+        "background-image": 'url("../'+item.thumb+'")'
+      };
     }
 
   },
   template: `
 <div id="_portfolio_" class="pmenu-core">
-    <div class="pmenu-hscroll-core core-text-align-center">
-        <div v-for="item in catList" 
-            class="pmenu-palete core-pointer" 
-            v-bind:class="getPaleteChosenClass(item)" 
-            v-on:click="raiseCategoryChangeEvent(item)">{{item}}</div>
+  <!-- left arrow -->
+  <div class="pmenu-dpad pmenu-dpad-40 core-pointer core-no-hilight" v-on:click="onLeftArrowClick()">
+    <i class="fas fa-angle-left pmenu-dpad-icon-40" style="font-size: 1.1em;"></i>
+  </div>
+  <!-- options list -->
+  <div class="pmenu-options-container core-no-hilight" v-bind:style="getMenuCoreWidth()">
+    <div class="pmenu-option core-pointer" v-for="item in listing" v-on:click="onCategoryClick(item)">
+      <span class="pmenu-option-label" v-bind:class="getLabelClass(item.id)">{{item.label}}</span> 
     </div>
+  </div>
+  <!-- right arrow -->
+  <div class="pmenu-dpad pmenu-dpad-40 core-pointer core-no-hilight" v-on:click="onRightArrowClick()">
+    <i class="fas fa-angle-right pmenu-dpad-icon-40" style="font-size: 1.1em;"></i>
+  </div>
+  <!-- more button -->
+  <div class="pmenu-dpad-dot-btn pmenu-dpad-40 core-pointer" v-on:click="onMoreClick()">...</div>
+  
+  <!-- hidden advance menu -->
+  <div class="pmenu-advance-option-container" v-bind:style="getAdvanceOptionStyle()">
+    <div style="overflow: scroll; width: 840px; height: 300px; padding: 20px; margin: auto;">
+      <div v-for="item in listing"
+        v-on:click="onCategoryClick(item)" 
+        class="pmenu-advance-option"
+        v-bind:style="getAdvanceOptionBtnStyle(item)">
+        {{item.label}}
+      </div>
+    </div>
+  </div>
 </div>
   `
 });
@@ -706,8 +770,8 @@ Vue.component('fixed-header', {
         //{label: 'Links',      'link': '_link_'},
         {label: 'Contact',    'link': '_contact_'},
         //{label: 'Resume',     'link': '_resume_'},
-        {label: 'About me',   'link': '_about_'},
-        {label: 'Portfolio',  'link': '_portfolio_'}
+        {label: 'About me',   'link': '_about_'}
+        //{label: 'Portfolio',  'link': '_portfolio_'}
       ],
       isBurgerMenuShown: false
     };
@@ -734,8 +798,10 @@ Vue.component('fixed-header', {
   },
   template: `
 <div class="fh-core fh-sticky">
-    <div class="float-left">Welcome to Lilian.C's world</div>
-    
+    <!--div class="float-left">Welcome to Lilian.C's world</div-->
+    <div class="float-left">
+      <img src="../portfolio/others/lc-world-header-logo.png" style="height: 25px;">
+    </div>
     <!-- hamburger icon -->
     <fixed-hamburger v-on:show-burger-menu="onShowBurgerMenu"></fixed-hamburger>
     
@@ -746,7 +812,7 @@ Vue.component('fixed-header', {
     
     <div class="fh-hamburger-list core-pointer animated">
       <ul>
-          <li><a href="#_portfolio_" v-on:click="onShowBurgerMenu()">Portfolio</a></li>
+          <!--li><a href="#_portfolio_" v-on:click="onShowBurgerMenu()">Portfolio</a></li-->
           <li><a href="#_about_" v-on:click="onShowBurgerMenu()">About Me</a></li>
           <li><a href="#_contact_" v-on:click="onShowBurgerMenu()">Contact</a></li>
       </ul>
@@ -1293,7 +1359,8 @@ new Vue({
   el: '#app',
   data: function() {
     return {
-      scrub: {}
+      scrub: {},
+      scrubNew: {}
     };
   },
   mounted: function() {
@@ -1303,10 +1370,19 @@ new Vue({
       if (data) {
         // instance._data.scrub = data;
         instance.scrub = data;
-        // TODO: preload images
+        // preload images
         instance.preloadImages();
       }
     });
+    $.getJSON('./../scrub_new', function(data) {
+      if (data) {
+        // instance._data.scrub = data;
+        instance.scrubNew = data;
+        // TODO: preload images
+        //instance.preloadImages();
+      }
+    });
+
   },
   methods: {
     preloadImages: function () {
@@ -1378,6 +1454,7 @@ function applyStickToFixedHeader() {
     document.querySelector(".fh-core").classList.remove('fh-rolling-background');
   }
   // pmenu-core (category menu)
+  /*
   let pmenuObj = document.querySelector(".pmenu-core");
   let a = document.querySelector(".cd-core-before");
   let endMenuOffsetY = a.clientHeight + pmenuOffset;
@@ -1389,7 +1466,7 @@ function applyStickToFixedHeader() {
       pmenuObj.classList.remove("pmenu-core-rolling-background");
     }
   }
-
+  */
 }
 
 
