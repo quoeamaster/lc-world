@@ -299,7 +299,7 @@ img.mfp-img {
 
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
     /**
-         * Remove all paddings around the image on small screen
+         * Remove awards paddings around the image on small screen
          */
     .mfp-img-mobile .mfp-image-holder {
         padding-left: 0;

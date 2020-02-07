@@ -8,7 +8,8 @@ new Vue({
   data: function() {
     return {
       scrub: {},
-      scrubNew: {}
+      scrubNew: {},
+      imgListingMap: {}
     };
   },
   mounted: function() {
@@ -26,13 +27,22 @@ new Vue({
       if (data) {
         // instance._data.scrub = data;
         instance.scrubNew = data;
-        // TODO: preload images
-        //instance.preloadImages();
+        instance.postScrubNewLoad();
       }
     });
-
   },
   methods: {
+    postScrubNewLoad: function() {
+      if (!this.scrubNew || !this.scrubNew.listing) {
+        return
+      }
+      let aList = this.scrubNew.listing;
+      aList.forEach(function (item) {
+        // preload
+        window.cacheObject.add("../"+item.thumb, item.thumb);
+      }, this);
+    },
+
     preloadImages: function () {
       let _imglisting = this.scrub.listing;
       if (_imglisting) {

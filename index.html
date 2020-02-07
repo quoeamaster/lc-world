@@ -32,7 +32,9 @@
         <div class="core-spacer-2" style="height: 1px;" >&nbsp;</div>
         <portfolio-menu v-bind:listing="scrubNew['listing']"></portfolio-menu>
 
-        <card-listing v-bind:listing="scrub['listing']"></card-listing>
+        <!--card-listing v-bind:listing="scrub['listing']"></card-listing-->
+<!-- work v-bind:listing="scrubNew" -->
+        <giant-list v-bind:listing="scrubNew['listing']"></giant-list>
 
         <about-me v-bind:about="scrub['about']"></about-me>
         <contact-me></contact-me>

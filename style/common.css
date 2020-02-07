@@ -375,6 +375,24 @@
     color: #FFFFFF;
 }
 
+.gl-container {
+    margin: auto;
+}
+.gl-title-1 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+}
+.gl-title-2 {
+    text-align: center;
+    font-size: 1.1em;
+}
+.gl-card-container {
+    margin-top: 40px;
+    background: #eee;
+    padding: 20px 20px 40px;
+}
+
 
 
 .pmenu-hscroll-core {

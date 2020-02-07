@@ -467,7 +467,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(5);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "/* common */\n.core-pointer {\n    cursor: pointer;\n}\n.core-pointer-zoom-in {\n    cursor: zoom-in;\n}\n.core-display-none {\n    display: none;\n}\n.core-vis-hide {\n    visibility: hidden;\n}\n.core-display-block {\n    display: block;\n}\n.core-display-inline-block {\n    display: inline-block;\n}\n.core-spacer-1 {}\n.core-spacer-2 {}\n\n.core-text-align-center {\n    text-align: center;\n}\n.core-text-align-left {\n    text-align: left;\n}\n.core-text-align-right {\n    text-align: right;\n}\n.core-no-hilight {\n    -webkit-user-select: none; /* Chrome/Safari */\n    -moz-user-select: none; /* Firefox */\n    -ms-user-select: none; /* IE10+ */\n\n    /* Not implemented yet */\n    -o-user-select: none;\n    user-select: none;\n}\n\n/* fixed-header: fh- */\n.fh-core {\n    z-index: 10;\n    padding: 16px 16px;\n    /*color: #666;*/\n    color: white;\n    background: black;\n}\n.fh-label-1 {\n    margin-left: 16px;\n    margin-right: 16px;\n}\n.fh-font-1 {\n    font-size: 0.95em;\n    font-weight: bold;\n}\n.fh-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%\n}\n.fh-rolling-background {\n    /*\n    background: #ffffff;\n    box-shadow: 0 1px 3px #ccc;\n    */\n}\n.fh-hamburger-1 {\n    display: none;\n}\n.fh-hamburger-list {\n    margin-top: 28px;\n    display: none;\n\n    position: absolute;\n    left: 0;\n\n    width: 100%;\n}\n.fh-hamburger-list ul {\n    list-style-type: none;\n    padding-left: 16px;\n    width: 100%;\n    /*background: #000046;*/\n    background: linear-gradient(225deg, rgb(0,0,70), rgb(113, 74, 253));\n}\n.fh-hamburger-list ul li {\n    color: #F3F3F3;\n    font-size: 20px;\n    padding-bottom: 2px;\n    padding-top: 2px;\n    margin-top: 8px;\n    margin-bottom: 4px;\n}\n.fh-hamburger-list ul li:first-child {\n    padding-top: 12px;\n}\n.fh-hamburger-list ul li:last-child {\n    padding-bottom: 12px;\n}\n.fh-hamburger-list ul li a {\n    color: #F3F3F3;\n}\n.fh-core a {\n    color: #666;\n}\n\n\n/* carousel */\n.car-flyer-core {\n    z-index: 5;\n    background-color: #cccccc;\n    height: 500px;\n    /* width: 1000px; */\n    width: 100%;\n\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.car-flyer-container {\n    /*width: 1000px; */\n    width: 100%;\n\n    height: 500px;\n    margin: auto;\n}\n.car-core {\n    width: 100%;\n    margin: auto;\n    display: inline-block;\n}\n.car-control-color-1 {\n    color: gray;\n}\n.car-control-color-2 {\n    color: white;\n}\n.car-dots {\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    transform: translate(-50%);\n    font-size: 0.8em;\n}\n.car-dots-spacer-1 {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n.car-swipe-left {\n    text-align: left;\n    position: absolute;\n    top: 50%;\n    left: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n.car-swipe-right {\n    text-align: right;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n\n\n/* card */\n.cd-core-before {\n    margin-top: 100px;\n    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n    max-width: 1280px;\n}\n.cd-container {\n    /*margin: 4px;\n    border: 1px solid blue;\n    height: 320px;*/\n\n    /* border: 1px solid blue; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    /*height: 320px;*/\n    height: 230px;\n}\n.cd-preview {\n    /* border-radius: 50%; */\n    border-radius: 4px;\n    width: 100%;\n    /*height: 280px;*/\n    height: 200px;\n    position: relative;\n}\n.cd-preview-hover {\n    position: relative;\n    top: -8px;\n    box-shadow: 4px 4px 2px #cccccc;\n}\n.cd-div-preview {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n/* somehow didn't work as expected\n.cd-content-pane {\n    position: absolute;\n    bottom: 0;\n    background: rgba(0, 0, 0, 0.5);\n    color: #f1f1f1;\n    margin: 4px;\n    width: 100%;\n    transition: .5s ease;\n    opacity:0;\n    font-size: 16px;\n    padding: 20px;\n    text-align: center;\n}\n.meta-lightbox:hover .cd-content-pane {\n    opacity: 1;\n}\n*/\n\n/* portfolio menu related */\n.pmenu-core {\n    padding-left: 12px;\n    padding-right: 12px;\n    /* border: 1px solid rgba(200,200,200,0.5); */\n    /*border-radius: 20px;*/\n    /* height: 64px; */\n    z-index: 8;\n    background: white;\n}\n.pmenu-core-rolling-background {\n    position: fixed;\n    top: 44px; /* kind of hard-coded */\n    width: 100%;\n}\n.pmenu-palete-container {\n    /* important as this width determines how to centerize the palete options later on */\n    width: 520px;\n    margin: auto;\n}\n.pmenu-palete {\n    /* vertical-align: center; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 56px;\n    line-height: 56px;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n    color: #666;\n}\n.pmenu-palete:hover {\n    color: #c0bfc3;\n}\n.pmenu-palete-chosen {\n    /* adding background with gradient color */\n    /*color: white;\n    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));\n    border-radius: 30px; */\n    color: orange;\n}\n\n.pmenu-dpad {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #666;\n    border-radius: 50%;\n    /* 40px height - 8px margin-bottom of the core options */\n    position: relative;\n    top: -32px;\n}\n.pmenu-dpad:hover {\n    color: orange;\n    box-shadow: 1px 1px 3px #666;\n}\n.pmenu-dpad-dot-btn {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #666;\n    border-radius: 6px;\n    font-size: 1.5em;\n\n    /* 40px height - 8px margin-bottom of the core options */\n    position: relative;\n    top: -32px;\n}\n.pmenu-dpad-dot-btn:hover {\n    color: orange;\n    box-shadow: 1px 1px 3px #666;\n}\n.pmenu-dpad-40 {\n    width: 40px;\n    height: 40px;\n    line-height: 40px;\n}\n.pmenu-dpad-icon-40 {\n    font-size: 1.4em;\n    height: 40px;\n    line-height: 40px;\n}\n.pmenu-options-container {\n    padding-top: 16px;\n\n    text-align: center;\n    display: inline-block;\n\n    overflow: auto;\n    white-space: nowrap;\n\n    /*height: 40px;\n    line-height: 40px;*/\n}\n.pmenu-option {\n    border: 1px solid #888;\n    border-radius: 4px;\n    display: inline-block;\n\n    margin-left: 6px;\n    margin-right: 8px;\n    padding: 8px 16px;\n\n    margin-bottom: 16px;\n}\n.pmenu-option:hover {\n    box-shadow: 1px 1px 3px #444;\n}\n.pmenu-option-label {\n    font-size: 0.8em;\n    font-weight: bold;\n}\n.pmenu-option-label:hover {\n    color: orange;\n}\n.pmenu-option-label-selected {\n    color: blue;\n}\n.pmenu-advance-option-container {\n    box-shadow: 1px 1px 3px #666;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n\n    height: 0;\n    width: 840px;\n    position: relative;\n    top: -24px;\n\n    transition: height 0.8s;\n}\n.pmenu-advance-option {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n\n    width: 180px;\n    height: 72px;\n    line-height: 72px;\n    vertical-align: middle;\n\n    /* padding: 12px 20px; */\n    padding-left: 20px;\n    padding-right: 20px;\n    margin: 12px 8px;: 12px;\n\n    text-align: center;\n    display: inline-block;\n\n    border-radius: 4px;\n    color: #FFFFFF;\n}\n\n\n\n.pmenu-hscroll-core {\n    overflow: auto;\n    white-space: nowrap;\n    padding-left: 16px;\n    padding-right: 16px;\n}\n\n/* about me */\n.am-core {\n    margin-top: 100px;\n    /*margin-left: 20px;\n    margin-right: 20px;*/\n\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n\n    position: relative;\n    height: 600px;\n    /*border-radius: 6px; */\n    /* box-shadow: 0 0 4px 8px #ccc; */\n}\n.am-content-container {\n    position: relative;\n    top: 30%;\n    left: 10%;\n    width: 400px;\n}\n.am-h3 {\n    color: #c0bfc3;\n    font-size: 2em;\n}\n.am-h4 {\n    margin-top: 12px;\n    margin-bottom: 12px;\n    color: #F3F3F3;\n    font-size: 1em;\n}\n\n/* contact me */\n.cm-core {\n    /* margin-top: 100px; */\n    padding: 100px 48px 48px 48px;\n    background: #F3F3F3;\n    width: 100%;\n    min-height: 100px;\n    text-align: center;\n}\n.cm-caption {\n    font-size: 2em;\n    font-weight: bold;\n    color: #0b0b0b;\n}\n.cm-social-media {\n    margin-top: 60px;\n}\n.cm-social-item {\n    color: #495057;\n    font-size: 2.4em;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n/* media queries */\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .car-core {\n        display: none;\n    }\n    .fh-label-1 {\n        display: none;\n    }\n    .pmenu-palete-container {\n        width: 300px;\n        margin: auto;\n    }\n    .pmenu-palete {\n        /* vertical-align: center; */\n        margin-top: 4px;\n        margin-bottom: 4px;\n        height: 56px;\n        line-height: 56px;\n        display: inline-block;\n        padding-left: 4px;\n        padding-right: 4px;\n        color: #666;\n        font-size: 12px;\n    }\n    .fh-hamburger-1 {\n        display: inline-block;\n    }\n    .am-content-container {\n        position: relative;\n        top: 30%;\n        left: 10%;\n        width: 200px;\n    }\n    .cd-core-before {\n        margin-top: 40px;\n        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n        max-width: 600px;\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n/*@media only screen and (min-width: 600px) {\n\n}\n*/\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {\n\n}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {\n\n}\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n@media only screen and (min-width: 1200px) {\n\n}\n", ""]);
+exports.push([module.i, "/* common */\n.core-pointer {\n    cursor: pointer;\n}\n.core-pointer-zoom-in {\n    cursor: zoom-in;\n}\n.core-display-none {\n    display: none;\n}\n.core-vis-hide {\n    visibility: hidden;\n}\n.core-display-block {\n    display: block;\n}\n.core-display-inline-block {\n    display: inline-block;\n}\n.core-spacer-1 {}\n.core-spacer-2 {}\n\n.core-text-align-center {\n    text-align: center;\n}\n.core-text-align-left {\n    text-align: left;\n}\n.core-text-align-right {\n    text-align: right;\n}\n.core-no-hilight {\n    -webkit-user-select: none; /* Chrome/Safari */\n    -moz-user-select: none; /* Firefox */\n    -ms-user-select: none; /* IE10+ */\n\n    /* Not implemented yet */\n    -o-user-select: none;\n    user-select: none;\n}\n\n/* fixed-header: fh- */\n.fh-core {\n    z-index: 10;\n    padding: 16px 16px;\n    /*color: #666;*/\n    color: white;\n    background: black;\n}\n.fh-label-1 {\n    margin-left: 16px;\n    margin-right: 16px;\n}\n.fh-font-1 {\n    font-size: 0.95em;\n    font-weight: bold;\n}\n.fh-sticky {\n    position: fixed;\n    top: 0;\n    width: 100%\n}\n.fh-rolling-background {\n    /*\n    background: #ffffff;\n    box-shadow: 0 1px 3px #ccc;\n    */\n}\n.fh-hamburger-1 {\n    display: none;\n}\n.fh-hamburger-list {\n    margin-top: 28px;\n    display: none;\n\n    position: absolute;\n    left: 0;\n\n    width: 100%;\n}\n.fh-hamburger-list ul {\n    list-style-type: none;\n    padding-left: 16px;\n    width: 100%;\n    /*background: #000046;*/\n    background: linear-gradient(225deg, rgb(0,0,70), rgb(113, 74, 253));\n}\n.fh-hamburger-list ul li {\n    color: #F3F3F3;\n    font-size: 20px;\n    padding-bottom: 2px;\n    padding-top: 2px;\n    margin-top: 8px;\n    margin-bottom: 4px;\n}\n.fh-hamburger-list ul li:first-child {\n    padding-top: 12px;\n}\n.fh-hamburger-list ul li:last-child {\n    padding-bottom: 12px;\n}\n.fh-hamburger-list ul li a {\n    color: #F3F3F3;\n}\n.fh-core a {\n    color: #666;\n}\n\n\n/* carousel */\n.car-flyer-core {\n    z-index: 5;\n    background-color: #cccccc;\n    height: 500px;\n    /* width: 1000px; */\n    width: 100%;\n\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n.car-flyer-container {\n    /*width: 1000px; */\n    width: 100%;\n\n    height: 500px;\n    margin: auto;\n}\n.car-core {\n    width: 100%;\n    margin: auto;\n    display: inline-block;\n}\n.car-control-color-1 {\n    color: gray;\n}\n.car-control-color-2 {\n    color: white;\n}\n.car-dots {\n    position: absolute;\n    bottom: 4%;\n    left: 50%;\n    transform: translate(-50%);\n    font-size: 0.8em;\n}\n.car-dots-spacer-1 {\n    margin-left: 4px;\n    margin-right: 4px;\n}\n.car-swipe-left {\n    text-align: left;\n    position: absolute;\n    top: 50%;\n    left: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n.car-swipe-right {\n    text-align: right;\n    position: absolute;\n    top: 50%;\n    right: 20px;\n    transform: translate(-0%, -50%);\n    font-size: 2.4em;\n}\n\n\n/* card */\n.cd-core-before {\n    margin-top: 100px;\n    /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n    max-width: 1280px;\n}\n.cd-container {\n    /*margin: 4px;\n    border: 1px solid blue;\n    height: 320px;*/\n\n    /* border: 1px solid blue; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    /*height: 320px;*/\n    height: 230px;\n}\n.cd-preview {\n    /* border-radius: 50%; */\n    border-radius: 4px;\n    width: 100%;\n    /*height: 280px;*/\n    height: 200px;\n    position: relative;\n}\n.cd-preview-hover {\n    position: relative;\n    top: -8px;\n    box-shadow: 4px 4px 2px #cccccc;\n}\n.cd-div-preview {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n}\n/* somehow didn't work as expected\n.cd-content-pane {\n    position: absolute;\n    bottom: 0;\n    background: rgba(0, 0, 0, 0.5);\n    color: #f1f1f1;\n    margin: 4px;\n    width: 100%;\n    transition: .5s ease;\n    opacity:0;\n    font-size: 16px;\n    padding: 20px;\n    text-align: center;\n}\n.meta-lightbox:hover .cd-content-pane {\n    opacity: 1;\n}\n*/\n\n/* portfolio menu related */\n.pmenu-core {\n    padding-left: 12px;\n    padding-right: 12px;\n    /* border: 1px solid rgba(200,200,200,0.5); */\n    /*border-radius: 20px;*/\n    /* height: 64px; */\n    z-index: 8;\n    background: white;\n}\n.pmenu-core-rolling-background {\n    position: fixed;\n    top: 44px; /* kind of hard-coded */\n    width: 100%;\n}\n.pmenu-palete-container {\n    /* important as this width determines how to centerize the palete options later on */\n    width: 520px;\n    margin: auto;\n}\n.pmenu-palete {\n    /* vertical-align: center; */\n    margin-top: 4px;\n    margin-bottom: 4px;\n    height: 56px;\n    line-height: 56px;\n    display: inline-block;\n    padding-left: 20px;\n    padding-right: 20px;\n    color: #666;\n}\n.pmenu-palete:hover {\n    color: #c0bfc3;\n}\n.pmenu-palete-chosen {\n    /* adding background with gradient color */\n    /*color: white;\n    background: linear-gradient(180deg, rgb(113, 74, 253), rgb(146, 135, 227));\n    border-radius: 30px; */\n    color: orange;\n}\n\n.pmenu-dpad {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #666;\n    border-radius: 50%;\n    /* 40px height - 8px margin-bottom of the core options */\n    position: relative;\n    top: -32px;\n}\n.pmenu-dpad:hover {\n    color: orange;\n    box-shadow: 1px 1px 3px #666;\n}\n.pmenu-dpad-dot-btn {\n    display: inline-block;\n    text-align: center;\n    vertical-align: middle;\n    border: 1px solid #666;\n    border-radius: 6px;\n    font-size: 1.5em;\n\n    /* 40px height - 8px margin-bottom of the core options */\n    position: relative;\n    top: -32px;\n}\n.pmenu-dpad-dot-btn:hover {\n    color: orange;\n    box-shadow: 1px 1px 3px #666;\n}\n.pmenu-dpad-40 {\n    width: 40px;\n    height: 40px;\n    line-height: 40px;\n}\n.pmenu-dpad-icon-40 {\n    font-size: 1.4em;\n    height: 40px;\n    line-height: 40px;\n}\n.pmenu-options-container {\n    padding-top: 16px;\n\n    text-align: center;\n    display: inline-block;\n\n    overflow: auto;\n    white-space: nowrap;\n\n    /*height: 40px;\n    line-height: 40px;*/\n}\n.pmenu-option {\n    border: 1px solid #888;\n    border-radius: 4px;\n    display: inline-block;\n\n    margin-left: 6px;\n    margin-right: 8px;\n    padding: 8px 16px;\n\n    margin-bottom: 16px;\n}\n.pmenu-option:hover {\n    box-shadow: 1px 1px 3px #444;\n}\n.pmenu-option-label {\n    font-size: 0.8em;\n    font-weight: bold;\n}\n.pmenu-option-label:hover {\n    color: orange;\n}\n.pmenu-option-label-selected {\n    color: blue;\n}\n.pmenu-advance-option-container {\n    box-shadow: 1px 1px 3px #666;\n    border-bottom-right-radius: 8px;\n    border-bottom-left-radius: 8px;\n\n    height: 0;\n    width: 840px;\n    position: relative;\n    top: -24px;\n\n    transition: height 0.8s;\n}\n.pmenu-advance-option {\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n    position: relative;\n\n    width: 180px;\n    height: 72px;\n    line-height: 72px;\n    vertical-align: middle;\n\n    /* padding: 12px 20px; */\n    padding-left: 20px;\n    padding-right: 20px;\n    margin: 12px 8px;: 12px;\n\n    text-align: center;\n    display: inline-block;\n\n    border-radius: 4px;\n    color: #FFFFFF;\n}\n\n.gl-container {\n    margin: auto;\n}\n.gl-title-1 {\n    font-size: 1.5em;\n    text-align: center;\n    font-weight: bolder;\n}\n.gl-title-2 {\n    text-align: center;\n    font-size: 1.1em;\n}\n.gl-card-container {\n    margin-top: 40px;\n    background: #eee;\n    padding: 20px 20px 40px;\n}\n\n\n\n.pmenu-hscroll-core {\n    overflow: auto;\n    white-space: nowrap;\n    padding-left: 16px;\n    padding-right: 16px;\n}\n\n/* about me */\n.am-core {\n    margin-top: 100px;\n    /*margin-left: 20px;\n    margin-right: 20px;*/\n\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-repeat: no-repeat;\n    background-size: cover;\n\n    position: relative;\n    height: 600px;\n    /*border-radius: 6px; */\n    /* box-shadow: 0 0 4px 8px #ccc; */\n}\n.am-content-container {\n    position: relative;\n    top: 30%;\n    left: 10%;\n    width: 400px;\n}\n.am-h3 {\n    color: #c0bfc3;\n    font-size: 2em;\n}\n.am-h4 {\n    margin-top: 12px;\n    margin-bottom: 12px;\n    color: #F3F3F3;\n    font-size: 1em;\n}\n\n/* contact me */\n.cm-core {\n    /* margin-top: 100px; */\n    padding: 100px 48px 48px 48px;\n    background: #F3F3F3;\n    width: 100%;\n    min-height: 100px;\n    text-align: center;\n}\n.cm-caption {\n    font-size: 2em;\n    font-weight: bold;\n    color: #0b0b0b;\n}\n.cm-social-media {\n    margin-top: 60px;\n}\n.cm-social-item {\n    color: #495057;\n    font-size: 2.4em;\n    margin-left: 16px;\n    margin-right: 16px;\n}\n\n/* media queries */\n/* Extra small devices (phones, 600px and down) */\n@media only screen and (max-width: 600px) {\n    .car-core {\n        display: none;\n    }\n    .fh-label-1 {\n        display: none;\n    }\n    .pmenu-palete-container {\n        width: 300px;\n        margin: auto;\n    }\n    .pmenu-palete {\n        /* vertical-align: center; */\n        margin-top: 4px;\n        margin-bottom: 4px;\n        height: 56px;\n        line-height: 56px;\n        display: inline-block;\n        padding-left: 4px;\n        padding-right: 4px;\n        color: #666;\n        font-size: 12px;\n    }\n    .fh-hamburger-1 {\n        display: inline-block;\n    }\n    .am-content-container {\n        position: relative;\n        top: 30%;\n        left: 10%;\n        width: 200px;\n    }\n    .cd-core-before {\n        margin-top: 40px;\n        /** mdbootstrap has a hard-coded max-width for different media queries... set this back to something bigger than 960px */\n        max-width: 600px;\n    }\n}\n\n/* Small devices (portrait tablets and large phones, 600px and up) */\n/*@media only screen and (min-width: 600px) {\n\n}\n*/\n/* Medium devices (landscape tablets, 768px and up) */\n@media only screen and (min-width: 768px) {\n\n}\n\n/* Large devices (laptops/desktops, 992px and up) */\n@media only screen and (min-width: 992px) {\n\n}\n\n/* Extra large devices (large laptops and desktops, 1200px and up) */\n@media only screen and (min-width: 1200px) {\n\n}\n", ""]);
 // Exports
 module.exports = exports;
 
@@ -530,6 +530,7 @@ __webpack_require__(2);
 // require('./lib/maginficPopup.css');
 
 __webpack_require__(8);
+
 __webpack_require__(9);
 __webpack_require__(10);
 __webpack_require__(11);
@@ -537,15 +538,151 @@ __webpack_require__(12);
 __webpack_require__(13);
 __webpack_require__(14);
 __webpack_require__(15);
+__webpack_require__(16);
+__webpack_require__(17);
 
 // include 3rd party jscript (already downloaded and not using npm repo to get the jscript src)
 // PS. didn't work as jquery is required within the webpack...
 // require('./lib/magnificPopup.min.js');
-__webpack_require__(16);
+
 
 
 /***/ }),
 /* 8 */
+/***/ (function(module, exports) {
+
+// global event bus for event handling / receiving
+let eventBus = new Vue();
+window.eventBus = eventBus;
+
+window.globalWindowDimensions = {
+  width: document.querySelector("body").clientWidth,
+  height: document.querySelector("body").clientHeight
+};
+
+// util - cache object
+window.cacheObject = new CacheObject(50);
+
+window.onscroll = function() {
+  applyStickToFixedHeader();
+};
+window.onload = function () {
+  let w = window.globalWindowDimensions.width;
+  if (w <= 600) {
+    hideCoreSpacer1();
+  }
+};
+
+function hideCoreSpacer1() {
+  document.querySelector(".core-spacer-1").style.display = 'none';
+}
+
+/**
+ * add back the fixed header css if started scrolling
+ */
+function applyStickToFixedHeader() {
+  let pmenuOffset = 575;  // hard coded
+  let w = window.globalWindowDimensions.width;
+
+  // related to the media query settings...
+  /* @media only screen and (max-width: 360px) */
+  if (w <= 600) {
+    pmenuOffset = 60;
+  } else {
+    // console.log('page y offset:', window.pageYOffset); console.log('clientHeight:', a.clientHeight);
+    // console.log('offsetHeight:', a.offsetHeight); console.log('scrollHeight:', a.scrollHeight);
+    pmenuOffset = 575;  // hard coded
+
+  }
+  // common
+  // fh-core (fixed header)
+  if (window.pageYOffset > 20) {
+    document.querySelector(".fh-core").classList.add('fh-rolling-background');
+  } else {
+    document.querySelector(".fh-core").classList.remove('fh-rolling-background');
+  }
+  // pmenu-core (category menu)
+  /*
+  let pmenuObj = document.querySelector(".pmenu-core");
+  let a = document.querySelector(".cd-core-before");
+  let endMenuOffsetY = a.clientHeight + pmenuOffset;
+  if (pmenuObj) {
+    // let pmenuObjOffsetTop = pmenuObj.offsetTop - 24;
+    if (window.pageYOffset > pmenuOffset && window.pageYOffset < endMenuOffsetY) {
+      pmenuObj.classList.add("pmenu-core-rolling-background");
+    } else {
+      pmenuObj.classList.remove("pmenu-core-rolling-background");
+    }
+  }
+  */
+}
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, exports) {
+
+/**
+ * main application entry point
+ * @type {Vue}
+ * @private
+ */
+new Vue({
+  el: '#app',
+  data: function() {
+    return {
+      scrub: {},
+      scrubNew: {},
+      imgListingMap: {}
+    };
+  },
+  mounted: function() {
+    // get the static scrub file loaded
+    let instance = this;
+    $.getJSON('./../scrub', function(data) {
+      if (data) {
+        // instance._data.scrub = data;
+        instance.scrub = data;
+        // preload images
+        instance.preloadImages();
+      }
+    });
+    $.getJSON('./../scrub_new', function(data) {
+      if (data) {
+        // instance._data.scrub = data;
+        instance.scrubNew = data;
+        instance.postScrubNewLoad();
+      }
+    });
+  },
+  methods: {
+    postScrubNewLoad: function() {
+      if (!this.scrubNew || !this.scrubNew.listing) {
+        return
+      }
+      let aList = this.scrubNew.listing;
+      aList.forEach(function (item) {
+        // preload
+        window.cacheObject.add("../"+item.thumb, item.thumb);
+      }, this);
+    },
+
+    preloadImages: function () {
+      let _imglisting = this.scrub.listing;
+      if (_imglisting) {
+        _imglisting.forEach(function (item) {
+          new Promise(function(resolve) {
+            resolve(window.cacheObject.add(item.preview, item.preview));
+          });
+        });
+      }
+    }
+  }
+});
+
+
+/***/ }),
+/* 10 */
 /***/ (function(module, exports) {
 
 
@@ -578,7 +715,7 @@ Vue.component('about-me', {
 
 
 /***/ }),
-/* 9 */
+/* 11 */
 /***/ (function(module, exports) {
 
 
@@ -608,7 +745,7 @@ Vue.component('contact-me', {
 
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports) {
 
 /*
@@ -624,9 +761,9 @@ Vue.component('portfolio-menu', {
   },
   data: function() {
     return {
-      // cat(egory) picked, Featured is the "all" value
+      // cat(egory) picked, Featured is the "awards" value
       "id": "all",
-      // list of all available category(s) - dynamic
+      // list of awards available category(s) - dynamic
       'catList': [],
 
       // actual optionDiv's width
@@ -680,6 +817,9 @@ Vue.component('portfolio-menu', {
       this.id = item.id;
       this.shouldOptionAdvShow = false; // close the hidden tab
       // TODO: raise event to update the contents based on id
+      window.eventBus.$emit('onCatChange', {
+        id: this.id,
+      });
     },
     onMoreClick: function() {
       // show the hidden menu
@@ -744,7 +884,7 @@ Vue.component('portfolio-menu', {
     <div style="overflow: scroll; width: 840px; height: 300px; padding: 20px; margin: auto;">
       <div v-for="item in listing"
         v-on:click="onCategoryClick(item)" 
-        class="pmenu-advance-option"
+        class="pmenu-advance-option core-pointer"
         v-bind:style="getAdvanceOptionBtnStyle(item)">
         {{item.label}}
       </div>
@@ -757,7 +897,7 @@ Vue.component('portfolio-menu', {
 
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports) {
 
 /**
@@ -861,7 +1001,7 @@ Vue.component('fixed-hamburger', {
 
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports) {
 
 
@@ -912,7 +1052,7 @@ Vue.component('dummy-text', {
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports) {
 
 /**
@@ -1084,7 +1224,7 @@ Vue.component('carousel-flyer', {
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -1347,127 +1487,129 @@ Vue.component('card', {
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports) {
 
-/**
- * main application entry point
- * @type {Vue}
- * @private
- */
-new Vue({
-  el: '#app',
+Vue.component('giant-list', {
+  props: ['listing'],
+  watch: {
+    listing: function (val) {
+      // load img list....
+      let inst = this;
+      setTimeout(function () {
+        inst.lenIListMap = Object.keys(inst.iListMap).length;
+        inst.getSelectedImgList('all');
+      }, 1000);
+      this.listing.forEach(function (item) {
+        $.getJSON('./../scrubs/'+item.id, function (data) {
+          inst.iListMap[item.id] = data;
+        });
+      });
+    }
+  },
   data: function() {
     return {
-      scrub: {},
-      scrubNew: {}
+      iListMap: {},
+      lenIListMap: 0,
+
+      // default category / id === 'all'
+      selectedCat: 'all',
+      selectedImgList: [],  // img-list per selected cat
+      allImgList: [],  // all category
+
+      selectedCatItem: {},
     };
   },
   mounted: function() {
-    // get the static scrub file loaded
-    let instance = this;
-    $.getJSON('./../scrub', function(data) {
-      if (data) {
-        // instance._data.scrub = data;
-        instance.scrub = data;
-        // preload images
-        instance.preloadImages();
-      }
-    });
-    $.getJSON('./../scrub_new', function(data) {
-      if (data) {
-        // instance._data.scrub = data;
-        instance.scrubNew = data;
-        // TODO: preload images
-        //instance.preloadImages();
-      }
-    });
-
+    window.eventBus.$on('onCatChange', this.onCatChange);
   },
   methods: {
-    preloadImages: function () {
-      let _imglisting = this.scrub.listing;
-      if (_imglisting) {
-        _imglisting.forEach(function (item) {
-          new Promise(function(resolve) {
-            resolve(window.cacheObject.add(item.preview, item.preview));
-          });
-        });
+    onCatChange: function (data) {
+      if (this.selectedCat !== data.id) {
+        this.selectedCat = data.id;
+        this.getSelectedImgList(data.id);
+      } else if (this.selectedCat === 'all') {
+        this.getSelectedImgList(data.id);
       }
+    },
+    getSelectedImgList: function (cat) {
+      // update the img list
+      if (cat !== 'all') {
+        console.log('not all');
+        this.selectedImgList = this.iListMap[this.selectedCat];
+      } else {
+        // all means everything....
+        if (this.allImgList.length === 0) {
+          let keys = Object.keys(this.iListMap);
+          let inst = this;
+          keys.forEach(function (k) {
+            inst.allImgList = inst.allImgList.concat(inst.iListMap[k]);
+          }); // end -- forEach(keys)
+        }
+        this.selectedImgList = this.allImgList;
+      } // end -- if (cat === 'all')
+      // update the selected cat item
+      for (let i=0; i<this.listing.length; i++) {
+        let item = this.listing[i];
+        if (item.id === this.selectedCat) {
+          this.selectedCatItem = item;
+          break;
+        }
+      }
+    },
+
+
+    // ** css ** //
+    getGlContainerStyle: function () {
+      return {
+        display: (this.selectedCatItem && this.selectedCatItem.hasOwnProperty("id"))?'block':'none',
+        width: parseInt(window.globalWindowDimensions.width * 0.8, 10)+'px'
+      };
+    },
+    getGlCardContainerStyle: function () {
+      return {};
     }
-  }
+
+  },
+  template: `
+<div>
+  <div class="gl-container" v-bind:style="getGlContainerStyle()">
+    <div class="gl-title-1">{{selectedCatItem.label}}</div>
+    <div class="gl-title-2">{{selectedCatItem.desc}}</div>
+    
+    <div class="gl-card-container" v-bind:style="getGlCardContainerStyle()">
+    to be detailed
+    </div>
+     
+     
+  </div>
+
+  {{selectedCat}}
+  list =>
+  {{selectedImgList}}<p/>
+  
+  <div v-for="(lst, key) in iListMap">
+    {{key}} => {{lst}}
+  </div>
+  <!-- weird bug... the reason might be... getJSON is not a promise; hence the core UI thread is not triggered for an update -->
+  <input type="hidden" v-bind:value="lenIListMap" />
+</div>
+  `
 });
 
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-// global event bus for event handling / receiving
-let eventBus = new Vue();
-window.eventBus = eventBus;
-
-window.globalWindowDimensions = {
-  width: document.querySelector("body").clientWidth,
-  height: document.querySelector("body").clientHeight
-};
-
-// util - cache object
-window.cacheObject = new CacheObject(20);
-
-window.onscroll = function() {
-  applyStickToFixedHeader();
-};
-window.onload = function () {
-  let w = window.globalWindowDimensions.width;
-  if (w <= 600) {
-    hideCoreSpacer1();
-  }
-};
-
-function hideCoreSpacer1() {
-  document.querySelector(".core-spacer-1").style.display = 'none';
-}
-
-/**
- * add back the fixed header css if started scrolling
+/*
+        // the promise way
+        let _promise = $.Deferred();
+        $.when($.getJSON('./../scrubs/'+item.id)).done(
+          function (data) {
+            _promise.resolve(data);
+          }
+        );
+        _promise.done(function (data) {
+          console.log(data);
+          inst.iListMap[item.id] = data;
+        });
  */
-function applyStickToFixedHeader() {
-  let pmenuOffset = 575;  // hard coded
-  let w = window.globalWindowDimensions.width;
-
-  // related to the media query settings...
-  /* @media only screen and (max-width: 360px) */
-  if (w <= 600) {
-    pmenuOffset = 60;
-  } else {
-    // console.log('page y offset:', window.pageYOffset); console.log('clientHeight:', a.clientHeight);
-    // console.log('offsetHeight:', a.offsetHeight); console.log('scrollHeight:', a.scrollHeight);
-    pmenuOffset = 575;  // hard coded
-
-  }
-  // common
-  // fh-core (fixed header)
-  if (window.pageYOffset > 20) {
-    document.querySelector(".fh-core").classList.add('fh-rolling-background');
-  } else {
-    document.querySelector(".fh-core").classList.remove('fh-rolling-background');
-  }
-  // pmenu-core (category menu)
-  /*
-  let pmenuObj = document.querySelector(".pmenu-core");
-  let a = document.querySelector(".cd-core-before");
-  let endMenuOffsetY = a.clientHeight + pmenuOffset;
-  if (pmenuObj) {
-    // let pmenuObjOffsetTop = pmenuObj.offsetTop - 24;
-    if (window.pageYOffset > pmenuOffset && window.pageYOffset < endMenuOffsetY) {
-      pmenuObj.classList.add("pmenu-core-rolling-background");
-    } else {
-      pmenuObj.classList.remove("pmenu-core-rolling-background");
-    }
-  }
-  */
-}
 
 
 /***/ })

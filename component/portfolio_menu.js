@@ -11,9 +11,9 @@ Vue.component('portfolio-menu', {
   },
   data: function() {
     return {
-      // cat(egory) picked, Featured is the "all" value
+      // cat(egory) picked, Featured is the "awards" value
       "id": "all",
-      // list of all available category(s) - dynamic
+      // list of awards available category(s) - dynamic
       'catList': [],
 
       // actual optionDiv's width
@@ -67,6 +67,9 @@ Vue.component('portfolio-menu', {
       this.id = item.id;
       this.shouldOptionAdvShow = false; // close the hidden tab
       // TODO: raise event to update the contents based on id
+      window.eventBus.$emit('onCatChange', {
+        id: this.id,
+      });
     },
     onMoreClick: function() {
       // show the hidden menu
