@@ -1634,7 +1634,11 @@ Vue.component('gl-card-item', {
     } // end -- for (e.length)
 
     // pre-render
-    window.cacheObject.add("./../portfolio/"+this.item.thumb, "./../portfolio/"+this.item.thumb);
+    let inst = this;
+    setTimeout(function () {
+      window.cacheObject.add("./../portfolio/"+inst.item.thumb, "./../portfolio/"+inst.item.thumb);
+    }, Math.random()*200);
+
   },
   methods: {
 
