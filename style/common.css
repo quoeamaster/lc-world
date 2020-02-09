@@ -268,7 +268,7 @@
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #666;
+    /*border: 1px solid #aaa;*/
     border-radius: 50%;
     /* 40px height - 8px margin-bottom of the core options */
     position: relative;
@@ -282,7 +282,7 @@
     display: inline-block;
     text-align: center;
     vertical-align: middle;
-    border: 1px solid #666;
+    /*border: 1px solid #666;*/
     border-radius: 6px;
     font-size: 1.5em;
 
@@ -317,7 +317,7 @@
     line-height: 40px;*/
 }
 .pmenu-option {
-    border: 1px solid #888;
+    /*border: 1px solid #888;*/
     border-radius: 4px;
     display: inline-block;
 
@@ -327,18 +327,24 @@
 
     margin-bottom: 16px;
 }
+.pmenu-option-selected {
+    background: rgba(58,139,187,0.15);
+}
 .pmenu-option:hover {
-    box-shadow: 1px 1px 3px #444;
+    /*box-shadow: 1px 1px 3px #444; */
+    color: #3a8bbb;
+    background: rgba(58,139,187,0.15);
 }
 .pmenu-option-label {
     font-size: 0.8em;
     font-weight: bold;
 }
 .pmenu-option-label:hover {
-    color: orange;
+    /*color: orange;*/
 }
 .pmenu-option-label-selected {
-    color: blue;
+    /*color: blue;*/
+    color: #3a8bbb;
 }
 .pmenu-advance-option-container {
     box-shadow: 1px 1px 3px #666;

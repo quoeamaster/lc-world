@@ -93,6 +93,15 @@ Vue.component('portfolio-menu', {
       }
       return c;
     },
+    getLabelContainerClass: function(id) {
+      let c = {
+        'pmenu-option-selected': false
+      };
+      if (id === this.id) {
+        c['pmenu-option-selected'] = true;
+      }
+      return c;
+    },
     getAdvanceOptionStyle: function () {
       let hWidth = 840;
       // PS: transition ONLY works for attribute changes e.g. height from 0 to 300px
@@ -118,7 +127,7 @@ Vue.component('portfolio-menu', {
   </div>
   <!-- options list -->
   <div class="pmenu-options-container core-no-hilight" v-bind:style="getMenuCoreWidth()">
-    <div class="pmenu-option core-pointer" v-for="item in listing" v-on:click="onCategoryClick(item)">
+    <div class="pmenu-option core-pointer" v-for="item in listing" v-bind:class="getLabelContainerClass(item.id)" v-on:click="onCategoryClick(item)">
       <span class="pmenu-option-label" v-bind:class="getLabelClass(item.id)">{{item.label}}</span> 
     </div>
   </div>
