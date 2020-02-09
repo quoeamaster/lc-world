@@ -86,8 +86,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component/giantList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="138" column="86" selection-start-line="138" selection-start-column="86" selection-end-line="138" selection-end-column="86" />
+            <state relative-caret-position="529">
+              <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
               <folding>
                 <element signature="e#2025#2233#0" />
                 <element signature="e#2276#2300#0" />
@@ -309,12 +309,12 @@
       <workItem from="1580610222960" duration="3137000" />
       <workItem from="1581034868968" duration="28218000" />
       <workItem from="1581212166235" duration="1782000" />
-      <workItem from="1581221071937" duration="9876000" />
+      <workItem from="1581221071937" duration="10400000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="247267000" />
+    <option name="totallyTimeSpent" value="247791000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -624,13 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrub">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -678,10 +671,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/component/giantList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="138" column="86" selection-start-line="138" selection-start-column="86" selection-end-line="138" selection-end-column="86" />
+        <state relative-caret-position="529">
+          <caret line="139" column="28" selection-start-line="139" selection-start-column="28" selection-end-line="139" selection-end-column="28" />
           <folding>
             <element signature="e#2025#2233#0" />
             <element signature="e#2276#2300#0" />
