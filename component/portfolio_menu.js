@@ -4,10 +4,7 @@
 Vue.component('portfolio-menu', {
   props: ['listing'],
   watch: {
-    listing: function (val) {
-
-    }
-
+    listing: function (val) {}
   },
   data: function() {
     return {

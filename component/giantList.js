@@ -9,9 +9,11 @@ Vue.component('giant-list', {
         inst.getSelectedImgList('all');
       }, 1000);
       this.listing.forEach(function (item) {
-        $.getJSON('./../scrubs/'+item.id, function (data) {
-          inst.iListMap[item.id] = data;
-        });
+        if (item.id !== 'all') {
+          $.getJSON('./../scrubs/'+item.id, function (data) {
+            inst.iListMap[item.id] = data;
+          });
+        }
       });
     }
   },
@@ -89,7 +91,6 @@ Vue.component('giant-list', {
       <!-- for loop on selectedImgList -->
       <div class="container-fluid">
         <div class="row">
-<!-- TODO: should change the col-x when media query shows a small width device -->
           <div v-for="item in selectedImgList" 
             class="col-4 col-md-4 col-sm-12">
              <gl-card-item v-bind:item="item" v-bind:cat="selectedCat"></gl-card-item>
@@ -101,9 +102,7 @@ Vue.component('giant-list', {
      
   </div>
 
-  {{selectedCat}}
-  list =>
-  {{selectedImgList}}<p/>
+  {{selectedCat}} list => {{selectedImgList}}<p/>
   
   <div v-for="(lst, key) in iListMap">
     {{key}} => {{lst}}
@@ -139,6 +138,8 @@ Vue.component('gl-card-item', {
     setTimeout(function () {
       window.cacheObject.add("./../portfolio/"+inst.item.thumb, "./../portfolio/"+inst.item.thumb);
     }, Math.random()*200);*/
+    // TODO: check performance => findings loading the non exist scrubs would make the images loading longer
+    // TODO: findings => no cache is faster to load images if scrubs are missing...
     window.cacheObject.add("./../portfolio/"+inst.item.thumb, "./../portfolio/"+inst.item.thumb);
   },
   methods: {
@@ -162,13 +163,18 @@ Vue.component('gl-card-item', {
       return {
         'display': (this.cat === 'all')?'inline-block':'none'
       };
+    },
+
+    // *** ui ***
+    displayDetails: function () {
+      console.log(this.item);
     }
 
   },
   template: `
 <div class="gl-card-item" v-bind:style="getContainerStyle()">
   <div class="gl-card-item-img core-pointer"
-    v-on:click="" 
+    v-on:click="displayDetails()" 
     v-bind:style="getImgDivStyle()"></div>
   <div class="text-truncate" style="height: 40px; line-height: 40px; vertical-align: middle; margin-top: 6px; margin-bottom: 6px;">
     <!-- v-bind:style="getCardItemCatLabelStyle()" -->

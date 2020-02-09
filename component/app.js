@@ -20,7 +20,7 @@ new Vue({
         // instance._data.scrub = data;
         instance.scrub = data;
         // preload images
-        instance.preloadImages();
+        //instance.preloadImages();
       }
     });
     $.getJSON('./../scrub_new', function(data) {
