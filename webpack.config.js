@@ -7,8 +7,8 @@ module.exports = {
   },*/
   entry: {
     index: './main.js',
-    photo: './photo.js',
-    story: './story.js'
+    /*photo: './photo.js',
+    story: './story.js'*/
   },
   output: {
     path: __dirname + '/dist',

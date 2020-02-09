@@ -388,9 +388,9 @@
     margin: auto;
 }
 .gl-title-1 {
-    font-size: 1.5em;
+    font-size: 3.5em;
     text-align: center;
-    font-weight: bolder;
+    font-weight: 800;
 }
 .gl-title-2 {
     text-align: center;
@@ -398,8 +398,31 @@
 }
 .gl-card-container {
     margin-top: 40px;
-    background: #eee;
+    /*background: #eee;*/
     padding: 20px 20px 40px;
+}
+.gl-card-item {
+    background: #FFFFFF;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.gl-card-item:hover {
+    box-shadow: 1px 1px 13px #ddd;
+}
+.gl-card-item-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.gl-card-item-category-label {
+    color: #3a8bbb;
+    margin-right: 12px;
+    font-weight: bold;
+}
+.gl-card-item-label {
+    text-align: center;
+    font-weight: bold;
 }
 
 

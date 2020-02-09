@@ -1,5 +1,5 @@
 [
-  { "desc": "asia awards", "thumb": "/awards/01AsiaAwardPhoto_LR.jpg" },
-  { "desc": "cream magazine", "thumb": "/awards/02CreamMagazine_Merit.jpg" },
-  { "desc": "", "thumb": "/awards/03FeedADifferentImagination_Slum.jpg" }
+  { "cat": "Awards", "desc": "Asia Awards", "thumb": "/awards/01AsiaAwardPhoto_LR.jpg" },
+  { "cat": "Awards", "desc": "Cream Magazine", "thumb": "/awards/02CreamMagazine_Merit.jpg" },
+  { "cat": "Awards", "desc": "", "thumb": "/awards/03FeedADifferentImagination_Slum.jpg" }
 ]
