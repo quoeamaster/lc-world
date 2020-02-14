@@ -28,6 +28,9 @@ Vue.component('giant-list', {
       allImgList: [],  // all category
 
       selectedCatItem: {},
+
+      // the modal dlg item for display
+      modalDlgItem: {}
     };
   },
   mounted: function() {
@@ -67,6 +70,9 @@ Vue.component('giant-list', {
         }
       }
     },
+    onShowModalDetails: function(data) {
+      this.modalDlgItem = data;
+    },
 
 
     // ** css ** //
@@ -93,14 +99,17 @@ Vue.component('giant-list', {
         <div class="row">
           <div v-for="item in selectedImgList" 
             class="col-4 col-md-4 col-sm-12">
-             <gl-card-item v-bind:item="item" v-bind:cat="selectedCat"></gl-card-item>
+             <gl-card-item
+              v-on:onShowModalDetails="onShowModalDetails" 
+              v-bind:item="item" 
+              v-bind:cat="selectedCat"></gl-card-item>
           </div>
         </div>
       </div>
     </div>
-     
-     
   </div>
+  <!-- modal dialog -->
+  <gl-details-modal v-bind:item="modalDlgItem"></gl-details-modal>
 
   {{selectedCat}} list => {{selectedImgList}}<p/>
   
@@ -167,7 +176,7 @@ Vue.component('gl-card-item', {
 
     // *** ui ***
     displayDetails: function () {
-      console.log(this.item);
+      this.$emit('onShowModalDetails', this.item);
     }
 
   },
@@ -187,6 +196,56 @@ Vue.component('gl-card-item', {
   `
 });
 
+/**
+ * modal dialog
+ */
+Vue.component('gl-details-modal', {
+  props: ["item"],
+  watch: {
+    item: function(val) {
+      this.selectedItem = val;
+    }
+  },
+  data: function() {
+    return {
+      selectedItem: {}
+    };
+  },
+  methods: {
+    // *** css ***
+    getContainerClass: function () {
+      if (this.selectedItem && this.selectedItem.hasOwnProperty('cat')) {
+        $('body').css('overflow', 'hidden');
+      }
+      return {
+        'gl-modal-container-show': (this.selectedItem && this.selectedItem.hasOwnProperty('cat'))?true:false,
+        'gl-modal-container-hide': (this.selectedItem && this.selectedItem.hasOwnProperty('cat'))?false:true,
+      };
+    },
+
+    // ** handler **
+    closeDlg: function () {
+      $('body').css('overflow', 'auto');
+      this.selectedItem = {};
+    }
+
+
+  },
+  template: `
+<div>
+  <div id="_gl_dlg_" class="gl-modal-container" v-bind:class="getContainerClass()">
+    <span class="gl-modal-x core-pointer" v-on:click="closeDlg()">&times;</span>
+    <!--img class="modal-content" id="img01">
+    <div id="caption"></div-->
+    {{item}}
+    
+    
+  </div>
+  <input type="hidden" value="{{shouldShow}}"> 
+</div>
+
+  `
+});
 
 /*
         // the promise way
