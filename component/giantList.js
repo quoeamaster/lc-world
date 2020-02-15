@@ -293,17 +293,31 @@ Vue.component('gl-single-image-display', {
   template: `
 <div>
   <img v-bind:src="getImgSrc()" style="width: 100%;"/>
+  <div class="gl-modal-detail-caption">{{item.desc}}</div>
 </div>  
   `
 });
 
 Vue.component('gl-story-display', {
   props: ['item'],
+  methods: {
+    getImgSrc: function (item) {
+      return '/portfolio' + item.img;
+    },
+    getDesc: function (item) {
+      if (item.desc && item.desc !== '') {
+        return item.desc;
+      } else {
+        return "&nbsp;";
+      }
+    }
+  },
   template: `
-<div>
-  story display<p/> 
-  {{item}}
-  fuckc ufkc
+<div style="margin-bottom: 40px;">
+  <div v-for="i in item.thumbs">
+    <img v-bind:src="getImgSrc(i)" style="width: 100%;"/>
+    <div class="gl-modal-story-caption" v-html="getDesc(i)"></div>
+  </div>
 </div>  
   `
 });

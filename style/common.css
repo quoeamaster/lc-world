@@ -460,19 +460,35 @@
 }
 
 .gl-modal-display-container {
-    margin-left: 100px;
-    margin-right: 100px;
+    /*margin: auto;
+    width: 1000px;*/
+    margin-left: 200px;
+    margin-right: 200px;
 }
 .gl-modal-header-text {
     color: white;
     font-size: 1.2em;
+    margin-bottom: 20px;
 }
 .gl-modal-header-img {
     width: 30px;
     height: 30px;
     margin-left: 8px;
 }
-
+.gl-modal-detail-caption {
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+    margin-top: 12px;
+    margin-bottom: 40px;
+}
+.gl-modal-story-caption {
+    text-align: center;
+    font-size: 1.1em;
+    color: white;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
 
 .pmenu-hscroll-core {
     overflow: auto;
