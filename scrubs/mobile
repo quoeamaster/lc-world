@@ -1,15 +1,31 @@
 [
-  { "cat": "Mobile", "story": "true", "desc": "101 Mobile App", "thumb": "/mobile/101/01_Header.png", "thumbs": [
-    "/mobile/101/01_Header.png", "/mobile/101/01a_Prototype_Login_signup.png", "/mobile/101/01b_Prototype_SearchBook.png",
-    "/mobile/101/01c_Request_Request.png", "/mobile/101/01d_Request_Social_Copy.png", "/mobile/101/01e_Request_Social.png",
-    "/mobile/101/01f_Logo.png", "/mobile/101/01g_Logo_CT.png", "/mobile/101/01h_ICON_Button.png",
-    "/mobile/101/02a_ResearchEvaluation.png", "/mobile/101/02b_CompetitiveAnalysis.png", "/mobile/101/02c_PersonaEmpathy.png",
-    "/mobile/101/02d_MVP.png", "/mobile/101/02e_Cardsort_Sitemap.png", "/mobile/101/02f_Userflow.png",
-    "/mobile/101/02g_Wireframe_v1.png", "/mobile/101/02h_Wireframe_v2.png"
+  { "cat": "Mobile", "story": "true", "desc": "101 Mobile App", "thumb": "/mobile/101/01_Header.png",
+    "software": ["/others/ae.png", "/others/ai.png", "/others/ps.png", "/others/xd.png"],
+    "thumbs": [
+    { "img": "/mobile/101/01_Header.png", "desc": "mobile app with all wireframe(s)" },
+    { "img": "/mobile/101/01a_Prototype_Login_signup.png", "desc": "" },
+    { "img": "/mobile/101/01b_Prototype_SearchBook.png", "desc": "" },
+    { "img": "/mobile/101/01c_Request_Request.png", "desc": "" },
+    { "img": "/mobile/101/01d_Request_Social_Copy.png", "desc": "" },
+    { "img": "/mobile/101/01e_Request_Social.png", "desc": "" },
+    { "img": "/mobile/101/01f_Logo.png", "desc": "" },
+    { "img": "/mobile/101/01g_Logo_CT.png", "desc": "" },
+    { "img": "/mobile/101/01h_ICON_Button.png", "desc": "" },
+    { "img": "/mobile/101/02a_ResearchEvaluation.png", "desc": "" },
+    { "img": "/mobile/101/02b_CompetitiveAnalysis.png", "desc": "" },
+    { "img": "/mobile/101/02c_PersonaEmpathy.png", "desc": "" },
+    { "img": "/mobile/101/02d_MVP.png", "desc": "" },
+    { "img": "/mobile/101/02e_Cardsort_Sitemap.png", "desc": "" },
+    { "img": "/mobile/101/02f_Userflow.png", "desc": "" },
+    { "img": "/mobile/101/02g_Wireframe_v1.png", "desc": "" },
+    { "img": "/mobile/101/02h_Wireframe_v2.png", "desc": "" }
   ] },
-  { "cat": "Mobile", "story": "true", "desc": "Okdeal Mobile App", "thumb": "/mobile/Okdeal/01_OKDEAL_Concept01_FP-01_LR.jpg", "thumbs": [
-    "/mobile/Okdeal/01_OKDEAL_Concept01_FP-01_LR.jpg", "/mobile/Okdeal/01a_OKDEAL_Concept01_ChooseDestination-01_LR.jpg",
-    "/mobile/Okdeal/01b_OKDEAL_Concept01_Book-01_LR.jpg"
+  { "cat": "Mobile", "story": "true", "desc": "Okdeal Mobile App", "thumb": "/mobile/Okdeal/01_OKDEAL_Concept01_FP-01_LR.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+    { "img": "/mobile/Okdeal/01_OKDEAL_Concept01_FP-01_LR.jpg", "desc": "" },
+    { "img": "/mobile/Okdeal/01a_OKDEAL_Concept01_ChooseDestination-01_LR.jpg", "desc": "" },
+    { "img": "/mobile/Okdeal/01b_OKDEAL_Concept01_Book-01_LR.jpg", "desc": "" }
   ] },
   { "cat": "Mobile", "desc": "Icons", "thumb": "/mobile/UI/UI-01.png" }
 ]

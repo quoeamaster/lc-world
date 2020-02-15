@@ -227,8 +227,40 @@ Vue.component('gl-details-modal', {
     closeDlg: function () {
       $('body').css('overflow', 'auto');
       this.selectedItem = {};
+    },
+
+    // *** content ***
+    getHeaderDesc: function() {
+      if (this.item.hasOwnProperty("desc")) {
+        if (this.item.desc !== '') {
+          return this.item.desc;
+        }
+      }
+      return "&nbsp;";
+    },
+    getSoftwareList: function () {
+      let s = [];
+      if (this.item.hasOwnProperty("software")) {
+        this.item.software.forEach(function (item) {
+          s.push('/portfolio' + item);
+        });
+      }
+      return s;
     }
 
+  },
+  computed: {
+    pickInnerComponent: function () {
+      let c = '';
+      if (this.item) {
+        if (this.item.hasOwnProperty('thumbs')) {
+          c = "gl-story-display";
+        } else {
+          c = "gl-single-image-display";
+        }
+      }
+      return c;
+    }
 
   },
   template: `
@@ -237,13 +269,42 @@ Vue.component('gl-details-modal', {
     <span class="gl-modal-x core-pointer" v-on:click="closeDlg()">&times;</span>
     <!--img class="modal-content" id="img01">
     <div id="caption"></div-->
-    {{item}}
-    
-    
-  </div>
-  <input type="hidden" value="{{shouldShow}}"> 
+    <div class="gl-modal-display-container">
+      <div class="gl-modal-header-text">
+        <div style="display: inline-block;"><span v-html="getHeaderDesc()"></span></div>
+        <div style="display: inline-block;" class="float-right">
+          <img v-for="s in getSoftwareList()" v-bind:src="s" class="gl-modal-header-img" />
+        </div>
+      </div>
+      <component :is="pickInnerComponent" v-bind:item="item"></component>
+    </div>
+  </div> 
 </div>
+  `
+});
 
+Vue.component('gl-single-image-display', {
+  props: ['item'],
+  methods: {
+    getImgSrc: function () {
+      return "/portfolio" + this.item.thumb;
+    }
+  },
+  template: `
+<div>
+  <img v-bind:src="getImgSrc()" style="width: 100%;"/>
+</div>  
+  `
+});
+
+Vue.component('gl-story-display', {
+  props: ['item'],
+  template: `
+<div>
+  story display<p/> 
+  {{item}}
+  fuckc ufkc
+</div>  
   `
 });
 

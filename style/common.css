@@ -459,7 +459,19 @@
     transition: 0.3s;
 }
 
-
+.gl-modal-display-container {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.gl-modal-header-text {
+    color: white;
+    font-size: 1.2em;
+}
+.gl-modal-header-img {
+    width: 30px;
+    height: 30px;
+    margin-left: 8px;
+}
 
 
 .pmenu-hscroll-core {
