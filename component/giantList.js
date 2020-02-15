@@ -30,11 +30,17 @@ Vue.component('giant-list', {
       selectedCatItem: {},
 
       // the modal dlg item for display
-      modalDlgItem: {}
+      modalDlgItem: {},
+
+      shouldShowBackToTop: false
     };
   },
   mounted: function() {
     window.eventBus.$on('onCatChange', this.onCatChange);
+    window.addEventListener('scroll', this.onscroll);
+  },
+  destroyed: function() {
+    window.removeEventListener('scroll', this.onscroll);
   },
   methods: {
     onCatChange: function (data) {
@@ -73,6 +79,21 @@ Vue.component('giant-list', {
     onShowModalDetails: function(data) {
       this.modalDlgItem = data;
     },
+    scrollToTop: function() {
+      window.scrollTo(0, 0);
+    },
+    onscroll: function(e) {
+      let windowH = window.innerHeight; //document.body.clientHeight;
+      let currentScroll = document.body.scrollTop; //document.documentElement.scrollTop;
+      let icon = document.querySelector('._gl_back_top_');
+      // TODO: hard code for the moment
+      windowH = 200;
+      if (currentScroll >= windowH) {
+        icon.style.display = 'block';
+      } else {
+        icon.style.display = 'none';
+      }
+    },
 
 
     // ** css ** //
@@ -84,6 +105,14 @@ Vue.component('giant-list', {
     },
     getGlCardContainerStyle: function () {
       return {};
+    },
+    getBackToTopLocation: function () {
+      return {
+        position: 'fixed',
+        bottom: '40px',
+        right: '20px',
+        'z-index': 5
+      };
     }
 
   },
@@ -109,12 +138,13 @@ Vue.component('giant-list', {
     </div>
   </div>
   <!-- modal dialog -->
-  <gl-details-modal v-bind:item="modalDlgItem"></gl-details-modal>
-
-  {{selectedCat}} list => {{selectedImgList}}<p/>
-  
-  <div v-for="(lst, key) in iListMap">
-    {{key}} => {{lst}}
+  <gl-details-modal v-bind:item="modalDlgItem" v-on:onShowModalDetails="onShowModalDetails"></gl-details-modal>
+  <!-- scroll to top -->
+  <div class="float-right" v-bind:style="getBackToTopLocation()">
+    <img src="/portfolio/others/backToTop.png"
+      v-on:click="scrollToTop()" 
+      style="width: 60px; display: none;" 
+      class="core-pointer _gl_back_top_" />
   </div>
   <!-- weird bug... the reason might be... getJSON is not a promise; hence the core UI thread is not triggered for an update -->
   <input type="hidden" v-bind:value="lenIListMap" />
@@ -227,6 +257,7 @@ Vue.component('gl-details-modal', {
     closeDlg: function () {
       $('body').css('overflow', 'auto');
       this.selectedItem = {};
+      this.$emit('onShowModalDetails', {}); // reset selected item
     },
 
     // *** content ***
@@ -264,7 +295,7 @@ Vue.component('gl-details-modal', {
 
   },
   template: `
-<div>
+<div v-on:click="closeDlg()">
   <div id="_gl_dlg_" class="gl-modal-container" v-bind:class="getContainerClass()">
     <span class="gl-modal-x core-pointer" v-on:click="closeDlg()">&times;</span>
     <!--img class="modal-content" id="img01">
