@@ -1,0 +1,40 @@
+[
+  { "cat": "graphic.film", "story": "true", "desc": "Undercover the Movie", "thumb": "/graphicFilm/undercover/01_Film_2018_horizontal_LR.jpg",
+    "software": ["/others/ps.png", "/others/ai.png"],
+    "thumbs": [
+      { "img": "/graphicFilm/undercover/01_Film_2018_horizontal_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/undercover/01a_Film_2018_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.film", "story": "true", "desc": "The Inspired Island II", "thumb": "/graphicFilm/island/02_Film_InspiredIsland2_Poster_LR.jpg",
+    "software": ["/others/ps.png", "/others/ai.png"],
+    "thumbs": [
+      { "img": "/graphicFilm/island/02_Film_InspiredIsland2_Poster_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/island/02a_Film_InspiredIsland2_Leaflet0102_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/island/02b_Film_InspiredIsland2_EDM_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/island/02c_Film_InspiredIsland2_Banner_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/island/03_Film_InspiredIsland1_Poster_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/island/03a_Film_InspiredIsland1_Leaflet0102_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.film", "story": "true", "desc": "Winter is Hope", "thumb": "/graphicFilm/winterIsHope/05_Film_WinterCannesPoster_LR.jpg",
+    "software": ["/others/ps.png", "/others/ai.png"],
+    "thumbs": [
+      { "img": "/graphicFilm/winterIsHope/04_Film_WinterPoster_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/winterIsHope/05_Film_WinterCannesPoster_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/winterIsHope/05a_Film_WinterCannesPostcard_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.film", "story": "true", "desc": "Let the Wind Carry Me", "thumb": "/graphicFilm/letTheWindCarryMe/06_Film_LetWindCarryMe_Poster_LR.jpg",
+    "software": ["/others/ps.png", "/others/ai.png"],
+    "thumbs": [
+      { "img": "/graphicFilm/letTheWindCarryMe/06_Film_LetWindCarryMe_Poster_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/letTheWindCarryMe/06a_Film_LetWindCarryMe_PostcardTix_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.film", "story": "true", "desc": "Mummy 3", "thumb": "/graphicFilm/mummy3/07_Film_Mummy3_Pro.jpg",
+    "software": ["/others/ps.png", "/others/ai.png"]
+  },
+  { "cat": "graphic.film", "story": "true", "desc": "Poster Concepts", "thumb": "/graphicFilm/concept/09_Film_2019_gamble_LR.jpg",
+    "software": ["/others/ps.png", "/others/ai.png"],
+    "thumbs": [
+      { "img": "/graphicFilm/concept/09_Film_2019_gamble_LR.jpg", "desc": "" },
+      { "img": "/graphicFilm/concept/08_Film_2019_thief_LR.jpg", "desc": "" }
+    ] }
+]
