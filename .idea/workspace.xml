@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/component/giantList.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/giantList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index_bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/util_lib.js" beforeDir="false" afterPath="$PROJECT_DIR$/lib/util_lib.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -38,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component/giantList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1026">
-              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="312">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -281,12 +279,12 @@
       <workItem from="1581673810263" duration="5000" />
       <workItem from="1581674443744" duration="4205000" />
       <workItem from="1581730462743" duration="13554000" />
-      <workItem from="1581821702442" duration="9525000" />
+      <workItem from="1581821702442" duration="9909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276257000" />
+    <option name="totallyTimeSpent" value="276641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -670,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/component/giantList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1026">
-          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="312">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
         </state>
       </provider>
     </entry>

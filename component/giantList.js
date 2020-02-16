@@ -6,8 +6,20 @@ Vue.component('giant-list', {
       let inst = this;
       setTimeout(function () {
         inst.lenIListMap = Object.keys(inst.iListMap).length;
-        inst.getSelectedImgList('all');
-      }, 1500);
+        if (inst.lenIListMap === 0) {
+          while (true) {
+            setTimeout(function () {
+              inst.lenIListMap = Object.keys(inst.iListMap).length;
+              if (inst.lenIListMap > 0) {
+                inst.getSelectedImgList('all');
+                break;
+              }
+            },100);
+          }
+        } else {
+          inst.getSelectedImgList('all');
+        }
+      }, 1000);
       this.listing.forEach(function (item) {
         if (item.id !== 'all') {
           setTimeout(function () {
