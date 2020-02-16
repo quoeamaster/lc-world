@@ -1504,25 +1504,26 @@ Vue.component('giant-list', {
       setTimeout(function () {
         inst.lenIListMap = Object.keys(inst.iListMap).length;
         inst.getSelectedImgList('all');
-      }, 1000);
+      }, 1500);
       this.listing.forEach(function (item) {
         if (item.id !== 'all') {
           setTimeout(function () {
             $.getJSON('./../scrubs/'+item.id, function (data) {
               inst.iListMap[item.id] = data;
               // preload image(s)
-              /*
               if (data) {
                 data.forEach(function (item) {
-                  window.cacheObject.add("../portfolio"+item.thumb, "../portfolio"+item.thumb);
+                  //addCacheWrapper("../portfolio"+item.thumb);
+                  /*
                   if (item.hasOwnProperty("thumbs")) {
                     item.thumbs.forEach(function (t) {
                       window.cacheObject.add("../portfolio"+t.img, "../portfolio"+t.img);
                     }); // end -- forEach (thumbs)
                   } // end -- if (contains thumbs)
+                  */
                 });
               } // end -- if (data is valid)
-              */
+
             });
           }, Math.random()*1500);
         }
@@ -1569,6 +1570,7 @@ Vue.component('giant-list', {
       if (cat !== 'all') {
         this.selectedImgList = this.iListMap[this.selectedCat];
         // preload
+        /*
         if (this.selectedImgList && this.selectedImgList.length > 0) {
           this.selectedImgList.forEach(function (item) {
             window.cacheObject.add("../portfolio"+item.thumb, "../portfolio"+item.thumb);
@@ -1580,6 +1582,7 @@ Vue.component('giant-list', {
             } // end -- if (thumbs / story)
           })
         } // end -- if (preload)
+        */
       } else {
         // all means everything.... (the 1st item in each category)
         if (this.allImgList.length === 0) {
@@ -1590,7 +1593,8 @@ Vue.component('giant-list', {
             if (cList && cList.length>0) {
               // only the 1st content
               inst.allImgList = inst.allImgList.concat(cList[0]);
-              window.cacheObject.add("../portfolio"+cList[0].thumb, "../portfolio"+cList[0].thumb);
+              addCacheWrapper("../portfolio"+cList[0].thumb);
+              //window.cacheObject.add("../portfolio"+cList[0].thumb, "../portfolio"+cList[0].thumb);
             }
             // all... contents
             //inst.allImgList = inst.allImgList.concat(inst.iListMap[k]);
