@@ -2,47 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/Film_2018_dragon1191191057198.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/Film_2018_dragon_horizontal261305514464.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/Film_2019_criminal679718994575.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/Film_2019_kingOfCards1091476940092.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/KingRichard_Booth1566147657223.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/OKDEAL_Concept01_Book-01_LR511544533165.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/OKDEAL_Concept01_ChooseDestination-01_LR805159654869.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/OKDEAL_Concept01_FP-01_LR822443817554.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/WeddingInvitationCard340342083980.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/foto00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/foto01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/foto02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/foto03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/foto04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_photos/foto05.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-A_2019-12-26/spt_00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-A_2019-12-26/spt_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-A_2019-12-26/spt_02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-A_2019-12-26/spt_03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-A_2019-12-26/spt_04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-A_2019-12-26/spt_05.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-B_2019-12-26/spt_00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-B_2019-12-26/spt_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-B_2019-12-26/spt_02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-B_2019-12-26/spt_03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-B_2019-12-26/spt_04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-B_2019-12-26/spt_05.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-C_2019-12-26/spt_00.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-C_2019-12-26/spt_01.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-C_2019-12-26/spt_02.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-C_2019-12-26/spt_03.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-C_2019-12-26/spt_04.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/_story/mike-shoes-C_2019-12-26/spt_05.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/others/ae.png" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/others/ae.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/others/ai.png" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/others/ai.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/others/ps.png" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/others/ps.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio/others/xd.png" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio/others/xd.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrub_new" beforeDir="false" afterPath="$PROJECT_DIR$/scrub_new" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrubs/graphic.film" beforeDir="false" afterPath="$PROJECT_DIR$/scrubs/graphic.film" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scrubs/web" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/common.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,29 +24,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/component/giantList.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scrubs/playground.ae">
+        <entry file="file://$PROJECT_DIR$/style/common.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrubs/playground.xd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="3" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scrubs/mobile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="6" selection-start-line="22" selection-start-column="2" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="445">
+              <caret line="397" column="21" selection-start-line="397" selection-start-column="21" selection-end-line="397" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -169,7 +120,6 @@
         <option value="$PROJECT_DIR$/component/app.js" />
         <option value="$APPLICATION_CONFIG_DIR$/webstorm.vmoptions" />
         <option value="$PROJECT_DIR$/scrubs/mobile" />
-        <option value="$PROJECT_DIR$/style/common.css" />
         <option value="$PROJECT_DIR$/component/giantList.js" />
         <option value="$PROJECT_DIR$/scrubs/web" />
         <option value="$PROJECT_DIR$/scrubs/graphic.film" />
@@ -184,6 +134,7 @@
         <option value="$PROJECT_DIR$/scrubs/playground.ps" />
         <option value="$PROJECT_DIR$/scrubs/playground.xd" />
         <option value="$PROJECT_DIR$/scrubs/playground.ae" />
+        <option value="$PROJECT_DIR$/style/common.css" />
       </list>
     </option>
   </component>
@@ -210,17 +161,7 @@
             <path>
               <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="lcWorld-lilianPortfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="scrubs" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="lcWorld-lilianPortfolio" type="b2602c69:ProjectViewProjectNode" />
@@ -315,12 +256,12 @@
       <workItem from="1581673810263" duration="5000" />
       <workItem from="1581674443744" duration="4205000" />
       <workItem from="1581730462743" duration="13554000" />
-      <workItem from="1581821702442" duration="4792000" />
+      <workItem from="1581821702442" duration="5346000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="271524000" />
+    <option name="totallyTimeSpent" value="272078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -577,13 +518,6 @@
     <entry file="file://$PROJECT_DIR$/portfolio/others/backToTop.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="484" column="1" selection-start-line="484" selection-start-column="1" selection-end-line="484" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="811">
@@ -603,22 +537,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/component/giantList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="89" column="17" selection-start-line="89" selection-start-column="17" selection-end-line="89" selection-end-column="17" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#6717#6955#0" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrubs/awards">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -631,13 +549,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
           <caret line="19" column="89" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scrubs/mobile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="6" selection-start-line="22" selection-start-column="2" selection-end-line="28" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -697,13 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrub_new">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="56" column="26" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrubs/playground.xd">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -715,6 +619,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="619">
           <caret line="67" column="54" selection-start-line="67" selection-start-column="54" selection-end-line="67" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrubs/mobile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="6" selection-start-line="22" selection-start-column="2" selection-end-line="28" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrub_new">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/component/giantList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="14" selection-end-line="120" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="397" column="21" selection-start-line="397" selection-start-column="21" selection-end-line="397" selection-end-column="21" />
         </state>
       </provider>
     </entry>
