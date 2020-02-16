@@ -38,7 +38,7 @@
       "label": "Art Glass",
       "thumb": "portfolio/images/lbl_glass.jpg",
       "desc": "glass works" },
-    { "id": "art",
+    { "id": "art.sketch",
       "label": "Art Sketch",
       "thumb": "portfolio/images/lbl_sketch.jpg",
       "desc": "sketches" },

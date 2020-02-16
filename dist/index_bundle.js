@@ -560,7 +560,7 @@ window.globalWindowDimensions = {
 };
 
 // util - cache object
-window.cacheObject = new CacheObject(50);
+window.cacheObject = new CacheObject(500);
 
 window.onscroll = function() {
   applyStickToFixedHeader();
@@ -1507,9 +1507,24 @@ Vue.component('giant-list', {
       }, 1000);
       this.listing.forEach(function (item) {
         if (item.id !== 'all') {
-          $.getJSON('./../scrubs/'+item.id, function (data) {
-            inst.iListMap[item.id] = data;
-          });
+          setTimeout(function () {
+            $.getJSON('./../scrubs/'+item.id, function (data) {
+              inst.iListMap[item.id] = data;
+              // preload image(s)
+              /*
+              if (data) {
+                data.forEach(function (item) {
+                  window.cacheObject.add("../portfolio"+item.thumb, "../portfolio"+item.thumb);
+                  if (item.hasOwnProperty("thumbs")) {
+                    item.thumbs.forEach(function (t) {
+                      window.cacheObject.add("../portfolio"+t.img, "../portfolio"+t.img);
+                    }); // end -- forEach (thumbs)
+                  } // end -- if (contains thumbs)
+                });
+              } // end -- if (data is valid)
+              */
+            });
+          }, Math.random()*1500);
         }
       });
     }
@@ -1553,13 +1568,32 @@ Vue.component('giant-list', {
       // update the img list
       if (cat !== 'all') {
         this.selectedImgList = this.iListMap[this.selectedCat];
+        // preload
+        if (this.selectedImgList && this.selectedImgList.length > 0) {
+          this.selectedImgList.forEach(function (item) {
+            window.cacheObject.add("../portfolio"+item.thumb, "../portfolio"+item.thumb);
+            // story thumbs????
+            if (item.hasOwnProperty("thumbs")) {
+              item.thumbs.forEach(function (iT) {
+                window.cacheObject.add("../portfolio"+iT.img, "../portfolio"+iT.img);
+              });
+            } // end -- if (thumbs / story)
+          })
+        } // end -- if (preload)
       } else {
-        // all means everything....
+        // all means everything.... (the 1st item in each category)
         if (this.allImgList.length === 0) {
           let keys = Object.keys(this.iListMap);
           let inst = this;
           keys.forEach(function (k) {
-            inst.allImgList = inst.allImgList.concat(inst.iListMap[k]);
+            let cList = inst.iListMap[k];
+            if (cList && cList.length>0) {
+              // only the 1st content
+              inst.allImgList = inst.allImgList.concat(cList[0]);
+              window.cacheObject.add("../portfolio"+cList[0].thumb, "../portfolio"+cList[0].thumb);
+            }
+            // all... contents
+            //inst.allImgList = inst.allImgList.concat(inst.iListMap[k]);
           }); // end -- forEach(keys)
         }
         this.selectedImgList = this.allImgList;

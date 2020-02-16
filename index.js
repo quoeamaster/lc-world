@@ -8,7 +8,7 @@ window.globalWindowDimensions = {
 };
 
 // util - cache object
-window.cacheObject = new CacheObject(50);
+window.cacheObject = new CacheObject(500);
 
 window.onscroll = function() {
   applyStickToFixedHeader();
