@@ -1,0 +1,23 @@
+[
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_12-01.jpg",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_01-01.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_08-01.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_02-01.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_03-01.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_04.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_06.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_07.png",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_05.jpg",
+    "software": ["/others/ai.png"]},
+  { "cat": "playground.ai", "story": "true", "desc": "", "thumb": "/playground_AI/LC_AI_10-01.png",
+    "software": ["/others/ai.png"]}
+
+]

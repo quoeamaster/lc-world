@@ -1,0 +1,14 @@
+[
+  { "cat": "photography", "story": "true", "desc": "", "thumb": "/photography/Untitled-_lr.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "photography", "story": "true", "desc": "", "thumb": "/photography/Untitled-6.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "photography", "story": "true", "desc": "", "thumb": "/photography/Untitled-10.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "photography", "story": "true", "desc": "", "thumb": "/photography/Untitled-11.jpg",
+    "software": ["/others/ps.png"]
+  }
+]

@@ -1,0 +1,35 @@
+[
+  { "cat": "playground.xd", "story": "true", "desc": "waves", "thumb": "/playground_XD/XD_01.gif",
+    "software": ["/others/xd.png"]
+  },
+  { "cat": "playground.xd", "story": "true", "desc": "photo transition", "thumb": "/playground_XD/XD_02.gif",
+    "software": ["/others/xd.png"]
+  },
+  { "cat": "playground.xd", "story": "true", "desc": "", "thumb": "/playground_XD/XD_03.gif",
+    "software": ["/others/xd.png"]
+  },
+  { "cat": "playground.xd", "story": "true", "desc": "", "thumb": "/playground_XD/XD_03.gif",
+    "software": ["/others/xd.png"],
+    "thumbs": [
+      { "img": "/playground_XD/XD_03.gif", "desc": "" },
+      { "img": "/playground_XD/XD_04.gif", "desc": "" }
+    ] },
+  { "cat": "playground.xd", "story": "true", "desc": "", "thumb": "/playground_XD/XD_05.gif",
+    "software": ["/others/xd.png"],
+    "thumbs": [
+      { "img": "/playground_XD/XD_05.gif", "desc": "" },
+      { "img": "/playground_XD/XD_06.gif", "desc": "" }
+    ] },
+  { "cat": "playground.xd", "story": "true", "desc": "trend change", "thumb": "/playground_XD/XD_07.gif",
+    "software": ["/others/xd.png"]
+  },
+  { "cat": "playground.xd", "story": "true", "desc": "searchbar animation", "thumb": "/playground_XD/XD_08.gif",
+    "software": ["/others/xd.png"]
+  },
+  { "cat": "playground.xd", "story": "true", "desc": "slidebar on listView", "thumb": "/playground_XD/XD_09.gif",
+    "software": ["/others/xd.png"]
+  },
+  { "cat": "playground.xd", "story": "true", "desc": "progress bar", "thumb": "/playground_XD/XD_10.gif",
+    "software": ["/others/xd.png"]
+  }
+]

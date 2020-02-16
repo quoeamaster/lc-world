@@ -1,0 +1,8 @@
+[
+  { "cat": "illustration", "story": "true", "desc": "Mummy 3 sketch", "thumb": "/illustration/Mummy3_Scene.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "illustration", "story": "true", "desc": "body sketch", "thumb": "/illustration/a60.jpg",
+    "software": ["/others/ps.png"]
+  }
+]

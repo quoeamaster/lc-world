@@ -1,0 +1,64 @@
+[
+  { "cat": "graphic.corporate", "story": "true", "desc": "Atelier Resplendent Jade", "thumb": "/graphicCorporate/00_AR_FBbanner820X312.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/00_AR_FBbanner820X312.jpg", "desc": "" },
+      { "img": "/graphicCorporate/00_AR_LogoBizCard-01.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Documentary Pitching Master Workshop", "thumb": "/graphicCorporate/01_cnex_poster_LR.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/01_cnex_poster_LR.jpg", "desc": "" },
+      { "img": "/graphicCorporate/01a_cnex_leaflet_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Salon 50 years celebration", "thumb": "/graphicCorporate/02_Salon_HollywoodReporterAds.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/02_Salon_HollywoodReporterAds.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Salon 50 years celebration Gifts", "thumb": "/graphicCorporate/02a_Salon_50thAnniversary_Gift-01.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/02a_Salon_50thAnniversary_Gift-01.jpg", "desc": "" },
+      { "img": "/graphicCorporate/02b_Salon_50thAnniversary_Folder.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Salon Brochure", "thumb": "/graphicCorporate/02c_SalonLeaflet.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/02c_SalonLeaflet.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "WKK", "thumb": "/graphicCorporate/03_WKK_ProductBrochureCover.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/03_WKK_ProductBrochureCover.jpg", "desc": "" },
+      { "img": "/graphicCorporate/03a_WKK_YamahaExhibitionPromotionFan-01.jpg", "desc": "" },
+      { "img": "/graphicCorporate/03b_WKK_2011NepconExhPromotionFan.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Schwarzkopf", "thumb": "/graphicCorporate/04_Schwarzkopf_LeafletCover_LR.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/04_Schwarzkopf_LeafletCover_LR.jpg", "desc": "" },
+      { "img": "/graphicCorporate/04a_Schwarzkopf_Leaflet_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Philips Wifi One", "thumb": "/graphicCorporate/05b_Philips_Hifi_Leaflet_LR.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Philips Wifi Two", "thumb": "/graphicCorporate/05c_2011Hifi_Concept_LR.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "graphic.corporate", "story": "true", "desc": "SZMGI tv station", "thumb": "/graphicCorporate/06_SZMGI_Banner_LR.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Red Squirrel Org", "thumb": "/graphicCorporate/07_RedSquirrel_Poster_LR.jpg",
+    "software": ["/others/ps.png"],
+    "thumbs": [
+      { "img": "/graphicCorporate/07_RedSquirrel_Poster_LR.jpg", "desc": "" },
+      { "img": "/graphicCorporate/07a_RedSquirrel_Logo_Bizcard_LR.jpg", "desc": "" }
+    ] },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Ms & Ms, Mr & Mr", "thumb": "/graphicCorporate/09_WeddingInvitationCard_LR.jpg",
+    "software": ["/others/ps.png"]
+  },
+  { "cat": "graphic.corporate", "story": "true", "desc": "Philips Wifi Three", "thumb": "/graphicCorporate/05a_Philips_BacktoBasic.png",
+    "software": ["/others/ps.png"]
+  }
+]
