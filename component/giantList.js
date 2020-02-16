@@ -14,7 +14,7 @@ Vue.component('giant-list', {
                 inst.getSelectedImgList('all');
                 break;
               }
-            },100);
+            },200);
           }
         } else {
           inst.getSelectedImgList('all');
