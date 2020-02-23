@@ -1503,8 +1503,21 @@ Vue.component('giant-list', {
       let inst = this;
       setTimeout(function () {
         inst.lenIListMap = Object.keys(inst.iListMap).length;
-        inst.getSelectedImgList('all');
-      }, 1500);
+        if (inst.lenIListMap === 0) {
+          let _flag = true;
+          while (_flag) {
+            setTimeout(function () {
+              inst.lenIListMap = Object.keys(inst.iListMap).length;
+              if (inst.lenIListMap > 0) {
+                inst.getSelectedImgList('all');
+                _flag = false;
+              }
+            },200);
+          }
+        } else {
+          inst.getSelectedImgList('all');
+        }
+      }, 1000);
       this.listing.forEach(function (item) {
         if (item.id !== 'all') {
           setTimeout(function () {

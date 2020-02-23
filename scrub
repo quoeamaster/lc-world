@@ -3,35 +3,6 @@
     "portfolio/awards/01AsiaAwardPhoto_LR.jpg",
     "portfolio/awards/03FeedADifferentImagination_Slum.jpg"
   ],
-  "listing": [
-    {
-      "idx": 0,
-      "cat": "Featured",
-      "sub_cat": "photo",
-      "story_id": "mike-shoes_2019-12-26",
-      "preview": "portfolio/story/mike-shoes_2019-12-26/spt_01.jpg",
-      "comment": "[featured] category",
-      "comment_sub_cat": "story means it would be forwarded to the 'story' page and show its content..."
-    },
-    {
-     "idx": -1,
-     "cat": "Photos",
-     "preview": "portfolio/others/about_me.jpg",
-     "comment": "[photos] category"
-    },
-    {
-      "idx": -2,
-      "cat": "Works",
-      "preview": "portfolio/others/about_me.jpg",
-      "comment": "[works] category"
-    },
-    {
-      "idx": 2,
-      "cat": "Awards",
-      "preview": "portfolio/awards/AwardPhoto1013741780993.jpg",
-      "title": ""
-    }
-  ],
   "about": {
     "caption": "the Story of LC",
     "content": "a talent working on photos, sketches and portraits. More than 15 years of creativity, stepping into different industries and producing artwork..."

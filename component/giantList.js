@@ -7,12 +7,13 @@ Vue.component('giant-list', {
       setTimeout(function () {
         inst.lenIListMap = Object.keys(inst.iListMap).length;
         if (inst.lenIListMap === 0) {
-          while (true) {
+          let _flag = true;
+          while (_flag) {
             setTimeout(function () {
               inst.lenIListMap = Object.keys(inst.iListMap).length;
               if (inst.lenIListMap > 0) {
                 inst.getSelectedImgList('all');
-                break;
+                _flag = false;
               }
             },200);
           }

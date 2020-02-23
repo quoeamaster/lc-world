@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9d94dc-19be-468b-ab2a-0c0d1333ef9a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/component/giantList.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/giantList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index_bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index_bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scrub" beforeDir="false" afterPath="$PROJECT_DIR$/scrub" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +30,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scrubs/graphic.corporate">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="41" column="8" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="41" selection-end-column="8" />
+            <state relative-caret-position="984">
+              <caret line="41" column="8" selection-start-line="36" selection-start-column="2" selection-end-line="41" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -36,8 +39,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/component/giantList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="353">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scrub">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -54,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/util_lib.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
+            <state relative-caret-position="360">
               <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
             </state>
           </provider>
@@ -64,7 +76,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>click</find>
       <find>hr-cat:</find>
       <find>ph-hr-cat</find>
       <find>ph-hr-cat-outer-container</find>
@@ -94,6 +105,7 @@
       <find>pmenu-option-selected</find>
       <find>watch</find>
       <find>gl-container</find>
+      <find>inst.getSelectedImgList('all');</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -129,7 +141,6 @@
         <option value="$PROJECT_DIR$/scrubs/all" />
         <option value="$PROJECT_DIR$/main.js" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/scrub" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/scrubs/awards" />
         <option value="$PROJECT_DIR$/component/portfolio_menu.js" />
@@ -152,6 +163,7 @@
         <option value="$PROJECT_DIR$/scrub_new" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/lib/util_lib.js" />
+        <option value="$PROJECT_DIR$/scrub" />
         <option value="$PROJECT_DIR$/component/giantList.js" />
       </list>
     </option>
@@ -169,6 +181,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,7 +208,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,12 +291,16 @@
       <workItem from="1581673810263" duration="5000" />
       <workItem from="1581674443744" duration="4205000" />
       <workItem from="1581730462743" duration="13554000" />
-      <workItem from="1581821702442" duration="10002000" />
+      <workItem from="1581821702442" duration="10079000" />
+      <workItem from="1582079099120" duration="511000" />
+      <workItem from="1582160341236" duration="420000" />
+      <workItem from="1582186770180" duration="560000" />
+      <workItem from="1582444193187" duration="321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="276734000" />
+    <option name="totallyTimeSpent" value="278623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1027" extended-state="0" />
@@ -525,13 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrub">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrubs/awards">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -617,13 +626,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scrub_new">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scrubs/exhibition">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -645,10 +647,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scrub_new">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scrubs/graphic.corporate">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="41" column="8" lean-forward="true" selection-start-line="36" selection-start-column="2" selection-end-line="41" selection-end-column="8" />
+        <state relative-caret-position="984">
+          <caret line="41" column="8" selection-start-line="36" selection-start-column="2" selection-end-line="41" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -661,15 +670,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/util_lib.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
+        <state relative-caret-position="360">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrub">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/component/giantList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="353">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
