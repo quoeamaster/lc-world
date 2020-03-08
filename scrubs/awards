@@ -1,5 +1,5 @@
 [
-  { "cat": "Awards", "desc": "Asia Awards", "thumb": "/awards/01AsiaAwardPhoto_LR.jpg" },
-  { "cat": "Awards", "desc": "Cream Magazine", "thumb": "/awards/02CreamMagazine_Merit.jpg" },
-  { "cat": "Awards", "desc": "", "thumb": "/awards/03FeedADifferentImagination_Slum.jpg" }
+  { "cat": "Awards", "desc": "Asia Awards", "thumb": "/awards/01AsiaAwardPhoto_LR.jpg", "thumb_sq": "/awards/01AsiaAwardPhoto_LR_sq.jpg" },
+  { "cat": "Awards", "desc": "Cream Magazine", "thumb": "/awards/02CreamMagazine_Merit.jpg", "thumb_sq": "/awards/02CreamMagazine_Merit_sq.jpg" },
+  { "cat": "Awards", "desc": "", "thumb": "/awards/03FeedADifferentImagination_Slum.jpg", "thumb_sq": "/awards/03FeedADifferentImagination_Slum_sq.jpg" }
 ]

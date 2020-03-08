@@ -5,13 +5,15 @@ Vue.component('giant-list', {
       // load img list....
       let inst = this;
       setTimeout(function () {
+console.log('** started getSelectedImgList');
         inst.lenIListMap = Object.keys(inst.iListMap).length;
         if (inst.lenIListMap === 0) {
           let _flag = true;
           while (_flag) {
             setTimeout(function () {
               inst.lenIListMap = Object.keys(inst.iListMap).length;
-              if (inst.lenIListMap > 0) {
+              // TODO: inst.lenIListMap > 0
+              if (inst.lenIListMap >= 6) {
                 inst.getSelectedImgList('all');
                 _flag = false;
               }
@@ -22,23 +24,24 @@ Vue.component('giant-list', {
         }
       }, 1000);
       this.listing.forEach(function (item) {
-        if (item.id !== 'all') {
+        if (item.id !== 'all' && item.id) {
           setTimeout(function () {
             $.getJSON('./../scrubs/'+item.id, function (data) {
               inst.iListMap[item.id] = data;
               // preload image(s)
+              /*
               if (data) {
                 data.forEach(function (item) {
-                  //addCacheWrapper("../portfolio"+item.thumb);
-                  /*
+                  addCacheWrapper("../portfolio"+item.thumb);
+
                   if (item.hasOwnProperty("thumbs")) {
                     item.thumbs.forEach(function (t) {
                       window.cacheObject.add("../portfolio"+t.img, "../portfolio"+t.img);
                     }); // end -- forEach (thumbs)
                   } // end -- if (contains thumbs)
-                  */
                 });
               } // end -- if (data is valid)
+              */
 
             });
           }, Math.random()*1500);
@@ -244,7 +247,8 @@ Vue.component('gl-card-item', {
       this.imgDimen.w = this.containerH-20;
       this.imgDimen.h = this.imgDimen.w-40;
       return {
-        "background-image": "url('./../portfolio/"+this.item.thumb+"')",
+        //"background-image": "url('./../portfolio/"+this.item.thumb+"')",
+        "background-image": "url('./../portfolio/"+this.item.thumb_sq+"')",
         "width": this.imgDimen.w,
         "height": this.imgDimen.h,
       };

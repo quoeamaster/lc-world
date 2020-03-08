@@ -78,10 +78,10 @@ __webpack_require__(9);
 __webpack_require__(10);
 __webpack_require__(11);
 __webpack_require__(12);
+//require('./component/dummy_test.js');
+//require('./component/carousel.js');
+//require('./component/card.js');
 __webpack_require__(13);
-__webpack_require__(14);
-__webpack_require__(15);
-__webpack_require__(16);
 
 // include 3rd party jscript (already downloaded and not using npm repo to get the jscript src)
 // PS. didn't work as jquery is required within the webpack...
@@ -1009,492 +1009,6 @@ Vue.component('fixed-hamburger', {
 /* 13 */
 /***/ (function(module, exports) {
 
-
-Vue.component('dummy-text', {
-  props: ['scrub'],
-  template: `
-<div>
-<p>{{scrub}}</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo turpis, vestibulum a purus sed, imperdiet ultricies lorem. Vivamus maximus tortor lectus, vitae suscipit lorem sodales id. Sed maximus consequat tortor at dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam efficitur magna in sapien lobortis finibus laoreet nec urna. Pellentesque non sollicitudin tellus. Nullam suscipit lorem felis, eu condimentum odio posuere at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum semper velit eget ornare elementum. Etiam nec eros vitae urna mattis consequat sit amet vitae eros. Nunc ut quam sem. Suspendisse ut lacinia libero. Ut interdum sollicitudin mi sit amet fringilla. Phasellus sed felis id ex egestas consequat.</p>
-
-<p>Fusce cursus lacus et metus egestas, eu euismod metus aliquam. Quisque velit ligula, semper ac dui at, tincidunt tristique est. Nunc efficitur pulvinar ante, a ultrices massa vulputate id. Integer ultrices malesuada velit at tempus. Quisque blandit volutpat nisl eget porta. Ut a mauris nunc. Donec convallis sapien elit, quis auctor sem commodo id. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dapibus, enim ut molestie viverra, velit diam tincidunt lectus, quis varius tortor dui at diam. Pellentesque quis feugiat urna. Sed efficitur nunc risus, sed sagittis lacus finibus vel. Quisque sodales velit enim, eu cursus neque feugiat a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</p>
-
-<p>Aenean tortor lacus, scelerisque in tincidunt malesuada, cursus ut arcu. Ut felis quam, luctus sed ornare a, sagittis in lectus. Duis eget lorem quis risus vehicula gravida vel vitae quam. Curabitur elementum, tortor vitae tristique sollicitudin, sem nibh sodales diam, convallis interdum dui eros sed nisl. Vestibulum vitae est non elit tempor tincidunt fermentum nec lectus. Sed dictum congue felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat tortor scelerisque dui hendrerit facilisis. Ut quam lorem, ultrices a augue ac, hendrerit laoreet ipsum. Duis quis diam magna. In varius dignissim iaculis. Nunc ullamcorper, elit a consectetur euismod, augue ipsum pellentesque turpis, eu commodo ex lectus eu massa. Integer et pulvinar nunc. Morbi commodo semper ex et molestie. Fusce tincidunt sollicitudin arcu, sit amet lobortis odio. Proin facilisis nibh quis convallis scelerisque.</p>
-
-<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc eget odio interdum, tempus libero eget, efficitur tellus. Vivamus mattis risus in sapien lacinia, eleifend lacinia elit varius. Nam pulvinar nisl eu augue porta, nec placerat neque gravida. Donec tempus feugiat ipsum at viverra. Fusce mollis mi quis sapien pulvinar, sit amet fringilla est scelerisque. Sed imperdiet dolor non vulputate semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur mattis massa at orci auctor, eget malesuada nisi facilisis. Maecenas condimentum fringilla condimentum.</p>
-
-<p>Pellentesque in leo ut augue porttitor congue. Phasellus dolor orci, facilisis at tellus at, blandit laoreet mi. Phasellus ut gravida sem, nec dignissim tellus. Nam in felis rutrum, porta nibh interdum, commodo purus. Morbi id neque quis nulla fringilla porttitor non a nulla. Praesent placerat scelerisque augue sed tempus. Quisque vitae mollis nibh. Donec finibus mollis dui, eget iaculis est porttitor sed.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo turpis, vestibulum a purus sed, imperdiet ultricies lorem. Vivamus maximus tortor lectus, vitae suscipit lorem sodales id. Sed maximus consequat tortor at dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam efficitur magna in sapien lobortis finibus laoreet nec urna. Pellentesque non sollicitudin tellus. Nullam suscipit lorem felis, eu condimentum odio posuere at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum semper velit eget ornare elementum. Etiam nec eros vitae urna mattis consequat sit amet vitae eros. Nunc ut quam sem. Suspendisse ut lacinia libero. Ut interdum sollicitudin mi sit amet fringilla. Phasellus sed felis id ex egestas consequat.</p>
-
-<p>Fusce cursus lacus et metus egestas, eu euismod metus aliquam. Quisque velit ligula, semper ac dui at, tincidunt tristique est. Nunc efficitur pulvinar ante, a ultrices massa vulputate id. Integer ultrices malesuada velit at tempus. Quisque blandit volutpat nisl eget porta. Ut a mauris nunc. Donec convallis sapien elit, quis auctor sem commodo id. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dapibus, enim ut molestie viverra, velit diam tincidunt lectus, quis varius tortor dui at diam. Pellentesque quis feugiat urna. Sed efficitur nunc risus, sed sagittis lacus finibus vel. Quisque sodales velit enim, eu cursus neque feugiat a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</p>
-
-<p>Aenean tortor lacus, scelerisque in tincidunt malesuada, cursus ut arcu. Ut felis quam, luctus sed ornare a, sagittis in lectus. Duis eget lorem quis risus vehicula gravida vel vitae quam. Curabitur elementum, tortor vitae tristique sollicitudin, sem nibh sodales diam, convallis interdum dui eros sed nisl. Vestibulum vitae est non elit tempor tincidunt fermentum nec lectus. Sed dictum congue felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat tortor scelerisque dui hendrerit facilisis. Ut quam lorem, ultrices a augue ac, hendrerit laoreet ipsum. Duis quis diam magna. In varius dignissim iaculis. Nunc ullamcorper, elit a consectetur euismod, augue ipsum pellentesque turpis, eu commodo ex lectus eu massa. Integer et pulvinar nunc. Morbi commodo semper ex et molestie. Fusce tincidunt sollicitudin arcu, sit amet lobortis odio. Proin facilisis nibh quis convallis scelerisque.</p>
-
-<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc eget odio interdum, tempus libero eget, efficitur tellus. Vivamus mattis risus in sapien lacinia, eleifend lacinia elit varius. Nam pulvinar nisl eu augue porta, nec placerat neque gravida. Donec tempus feugiat ipsum at viverra. Fusce mollis mi quis sapien pulvinar, sit amet fringilla est scelerisque. Sed imperdiet dolor non vulputate semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur mattis massa at orci auctor, eget malesuada nisi facilisis. Maecenas condimentum fringilla condimentum.</p>
-
-<p>Pellentesque in leo ut augue porttitor congue. Phasellus dolor orci, facilisis at tellus at, blandit laoreet mi. Phasellus ut gravida sem, nec dignissim tellus. Nam in felis rutrum, porta nibh interdum, commodo purus. Morbi id neque quis nulla fringilla porttitor non a nulla. Praesent placerat scelerisque augue sed tempus. Quisque vitae mollis nibh. Donec finibus mollis dui, eget iaculis est porttitor sed.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo turpis, vestibulum a purus sed, imperdiet ultricies lorem. Vivamus maximus tortor lectus, vitae suscipit lorem sodales id. Sed maximus consequat tortor at dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam efficitur magna in sapien lobortis finibus laoreet nec urna. Pellentesque non sollicitudin tellus. Nullam suscipit lorem felis, eu condimentum odio posuere at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum semper velit eget ornare elementum. Etiam nec eros vitae urna mattis consequat sit amet vitae eros. Nunc ut quam sem. Suspendisse ut lacinia libero. Ut interdum sollicitudin mi sit amet fringilla. Phasellus sed felis id ex egestas consequat.</p>
-
-<p>Fusce cursus lacus et metus egestas, eu euismod metus aliquam. Quisque velit ligula, semper ac dui at, tincidunt tristique est. Nunc efficitur pulvinar ante, a ultrices massa vulputate id. Integer ultrices malesuada velit at tempus. Quisque blandit volutpat nisl eget porta. Ut a mauris nunc. Donec convallis sapien elit, quis auctor sem commodo id. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dapibus, enim ut molestie viverra, velit diam tincidunt lectus, quis varius tortor dui at diam. Pellentesque quis feugiat urna. Sed efficitur nunc risus, sed sagittis lacus finibus vel. Quisque sodales velit enim, eu cursus neque feugiat a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</p>
-
-<p>Aenean tortor lacus, scelerisque in tincidunt malesuada, cursus ut arcu. Ut felis quam, luctus sed ornare a, sagittis in lectus. Duis eget lorem quis risus vehicula gravida vel vitae quam. Curabitur elementum, tortor vitae tristique sollicitudin, sem nibh sodales diam, convallis interdum dui eros sed nisl. Vestibulum vitae est non elit tempor tincidunt fermentum nec lectus. Sed dictum congue felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat tortor scelerisque dui hendrerit facilisis. Ut quam lorem, ultrices a augue ac, hendrerit laoreet ipsum. Duis quis diam magna. In varius dignissim iaculis. Nunc ullamcorper, elit a consectetur euismod, augue ipsum pellentesque turpis, eu commodo ex lectus eu massa. Integer et pulvinar nunc. Morbi commodo semper ex et molestie. Fusce tincidunt sollicitudin arcu, sit amet lobortis odio. Proin facilisis nibh quis convallis scelerisque.</p>
-
-<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc eget odio interdum, tempus libero eget, efficitur tellus. Vivamus mattis risus in sapien lacinia, eleifend lacinia elit varius. Nam pulvinar nisl eu augue porta, nec placerat neque gravida. Donec tempus feugiat ipsum at viverra. Fusce mollis mi quis sapien pulvinar, sit amet fringilla est scelerisque. Sed imperdiet dolor non vulputate semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur mattis massa at orci auctor, eget malesuada nisi facilisis. Maecenas condimentum fringilla condimentum.</p>
-
-<p>Pellentesque in leo ut augue porttitor congue. Phasellus dolor orci, facilisis at tellus at, blandit laoreet mi. Phasellus ut gravida sem, nec dignissim tellus. Nam in felis rutrum, porta nibh interdum, commodo purus. Morbi id neque quis nulla fringilla porttitor non a nulla. Praesent placerat scelerisque augue sed tempus. Quisque vitae mollis nibh. Donec finibus mollis dui, eget iaculis est porttitor sed.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo turpis, vestibulum a purus sed, imperdiet ultricies lorem. Vivamus maximus tortor lectus, vitae suscipit lorem sodales id. Sed maximus consequat tortor at dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam efficitur magna in sapien lobortis finibus laoreet nec urna. Pellentesque non sollicitudin tellus. Nullam suscipit lorem felis, eu condimentum odio posuere at. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum semper velit eget ornare elementum. Etiam nec eros vitae urna mattis consequat sit amet vitae eros. Nunc ut quam sem. Suspendisse ut lacinia libero. Ut interdum sollicitudin mi sit amet fringilla. Phasellus sed felis id ex egestas consequat.</p>
-
-<p>Fusce cursus lacus et metus egestas, eu euismod metus aliquam. Quisque velit ligula, semper ac dui at, tincidunt tristique est. Nunc efficitur pulvinar ante, a ultrices massa vulputate id. Integer ultrices malesuada velit at tempus. Quisque blandit volutpat nisl eget porta. Ut a mauris nunc. Donec convallis sapien elit, quis auctor sem commodo id. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce dapibus, enim ut molestie viverra, velit diam tincidunt lectus, quis varius tortor dui at diam. Pellentesque quis feugiat urna. Sed efficitur nunc risus, sed sagittis lacus finibus vel. Quisque sodales velit enim, eu cursus neque feugiat a. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst.</p>
-
-<p>Aenean tortor lacus, scelerisque in tincidunt malesuada, cursus ut arcu. Ut felis quam, luctus sed ornare a, sagittis in lectus. Duis eget lorem quis risus vehicula gravida vel vitae quam. Curabitur elementum, tortor vitae tristique sollicitudin, sem nibh sodales diam, convallis interdum dui eros sed nisl. Vestibulum vitae est non elit tempor tincidunt fermentum nec lectus. Sed dictum congue felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat tortor scelerisque dui hendrerit facilisis. Ut quam lorem, ultrices a augue ac, hendrerit laoreet ipsum. Duis quis diam magna. In varius dignissim iaculis. Nunc ullamcorper, elit a consectetur euismod, augue ipsum pellentesque turpis, eu commodo ex lectus eu massa. Integer et pulvinar nunc. Morbi commodo semper ex et molestie. Fusce tincidunt sollicitudin arcu, sit amet lobortis odio. Proin facilisis nibh quis convallis scelerisque.</p>
-
-<p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc eget odio interdum, tempus libero eget, efficitur tellus. Vivamus mattis risus in sapien lacinia, eleifend lacinia elit varius. Nam pulvinar nisl eu augue porta, nec placerat neque gravida. Donec tempus feugiat ipsum at viverra. Fusce mollis mi quis sapien pulvinar, sit amet fringilla est scelerisque. Sed imperdiet dolor non vulputate semper. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur mattis massa at orci auctor, eget malesuada nisi facilisis. Maecenas condimentum fringilla condimentum.</p>
-
-<p>Pellentesque in leo ut augue porttitor congue. Phasellus dolor orci, facilisis at tellus at, blandit laoreet mi. Phasellus ut gravida sem, nec dignissim tellus. Nam in felis rutrum, porta nibh interdum, commodo purus. Morbi id neque quis nulla fringilla porttitor non a nulla. Praesent placerat scelerisque augue sed tempus. Quisque vitae mollis nibh. Donec finibus mollis dui, eget iaculis est porttitor sed.</p>
-</div>  
-  `
-});
-
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-/**
- * carousel component
- * sub-component(s):
- * - carousel-flyer
- */
-Vue.component('carousel', {
-  props: ['scrub'],
-  data: function() {
-    return {
-      imgIdx: 0
-    };
-  },
-  methods: {
-    getFeatureImage: function () {
-      if (this.scrub && this.scrub.length>0) {
-        return this.scrub[this.imgIdx];
-      }
-      return '';
-    },
-    getImageIdx: function() {
-      return this.imgIdx;
-    },
-    getFlyersLength: function () {
-      if (this.scrub && this.scrub.length>0) {
-        return this.scrub.length;
-      }
-      return 0;
-    },
-    onCarSwipeFlyer: function (data) {
-      if (data) {
-        this.imgIdx = data.idx;
-      }
-    }
-
-  },
-  template: `
-<div class="car-core">
-    <!-- inline-block or right -->
-    <div class="car-flyer-container">
-      <carousel-flyer
-          v-bind:flyer="getFeatureImage()"
-          v-bind:idx="getImageIdx()"
-          v-on:car-swipe-flyer="onCarSwipeFlyer"
-          v-bind:flyersAvailable="getFlyersLength()"
-      ></carousel-flyer>
-    </div>
-</div>
-  `
-});
-
-
-/**
- * carousel-flyer component
- */
-Vue.component('carousel-flyer', {
-  props: ['flyer', 'idx', 'flyersAvailable'],
-  data: function() {
-    return {
-      // flag to determine should the flip happen
-      // isFlipEventPerformed: false,
-      // when did the last flip happened
-      lastFlipTimestamp: new Date()
-    };
-  },
-  watch: {
-    flyer: function (val) {
-      document.querySelector(".car-flyer-core").classList.remove("flipInX");
-      setTimeout(function () {
-          document.querySelector(".car-flyer-core").classList.add("flipInX");
-      }, 10);
-    }
-  },
-  mounted: function() {
-    /* auto - swipe feature
-    let instance = this;
-    setInterval(function () {
-      let duration = new Date() - instance.lastFlipTimestamp;
-      if (duration >= 5000) {
-        instance.raiseNextWipeFlyerEvent();
-      }
-    }, 1000);
-    */
-  },
-  methods: {
-    getFlyerStyle: function () {
-      //let _top = this.idx * (-500);
-      //let _left = this.idx * (800);
-      return {
-        "background-image": "url('" + this.flyer + "')",
-        "position": "relative",
-        "float": "right",
-        //"top": _top + "px",
-        //"left": _left + "px"
-      };
-    },
-    getDotClass: function(idx) {
-      if (idx === this.idx) {
-        return {
-          "fas": true,
-          "fa-circle": true,
-        };
-      }
-      return {
-        "far": true,
-        "fa-circle": true,
-      };
-    },
-    raiseSwipeFlyerEvent: function (idx) {
-      if (idx !== this.idx) {
-        this.lastFlipTimestamp = new Date();
-        this.$emit('car-swipe-flyer', {
-          "idx": idx,
-        });
-      }
-    },
-    raisePreviousWipeFlyerEvent: function () {
-      this.lastFlipTimestamp = new Date();
-      if (this.idx === 0) {
-        this.$emit('car-swipe-flyer', {
-          "idx": (this.flyersAvailable - 1),
-        })
-      } else {
-        this.$emit('car-swipe-flyer', {
-          "idx": (this.idx - 1),
-        })
-      }
-    },
-    raiseNextWipeFlyerEvent: function () {
-      this.lastFlipTimestamp = new Date();
-      if (this.idx < (this.flyersAvailable - 1)) {
-        this.$emit('car-swipe-flyer', {
-          "idx": (this.idx + 1),
-        })
-      } else {
-        this.$emit('car-swipe-flyer', {
-          "idx": 0,
-        })
-      }
-    }
-  },
-  template: `
-<div class="car-flyer-core animated fadeIn"
-    style="-webkit-animation-duration: 2.5s; -moz-animation-duration: 2.5s;" 
-    v-bind:style="getFlyerStyle()">
-    <!-- left cursor -->
-    <div class="car-swipe-left car-control-color-1 core-pointer" 
-        v-on:click="raisePreviousWipeFlyerEvent()">
-      <i class="fas fa-angle-left"></i>
-    </div>
-    <!-- right cursor -->
-    <div class="car-swipe-right car-control-color-1 core-pointer" 
-        v-on:click="raiseNextWipeFlyerEvent()">
-      <i class="fas fa-angle-right"></i>
-    </div>
-    <!-- dots -->
-    <div class="car-dots car-control-color-2">
-        <i v-for="(val, idx) in flyersAvailable"
-            v-on:click="raiseSwipeFlyerEvent(idx)"
-            v-bind:class="getDotClass(idx)"
-            class="car-dots-spacer-1 core-pointer"></i>
-    </div>
-</div>
-  `
-});
-
-
-
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * listing of card(s)
- */
-Vue.component('card-listing', {
-  props: ['listing'],
-  data: function() {
-    return {
-      //isPopupInited: false,
-      // cat == 'Featured' is the DEFAULT
-      cat: 'Featured',
-      // cat-listing = the actual listing to be shown based on the chosen cat (default is Featured)
-      catListing: []
-    };
-  },
-  mounted: function() {
-    let instance = this;
-    /*
-     *  there is a chance that the eventBus is not yet initialized; hence wait for 500ms
-     */
-    if (!window.eventBus) {
-      setTimeout(function () {
-        window.eventBus.$on('on-category-change', function (data) {
-          instance.onCategoryChange(data);
-        });
-      }, 500);
-    } else {
-      window.eventBus.$on('on-category-change', function (data) {
-        instance.onCategoryChange(data);
-      });
-    }
-
-    setTimeout(function () {
-      if (instance.listing) {
-        // update the catListing
-        instance.updateCatListing(instance);
-      }
-    }, 100);
-
-  },
-  methods: {
-    updateCatListing: function(instance) {
-      instance.catListing = [];
-      for (let i=0; i<instance.listing.length; i++) {
-        let item = instance.listing[i];
-        if (item.cat === instance.cat) {
-          instance.catListing.push(item);
-        }
-      } // end -- for (listing iteration)
-      //console.log(instance.catListing);
-    },
-    onCategoryChange: function(data) {
-      if (data) {
-        // possible values '', awards, photos, sketches
-        this.cat = data.cat;
-        // also update the actual listing for display (on cards)
-        this.updateCatListing(this);
-      }
-    },
-    onPopupInit: function(data) {
-      // this.isPopupInited === false
-      // PS: since the design is changed... it is not possible to init the popup class for ONCE,
-      // instead every time the listing changes, the popup init should be re-do again
-      if (true) {
-        //this.isPopupInited = true;
-        setTimeout(function () {
-          jQuery(data['className']).magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            closeBtnInside: false,
-            fixedContentPos: true,
-            image: {
-              verticalFit: true
-            },
-            zoom: {
-              enabled: true,
-              duration: 300
-            }
-            // other options
-          });
-        }, 500);
-      }
-    },
-    getCardId: function(idx) {
-      return '__card__'+idx;
-    },
-    /*
-    _getAnimationClass: function(item, idx, cardObj) {
-      // should be "Featured" instead of '' (HARD-CODED)
-      //  || this.cat === 'Featured'
-      if (this.cat === item.cat) {
-        console.log('cat matched', cardObj.attr('id'));
-        cardObj.addClass('core-display-block').removeClass('core-display-none');
-        cardObj.addClass('zoomIn').removeClass('zoomOut');
-      } else {
-        console.log(cardObj.attr('id'));
-        cardObj.addClass('zoomOut').removeClass('zoomIn');
-        cardObj.addClass('core-display-none').removeClass('core-display-block');
-      }
-    },
-    */
-    getAnimationClass: async function (item, idx) {
-      let instance = this;
-      let pCardObj = new Promise(function (resolve) {
-        setTimeout(function () {
-          let cardObj = jQuery('#'+instance.getCardId(idx));
-          //console.log(cardObj.attr('id'));
-          resolve(cardObj);
-        }, 100);
-      });
-      let realCardObj = null;
-      await pCardObj.then(function (data) {
-        realCardObj = data;
-        //instance._getAnimationClass(item, idx, realCardObj);
-        realCardObj.addClass('core-vis-hide').removeClass('zoomIn');
-        setTimeout(function () {
-          realCardObj.removeClass('core-vis-hide').addClass('zoomIn');
-        }, 10);
-      });
-
-      /*
-      let instance = this;
-      let cardObj = jQuery('#'+instance.getCardId(idx));
-      if (!cardObj) {
-        setTimeout(function () {
-          cardObj = jQuery('#'+instance.getCardId(idx));
-          instance._getAnimationClass(item, idx, cardObj);
-        }, 500);
-      } else {
-        this._getAnimationClass(item, idx, cardObj);
-      }
-      */
-    }
-
-  },
-  template: `
-<div class="container cd-core-before">
-  <div class="row">
-    <!-- listing -->
-    <!-- v-bind:class="getAnimationClass(item, idx)" -->
-    <!-- class="animated col-lg-3 col-md-4 col-sm-12" -->
-    <div v-for="(item, idx) in catListing"
-        v-bind:id="getCardId(idx)"
-        class="animated col-lg-3 col-md-4 col-sm-12"
-        v-bind:class="getAnimationClass(item, idx)"
-        style="-webkit-animation-duration: 0.6s; -moz-animation-duration: 0.6s;" >
-        <card v-bind:presentation="item"
-            v-on:popup-init="onPopupInit"
-        ></card>    
-    </div>
-
-  </div>
-</div>
-  `
-});
-
-/**
- * card - presenting a particular portfolio
- */
-Vue.component('card', {
-  props: ['presentation'],
-  data: function() {
-    return {
-      isHovered: false,
-      isCatMatch: true,
-      previousCatMatch: true,
-      shouldDisplayNone: false
-    };
-  },
-  mounted: function() {
-    let instance = this;
-    setTimeout(function () {
-      instance.$emit('popup-init', {
-        'className': '.meta-lightbox'
-      });
-    }, 100+(Math.random() * 1000));
-  },
-  template: `
-<div class="cd-container" >
-    <div class="">
-        <a class="meta-lightbox" v-bind:href="presentation.preview" v-on:click="onPreviewClick()">
-            <div class="cd-preview core-pointer-zoom-in meta-lightbox cd-div-preview"
-                v-bind:class="getPresentatonImgClass()"
-                v-on:mouseover="acceptHoverEvent()" 
-                v-on:mouseleave="acceptHoverLeaveEvent();"
-                v-bind:style="getDivStyle()"
-            ></div>
-          <!--img v-bind:src="getPresentationImg()"
-              v-bind:class="getPresentatonImgClass()"
-              v-on:mouseover="acceptHoverEvent()" 
-              v-on:mouseleave="acceptHoverLeaveEvent();" 
-              class="cd-preview core-pointer-zoom-in meta-lightbox"-->
-        </a>
-        <div style="text-align: center; margin-top: 4px;">{{presentation.title}}</div>
-    </div>
-</div>
-  `,
-  methods: {
-    onPreviewClick: function() {
-      let item = this.presentation;
-      if (item.cat === 'Featured' && item.sub_cat === 'story') {
-        window.location.href = 'story.html?story_id=' + item.story_id;
-      } else {
-        this.initPopupAgain();
-      }
-    },
-    initPopupAgain: function() {
-      this.$emit('popup-init', {
-        'className': '.meta-lightbox'
-      });
-    },
-    getDivStyle: function() {
-      return 'background-image: url('+this.presentation.preview+');';
-    },
-    /*
-    getPresentationImg: function () {
-      if (this.presentation) {
-        return this.presentation.preview;
-      }
-      return '';
-    },
-    getPresentationContent: function() {
-      if (this.presentation) {
-        // is it empty or null?
-        var content = this.presentation['content'];
-        if (!content || content === '') {
-          return '';
-        }
-        return content;
-      }
-      return "";
-    },
-    */
-    acceptHoverEvent: function () {
-      this.isHovered = true;
-    },
-    acceptHoverLeaveEvent: function () {
-      this.isHovered = false;
-    },
-    getPresentatonImgClass: function() {
-      if (this.isHovered) {
-        return {
-          "cd-preview-hover": true
-        };
-      }
-      return {
-        "cd-preview-hover": false
-      };
-    }
-
-  }
-});
-
-/**
- *  TODO: CARD
- *  1. presentation and forward (story => forward; photo just show photo as is)
- *  (ok) 2. should use div background instead of img
- */
-
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
 Vue.component('giant-list', {
   props: ['listing'],
   watch: {
@@ -1502,13 +1016,15 @@ Vue.component('giant-list', {
       // load img list....
       let inst = this;
       setTimeout(function () {
+console.log('** started getSelectedImgList');
         inst.lenIListMap = Object.keys(inst.iListMap).length;
         if (inst.lenIListMap === 0) {
           let _flag = true;
           while (_flag) {
             setTimeout(function () {
               inst.lenIListMap = Object.keys(inst.iListMap).length;
-              if (inst.lenIListMap > 0) {
+              // TODO: inst.lenIListMap > 0
+              if (inst.lenIListMap >= 6) {
                 inst.getSelectedImgList('all');
                 _flag = false;
               }
@@ -1519,23 +1035,24 @@ Vue.component('giant-list', {
         }
       }, 1000);
       this.listing.forEach(function (item) {
-        if (item.id !== 'all') {
+        if (item.id !== 'all' && item.id) {
           setTimeout(function () {
             $.getJSON('./../scrubs/'+item.id, function (data) {
               inst.iListMap[item.id] = data;
               // preload image(s)
+              /*
               if (data) {
                 data.forEach(function (item) {
-                  //addCacheWrapper("../portfolio"+item.thumb);
-                  /*
+                  addCacheWrapper("../portfolio"+item.thumb);
+
                   if (item.hasOwnProperty("thumbs")) {
                     item.thumbs.forEach(function (t) {
                       window.cacheObject.add("../portfolio"+t.img, "../portfolio"+t.img);
                     }); // end -- forEach (thumbs)
                   } // end -- if (contains thumbs)
-                  */
                 });
               } // end -- if (data is valid)
+              */
 
             });
           }, Math.random()*1500);
@@ -1741,7 +1258,8 @@ Vue.component('gl-card-item', {
       this.imgDimen.w = this.containerH-20;
       this.imgDimen.h = this.imgDimen.w-40;
       return {
-        "background-image": "url('./../portfolio/"+this.item.thumb+"')",
+        //"background-image": "url('./../portfolio/"+this.item.thumb+"')",
+        "background-image": "url('./../portfolio/"+this.item.thumb_sq+"')",
         "width": this.imgDimen.w,
         "height": this.imgDimen.h,
       };
