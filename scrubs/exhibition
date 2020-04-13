@@ -1,23 +1,26 @@
 [
-  { "cat": "illustration", "story": "true", "desc": "Salon 50 anniversary Booth", "thumb": "/exhibition/01Salon_50thAnniversary_Booth-01.jpg",
-    "software": ["/others/ps.png"]
+  { "cat": "illustration", "story": "true", "desc": "Salon 50 anniversary Booth", "thumb": "/exhibition/01Salon50thAnniversaryBooth.jpg",
+    "thumb_sq": "/exhibition/01Salon50thAnniversaryBooth_sq.jpg",
+    "software": ["/others/ai.png", "/others/ps.png", "/others/ae.png", "/others/sketch.png", "/others/xd.png"]
   },
   { "cat": "illustration", "story": "true", "desc": "Salon 50 anniversary Booth", "thumb": "/exhibition/02SalonBooth.jpg",
-    "software": ["/others/ps.png"]
+    "thumb_sq": "/exhibition/02SalonBooth_sq.jpg",
+    "software": ["/others/ai.png", "/others/ps.png"]
   },
   { "cat": "illustration", "story": "true", "desc": "WKK Nepon expo", "thumb": "/exhibition/03WKK_NeponExhibition.jpg",
-    "software": ["/others/ps.png"]
+    "thumb_sq": "/exhibition/03WKK_NeponExhibition_sq.jpg",
+    "software": ["/others/ai.png", "/others/ps.png"]
   },
-  { "cat": "illustration", "story": "true", "desc": "The Inspired Island II", "thumb": "/exhibition/04Film_InspiredIsland2_Eslite_LR.jpg",
-    "software": ["/others/ps.png"]
+  { "cat": "illustration", "story": "true", "desc": "The Inspired Island II", "thumb": "/exhibition/04Film_InspiredIsland2_Eslite.jpg",
+    "thumb_sq": "/exhibition/04Film_InspiredIsland2_Eslite_sq.jpg",
+    "software": ["/others/ai.png", "/others/ps.png"]
   },
-  { "cat": "illustration", "story": "true", "desc": "Tradelink Technologies Ltd", "thumb": "/exhibition/05Tradelink_HKCCBooth_LR.jpg",
-    "software": ["/others/ps.png"]
+  { "cat": "illustration", "story": "true", "desc": "Tradelink Technologies Ltd", "thumb": "/exhibition/06Film_WinterIsHope.jpg",
+    "thumb_sq": "/exhibition/06Film_WinterIsHope_sq.jpg",
+    "software": ["/others/ai.png", "/others/ps.png"]
   },
-  { "cat": "illustration", "story": "true", "desc": "Winter is Hope Booth", "thumb": "/exhibition/06Film_WinterBooth_LR.jpg",
-    "software": ["/others/ps.png"]
-  },
-  { "cat": "illustration", "story": "true", "desc": "I am the King of the World", "thumb": "/exhibition/07KingRichard_Booth_LR.jpg",
-    "software": ["/others/ps.png"]
+  { "cat": "illustration", "story": "true", "desc": "Winter is Hope Booth", "thumb": "/exhibition/07KingRichard_Booth.jpg",
+    "thumb_sq": "/exhibition/07KingRichard_Booth_sq.jpg",
+    "software": ["/others/ai.png", "/others/ps.png"]
   }
 ]

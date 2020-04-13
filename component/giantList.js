@@ -5,7 +5,7 @@ Vue.component('giant-list', {
       // load img list....
       let inst = this;
       setTimeout(function () {
-console.log('** started getSelectedImgList');
+//console.log('** started getSelectedImgList');
         inst.lenIListMap = Object.keys(inst.iListMap).length;
         if (inst.lenIListMap === 0) {
           let _flag = true;
@@ -181,7 +181,7 @@ console.log('** started getSelectedImgList');
       <div class="container-fluid">
         <div class="row">
           <div v-for="item in selectedImgList" 
-            class="col-4 col-md-4 col-sm-12">
+            class="col-3 col-md-3 col-sm-12">
              <gl-card-item
               v-on:onShowModalDetails="onShowModalDetails" 
               v-bind:item="item" 
